@@ -2,6 +2,10 @@ const margin = { top: 30, right: 30, bottom: 100, left: 100 },
 	width = 550 - margin.left - margin.right,
 	height = 550 - margin.top - margin.bottom;
 
+const margin1 = { top: 30, right: 100, bottom: 100, left: 100 };
+let width1 = document.getElementById('plot1').clientWidth - margin.left - margin.right;
+let height1 = document.getElementById('plot1').clientHeight - margin.top - margin.bottom;
+
 let tooltip = d3
 		.select("#content-wrap")
 		.append("div")
@@ -19,8 +23,8 @@ let tooltip = d3
 const svg_plot1 = d3
 	.select("#plot1")
 	.append("svg")
-	.attr("width", width + margin.left + margin.right)
-	.attr("height", height + margin.top + margin.bottom)
+	.attr("width", width1 + margin1.left + margin1.right)
+	.attr("height", height1 + margin1.top + margin1.bottom)
 	.append("g")
 	.attr("transform", `translate(${margin.left},${margin.top})`);
 
@@ -65,6 +69,243 @@ function add_axis_label(svg_plot, x, y, transform, text_anchor, label) {
 		.attr("y", y)
 		.attr("transform", transform)
 		.text(label);
+}
+
+function double_line_plot(data, svg_plot, id_div) {
+	let years = data.map((d) => d.year);
+	let years_map = {};
+	for(let i=1; i<=years.length; i++){
+		years_map[years[i-1]] = i;
+	}
+    const x = d3
+		.scaleLinear()
+		.domain([1, years.length])
+		.range([0, width1]);
+
+	svg_plot
+		.append("g")
+		.attr("transform", `translate(0, ${height1})`)
+		.call(d3.axisBottom(x).tickFormat((d, i) => years[d - 1]).ticks(years.length))
+		.selectAll("text")
+		.attr("transform", "translate(-10,0)rotate(-45)")
+		.style("text-anchor", "end");
+	
+	add_axis_label(
+		svg_plot,
+		(width1 / 2)-(margin1.right-margin1.left),
+		height1 + margin1.bottom - 5,
+		"",
+		"middle",
+		"Years"
+	);
+
+    var y_heating = d3.scaleLinear()
+        .domain([0, d3.max([...data], function(d) { return +d.heating; })])
+        .range([height1, 0]);
+
+	add_axis_label(
+		svg_plot,
+		-height1 / 2,
+		-margin1.left + 50,
+		"rotate(-90)",
+		"middle",
+		"Heating Degree Days (HDD) index"
+	);
+
+    svg_plot.append("g")
+    .call(d3.axisLeft(y_heating).tickSizeOuter([0]));
+	
+	var y_cooling = d3.scaleLinear()
+        .domain([0, d3.max([...data], function(d) { return +d.cooling; })])
+        .range([height1, 0]);
+	
+	svg_plot
+		.append("text")
+		.attr('class', 'right_label')
+		.attr("text-anchor", "middle")
+		.attr("x", -height1 / 2)
+		.attr("y", margin1.left-50)
+		.text("Cooling degree days (CDD) index");
+
+    svg_plot.append("g")
+	.attr('class', 'right_axis')
+    .call(d3.axisRight(y_cooling).tickSizeOuter([0]));
+
+	svg_plot.selectAll(".right_axis")
+	.style("transform", `translate(${width1}px, 0px)`);
+
+	svg_plot.selectAll(".right_label")
+	.style("transform", `rotate(-90deg) translate(0px, ${width1}px)`);
+
+    var mouseover = function (event, d) {
+        d3.selectAll(id_div + "  path").style("opacity", 0.2);
+        d3.selectAll(id_div + "  circle").style("opacity", 0.2);
+        d3.select(this).style("opacity", 1);
+        d3.selectAll(id_div + " .domain").style("opacity", 1);
+        info = d3.select(this).datum();
+		if(this.className['animVal']=='heating_circle'){
+			tooltip
+            .html("Year: " + info.year + "<br>HDD: " + info.heating)
+            .style("opacity", 1);
+		}
+		else{
+			tooltip
+            .html("Year: " + info.year + "<br>CDD: " + info.cooling)
+            .style("opacity", 1);
+		}
+    };
+
+    var mousemove = function (event, d) {
+        tooltip
+            .style("left", event.pageX + 20 + "px")
+            .style("top", event.pageY - 100 + "px");
+    };
+
+    var mouseleave = function (event, d) {
+        d3.selectAll(id_div + "  path").style("opacity", 1);
+        d3.selectAll(id_div + "  circle").style("opacity", 1);
+        tooltip.style("opacity", 0);
+    };
+    
+    svg_plot.append("path")
+    .datum(data)
+    .attr("fill", "none")
+    .attr("stroke", "blue")
+    .attr("stroke-width", 1.5)
+	.attr("d", d3.line()
+		.x(d => x(years_map[d.year]))
+		.y(d => y_heating(d.heating))
+	)
+            
+	//add invisible circle for mouseover
+	svg_plot.selectAll()
+	.data(data)
+	.enter()
+	.append("circle")
+	.attr("cx", d => x(years_map[d.year]))
+	.attr("cy", d => y_heating(d.heating))
+	.attr("r", 3)
+	.attr("fill", "blue")
+	.attr("class", "heating_circle")
+	.on("mouseover", mouseover)
+	.on("mousemove", mousemove)
+	.on("mouseleave", mouseleave)
+
+	svg_plot.append("path")
+    .datum(data)
+    .attr("fill", "none")
+    .attr("stroke", "red")
+    .attr("stroke-width", 1.5)
+	.attr("d", d3.line()
+		.x(d => x(years_map[d.year]))
+		.y(d => y_cooling(d.cooling))
+	)
+
+	//add invisible circle for mouseover
+	svg_plot.selectAll()
+	.data(data)
+	.enter()
+	.append("circle")
+	.attr("cx", d => x(years_map[d.year]))
+	.attr("cy", d => y_cooling(d.cooling))
+	.attr("r", 3)
+	.attr("fill", "red")
+	.attr("class", "cooling_circle")
+	.on("mouseover", mouseover)
+	.on("mousemove", mousemove)
+	.on("mouseleave", mouseleave)
+}
+
+function single_line_plot(data, svg_plot, id_div) {
+	let years = data.map((d) => d.year);
+	let years_map = {};
+	for(let i=1; i<=years.length; i++){
+		years_map[years[i-1]] = i;
+	}
+    const x = d3
+		.scaleLinear()
+		.domain([1, years.length])
+		.range([0, height]);
+
+	svg_plot
+		.append("g")
+		.attr("transform", `translate(0, ${height})`)
+		.call(d3.axisBottom(x).tickFormat((d, i) => years[d - 1]).ticks(years.length))
+		.selectAll("text")
+		.attr("transform", "translate(-10,0)rotate(-45)")
+		.style("text-anchor", "end");
+	
+	add_axis_label(
+		svg_plot,
+		width / 2,
+		height + margin.bottom - 5,
+		"",
+		"middle",
+		"Years"
+	);
+
+	
+    var y = d3.scaleLinear()
+        .domain([0, d3.max([...data], function(d) { return +d.losses; })])
+        .range([height, 0]);
+
+	add_axis_label(
+		svg_plot,
+		-height / 2,
+		-margin.left + 50,
+		"rotate(-90)",
+		"middle",
+		"losses (milion euro)"
+	);
+
+    svg_plot.append("g")
+        .call(d3.axisLeft(y).tickSizeOuter([0]));
+
+    var mouseover = function (event, d) {
+        d3.selectAll(id_div + "  path").style("opacity", 0.2);
+        d3.selectAll(id_div + "  circle").style("opacity", 0.2);
+        d3.select(this).style("opacity", 1);
+        d3.selectAll(id_div + " .domain").style("opacity", 1);
+        info = d3.select(this).datum();
+        tooltip
+            .html("Year: " + info.year + "<br>Losses: " + info.losses + " milion euro")
+            .style("opacity", 1);
+    };
+
+    var mousemove = function (event, d) {
+        tooltip
+            .style("left", event.pageX + 20 + "px")
+            .style("top", event.pageY - 100 + "px");
+    };
+
+    var mouseleave = function (event, d) {
+        d3.selectAll(id_div + "  path").style("opacity", 1);
+        d3.selectAll(id_div + "  circle").style("opacity", 1);
+        tooltip.style("opacity", 0);
+    };
+    
+    svg_plot.append("path")
+    .datum(data)
+    .attr("fill", "none")
+    .attr("stroke", "black") // Use shade based on label
+    .attr("stroke-width", 1.5)
+	.attr("d", d3.line()
+		.x(d => x(years_map[d.year]))
+		.y(d => y(d.losses))
+	)
+            
+	//add invisible circle for mouseover
+	svg_plot.selectAll()
+	.data(data)
+	.enter()
+	.append("circle")
+	.attr("cx", d => x(years_map[d.year]))
+	.attr("cy", d => y(d.losses))
+	.attr("r", 3)
+	.attr("fill", "black")
+	.on("mouseover", mouseover)
+	.on("mousemove", mousemove)
+	.on("mouseleave", mouseleave);
 }
 
 function heatmap_plot(data, svg_plot, id_div) {
@@ -199,7 +440,7 @@ function heatmap_plot(data, svg_plot, id_div) {
 	var mousemove = function (event, d) {
 		tooltip
 			.style("left", event.pageX + 20 + "px")
-			.style("top", event.pageY - 100 + "px");
+			.style("top", event.pageY - 140 + "px");
 	};
 
 	var mouseleave = function (event, d) {
@@ -231,6 +472,16 @@ function heatmap_plot(data, svg_plot, id_div) {
 		.on("mouseleave", mouseleave);
 }
 
+d3.csv("Cicala/plot1.csv", function (d) {
+	return {
+		year: d.year,
+		heating: +d["heating"],
+		cooling: +d["cooling"],
+	};
+}).then(function (data) {
+	double_line_plot(data, svg_plot1, "#plot1");
+});
+
 d3.csv("Cicala/plot4.csv", function (d) {
 	return {
 		year: d.year,
@@ -238,4 +489,13 @@ d3.csv("Cicala/plot4.csv", function (d) {
 	};
 }).then(function (data) {
 	heatmap_plot(data, svg_plot4, "#plot4");
+});
+
+d3.csv("Cicala/plot5.csv", function (d) {
+	return {
+		year: d.year,
+		losses: +d["losses"],
+	};
+}).then(function (data) {
+	single_line_plot(data, svg_plot5, "#plot5");
 });
