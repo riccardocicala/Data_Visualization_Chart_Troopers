@@ -4,8 +4,11 @@ const margin_11_15 = { top: 30, right: 30, bottom: 100, left: 100 },
 
 const bubble_margin = { top: 30, right: 30, bottom: 100, left: 100 },
 	bubble_width = 1250 - bubble_margin.left - bubble_margin.right,
-	bubble_height = 650 - bubble_margin.top - bubble_margin.bottom;
+	bubble_height = 750 - bubble_margin.top - bubble_margin.bottom;
 	
+const BLUE = "#0066ff";
+const GREEN = "#2bcf5f";
+
 const colours_11_15 = [
 	"#4C6A92",
 	"#F28C3B",
@@ -51,7 +54,7 @@ const svg_plot15 = d3
 	.select("#plot15")
 	.append("svg")
 	.attr("width", bubble_width + bubble_margin.left + bubble_margin.right)
-	.attr("height", bubble_height + bubble_margin.top + bubble_margin.bottom)
+	.attr("height", bubble_height + bubble_margin.top + bubble_margin.bottom + 100)
 	.append("g")
 	.attr("transform", `translate(${bubble_margin.left},${bubble_margin.top})`);
 
@@ -355,13 +358,13 @@ function bubbe_plot(data, svg_plot, id_div) {
 
 	const formatta = d3.format(".3~s");
 
-	const colours_27 = [
-		"#FF6347", "#FF4500", "#FFD700", "#ADFF2F", "#32CD32", "#3CB371", 
-		"#20B2AA", "#48D1CC", "#00BFFF", "#1E90FF", "#6495ED", "#8A2BE2", 
-		"#9932CC", "#D8BFD8", "#FF69B4", "#FF1493", "#C71585", "#800080", 
-		"#8B0000", "#DC143C", "#FF8C00", "#FF7F50", "#7FFF00", "#98FB98", 
-		"#C1FFC1", "#FFFF00", "#FFC0CB"
-	];
+	var min_value = d3.min(data, d => d.investments);
+	var max_value = d3.max(data, d => d.investments);
+
+	const colours_27 = d3
+		.scaleLinear()
+		.range(["red", BLUE, GREEN])
+		.domain([min_value, max_value / 2, max_value]);
 
 	svg_plot.append("line")
     .attr("x1", x(100))
@@ -379,7 +382,9 @@ function bubbe_plot(data, svg_plot, id_div) {
         .attr("cx", d => x(d.GDP))
         .attr("cy", d => y(d.taxes))
         .attr("r", d => radius(d.investments))
-        .style("fill", (d, i) => colours_27[i % colours_27.length])
+        .style("fill",  function (d) {
+			return colours_27(d.investments);
+		}) // (d, i) => colours_27[i % colours_27.length])
         .style("opacity", 0.7)
         .style("stroke", "black")
         .style("stroke-width", 1)
@@ -396,6 +401,66 @@ function bubbe_plot(data, svg_plot, id_div) {
                 .duration(500)
                 .style("opacity", 0);
         });
+
+		// Legend
+		const legendHeight = 20;
+		const legendWidth = bubble_width * 0.5;
+		const legendX = (bubble_width) / 4;
+		const legendY = bubble_height + 120;
+	
+		var min_value = d3.min(data, d => d.investments);
+		var max_value = d3.max(data, d => d.investments);
+	
+		svg_plot
+			.append("g")
+			.attr("class", "legend")
+			.attr("transform", `translate(${legendX}, ${legendY})`)
+			.append("rect")
+			.attr("width", legendWidth)
+			.attr("height", legendHeight)
+			.style("fill", `url(#linear-gradient-investments)`)
+			.style("stroke-width", 2);
+	
+		const defs = svg_plot.append("defs");
+		
+		const linearGradient = defs
+				.append("linearGradient")
+				.attr("id", "linear-gradient-investments");
+		
+		linearGradient
+				.selectAll("stop")
+				.data([
+				{ offset: "0%", color: "red" },
+				{ offset: "50%", color: "#0066ff" },
+				{ offset: "100%", color: "#2bcf5f" }
+				])
+				.enter()
+				.append("stop")
+				.attr("offset", (d) => d.offset)
+				.attr("stop-color", (d) => d.color);
+		
+		const legendScale = d3
+			.scaleLinear()
+			.domain([min_value, max_value])
+			.range([0, legendWidth]);
+	
+		const legendAxis = d3
+			.axisBottom(legendScale)
+			.tickValues([min_value, Math.round(max_value / 2000) * 1000, Math.round(max_value/ 1000) * 1000]);
+	
+		svg_plot
+			.append("g")
+			.attr("class", "legend-axis")
+			.attr("transform", `translate(${legendX}, ${legendY + legendHeight})`)
+			.call(legendAxis);
+	
+		svg_plot
+			.append("text")
+			.attr("x", legendX + legendWidth / 2)
+			.attr("y", legendY - 10)
+			.attr("text-anchor", "middle")
+			.style("font-size", "12px")
+			.text("Investments (millions EUR)");
 }
 
 d3.csv("Cosulich/plot1.csv", function (d) {
