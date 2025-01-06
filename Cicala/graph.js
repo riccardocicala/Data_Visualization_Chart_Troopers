@@ -7,7 +7,7 @@ let width1 = document.getElementById('plot1').clientWidth - margin1.left - margi
 let height1 = document.getElementById('plot1').clientHeight - margin1.top - margin1.bottom;
 
 const margin2 = { top: 30, right: 100, bottom: 130, left: 100 };
-let width2 = 700 - margin.left - margin.right;
+let width2 = 550 - margin.left - margin.right;
 let height2 = 640 - margin.top - margin.bottom;
 
 let tooltip = d3
@@ -538,8 +538,8 @@ function customTickFormat(d) {
 }
 
 function map_plot(data, topo, svg_plot, colorScheme, id_div, min_value, max_value, column) {
-	projection = d3.geoMercator().scale(420);
-	projection = projection.center([15, 55]).translate([width / 2, height / 2]);
+	projection = d3.geoMercator().scale(430);
+	projection = projection.center([30, 55]).translate([width / 2, height / 2]);
 
 	minVal = min_value;
 	maxVal = max_value;
@@ -555,17 +555,17 @@ function map_plot(data, topo, svg_plot, colorScheme, id_div, min_value, max_valu
 	let colorScale = d3.scaleThreshold().domain(thresholds).range(colorScheme);
 
 	let mouseOver = function (d) {
-		d3.selectAll(".Country " + id_div)
-			.transition()
-			.duration(200)
-			.style("opacity", 0.5)
-			.style("stroke", "transparent");
-		d3.select(this)
-			.transition()
-			.duration(200)
-			.style("opacity", 1)
-			.style("stroke", "black");
 		if(d.currentTarget.__data__.total!=-1){
+			d3.selectAll(".Country " + id_div)
+				.transition()
+				.duration(200)
+				.style("opacity", 0.5)
+				.style("stroke", "transparent");
+			d3.select(this)
+				.transition()
+				.duration(200)
+				.style("opacity", 1)
+				.style("stroke", "black");
 			tooltip
 				.html(
 					"Country: " +
@@ -575,33 +575,27 @@ function map_plot(data, topo, svg_plot, colorScheme, id_div, min_value, max_valu
 				)
 				.style("opacity", 1);
 		}
-		else{
-			tooltip
-				.html(
-					"Country: " +
-						d.currentTarget.__data__.properties.NAME
-				)
-				.style("opacity", 1);
-		}
 	};
 
 	let mouseMove = function tooltipMousemove(event, d) {
 		tooltip
 			.style("left", event.pageX + 20 + "px")
-			.style("top", event.pageY - 100 + "px");
+			.style("top", event.pageY - 150 + "px");
 	};
 
 	let mouseLeave = function (d) {
-		d3.selectAll(".Country " + id_div)
-			.transition()
-			.duration(200)
-			.style("opacity", 1)
-			.style("stroke", "transparent");
-		d3.select(this)
-			.transition()
-			.duration(200)
-			.style("stroke", "transparent");
-		tooltip.style("opacity", 0);
+		if(d.currentTarget.__data__.total!=-1){
+			d3.selectAll(".Country " + id_div)
+				.transition()
+				.duration(200)
+				.style("opacity", 1)
+				.style("stroke", "transparent");
+			d3.select(this)
+				.transition()
+				.duration(200)
+				.style("stroke", "transparent");
+			tooltip.style("opacity", 0);
+		}
 	};
 
 	
@@ -657,7 +651,7 @@ function map_plot(data, topo, svg_plot, colorScheme, id_div, min_value, max_valu
 	// Legend
 	const legendHeight = 20;
 	const legendWidth = width2 * 0.8;
-	const legendX = ((width2) /4)-30;
+	const legendX = ((width2) /4)-80;
 	const legendY = height2 + 20;
 
 	svg_plot
@@ -732,7 +726,7 @@ var onchange_slider2 = function (event, d) {
 	let dataTotal = new Map(
 		loadData1_slider2.filter(d => d.year==event.target.value).map((d) => [d.code, d.heating])
 	);
-	let colorScheme = d3.schemeReds[7];
+	let colorScheme = d3.schemeBlues[7];
 	map_plot(
 		dataTotal,
 		loadData0_slider2,
@@ -777,7 +771,7 @@ Promise.all([
 	let dataTotal = new Map(
 		loadData[1].filter(d => d.year==max_year).map((d) => [d.code, d.heating])
 	);
-	let colorScheme = d3.schemeReds[7];
+	let colorScheme = d3.schemeBlues[7];
 	map_plot(
 		dataTotal,
 		topo,
@@ -811,7 +805,7 @@ var onchange_slider3 = function (event, d) {
 	let dataTotal = new Map(
 		loadData1_slider3.filter(d => d.year==event.target.value).map((d) => [d.code, d.cooling])
 	);
-	let colorScheme = d3.schemeBlues[7];
+	let colorScheme = d3.schemeReds[7];
 	map_plot(
 		dataTotal,
 		loadData0_slider3,
@@ -856,7 +850,7 @@ Promise.all([
 	let dataTotal = new Map(
 		loadData[1].filter(d => d.year==max_year).map((d) => [d.code, d.cooling])
 	);
-	let colorScheme = d3.schemeBlues[7];
+	let colorScheme = d3.schemeReds[7];
 	map_plot(
 		dataTotal,
 		topo,

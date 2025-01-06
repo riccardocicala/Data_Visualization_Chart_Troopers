@@ -173,10 +173,6 @@ p {
 	font-size: large;
 }
 
-.time_plots {
-	display: flex;
-    flex-direction: row;
-}
 
 #range_plot2{
 	height: 70%;
@@ -194,6 +190,7 @@ p {
 
 .slidecontainer{
 	width: 50px;
+	text-align: center;
 }
 
 #footer {
