@@ -2,6 +2,10 @@ const margin_11_15 = { top: 30, right: 30, bottom: 100, left: 100 },
 	width_11_15 = 550 - margin_11_15.left - margin_11_15.right,
 	height_11_15 = 550 - margin_11_15.top - margin_11_15.bottom;
 
+const margin_14 = { top: 30, right: 30, bottom: 100, left: 100 },
+	width_14 = 550 - margin_14.left - margin_14.right,
+	height_14 = 650 - margin_14.top - margin_14.bottom;
+
 const bubble_margin = { top: 30, right: 30, bottom: 100, left: 100 },
 	bubble_width = 1250 - bubble_margin.left - bubble_margin.right,
 	bubble_height = 750 - bubble_margin.top - bubble_margin.bottom;
@@ -45,10 +49,10 @@ const svg_plot13 = d3
 const svg_plot14 = d3
 		.select("#plot14")
 		.append("svg")
-		.attr("width", width_11_15 + margin_11_15.left + margin_11_15.right)
-		.attr("height", height_11_15 + margin_11_15.top + margin_11_15.bottom)
+		.attr("width", width_14 + margin_14.left + margin_14.right)
+		.attr("height", height_14 + margin_14.top + margin_14.bottom + 60)
 		.append("g")
-		.attr("transform", `translate(${margin_11_15.left},${margin_11_15.top})`);
+		.attr("transform", `translate(${margin_14.left},${margin_14.top})`);
 
 const svg_plot15 = d3
 	.select("#plot15")
@@ -303,80 +307,79 @@ function stacked_bar_plot(data, svg_plot, id_div) {
 		.on("mouseleave", mouseleave);
 }
 
-function map_plot_taxes(data, topo, svg_plot, colorScheme, id_div, map_type, units) {
-	console.log(data);
-	projection = d3.geoMercator().scale(400);
-	projection = projection.center([13, 55]).translate([width_11_15 / 2, height_11_15 / 2]);
+function map_plot_taxes(data, topo, svg_plot, colorScheme, id_div, min_value, max_value, column) {
+	projection = d3.geoMercator().scale(430);
+	projection = projection.center([30, 55]).translate([width / 2, height / 2]);
 
-	minVal = d3.min(data.values());
-	maxVal = d3.max(data.values());
+	minVal = min_value;
+	maxVal = max_value;
 
-	const numThresholds = 8;
+	const numThresholds = 5;
 	const thresholds = Array.from(
 		{ length: numThresholds },
 		(_, i) => minVal + ((i + 1) * (maxVal - minVal)) / (numThresholds + 1)
 	);
+
 	thresholds.unshift(minVal);
 	thresholds.push(maxVal);
 
 	let colorScale = d3.scaleThreshold().domain(thresholds).range(colorScheme);
+	const formatta = d3.format(".3~s");
 
 	let mouseOver = function (d) {
-		d3.selectAll(".Country " + id_div)
-			.transition()
-			.duration(200)
-			.style("opacity", 0.5)
-			.style("stroke", "transparent");
-		d3.select(this)
-			.transition()
-			.duration(200)
-			.style("opacity", 1)
-			.style("stroke", "black");
-		tooltip
-			.html(
-				"Country: " +
-					d.currentTarget.__data__.properties.NAME +
-					"<br>Taxes (millions EUR): " +
-					d.currentTarget.__data__.total +
-					" " +
-					units
-			)
-			.style("opacity", 1);
+		if(d.currentTarget.__data__.total!=-1){
+			d3.selectAll(".Country " + id_div)
+				.transition()
+				.duration(200)
+				.style("opacity", 0.5)
+				.style("stroke", "transparent");
+			d3.select(this)
+				.transition()
+				.duration(200)
+				.style("opacity", 1)
+				.style("stroke", "black");
+			tooltip
+				.html("Country: <b>" + d.currentTarget.__data__.properties.NAME + "</b><br>Taxes (millions EUR): <b>" + formatta(d.currentTarget.__data__.total))
+				.style("opacity", 1);
+		}
 	};
 
 	let mouseMove = function tooltipMousemove(event, d) {
 		tooltip
 			.style("left", event.pageX + 20 + "px")
-			.style("top", event.pageY - 100 + "px");
+			.style("top", event.pageY - 150 + "px");
 	};
 
 	let mouseLeave = function (d) {
-		d3.selectAll(".Country " + id_div)
-			.transition()
-			.duration(200)
-			.style("opacity", 1)
-			.style("stroke", "transparent");
-		d3.select(this)
-			.transition()
-			.duration(200)
-			.style("stroke", "transparent");
-		tooltip.style("opacity", 0);
+		if(d.currentTarget.__data__.total != -1){
+			d3.selectAll(".Country " + id_div)
+				.transition()
+				.duration(200)
+				.style("opacity", 1)
+				.style("stroke", "transparent");
+			d3.select(this)
+				.transition()
+				.duration(200)
+				.style("stroke", "transparent");
+			tooltip.style("opacity", 0);
+		}
 	};
 
-	// Draw the map
 	svg_plot
 		.append("g")
-		.attr("transform", `translate(${margin_11_15.left},${margin_11_15.top})`)
+		.attr("transform", `translate(${margin_14.left},${margin_14.top})`)
 		.append("g")
 		.selectAll("path")
 		.data(topo.features)
 		.enter()
 		.append("path")
-		// draw each country
 		.attr("d", d3.geoPath().projection(projection))
-		// set the color of each country
 		.attr("fill", function (d) {
-			d.total = data.get(d.properties.ISO3) || 0;
+			d.total = data.get(d.properties.ISO3) ;
+			if (d.total == undefined) {
+				d.total = -1
+				return 'lightgray';
+			}
 			return colorScale(d.total);
 		})
 		.style("stroke", "transparent")
@@ -388,7 +391,6 @@ function map_plot_taxes(data, topo, svg_plot, colorScheme, id_div, map_type, uni
 		.on("mouseleave", mouseLeave)
 		.on("mousemove", mouseMove);
 
-	// Create gradient for the legend
 	const defs = svg_plot.append("defs");
 	const linearGradient = defs
 		.append("linearGradient")
@@ -409,12 +411,9 @@ function map_plot_taxes(data, topo, svg_plot, colorScheme, id_div, map_type, uni
 
 	// Legend
 	const legendHeight = 20;
-	const legendWidth = width_11_15 * 0.8;
-	const legendX = (width_11_15 +  margin_11_15.left) / 4;
-	const legendY = height_11_15 + 100;
-
-	var min_value = d3.min(data, d => d.taxes);
-	var max_value = d3.min(data, d => d.taxes);
+	const legendWidth = width_14 * 0.8;
+	const legendX = ((width_14) /4) - 80;
+	const legendY = height_14 + 40;
 
 	svg_plot
 		.append("g")
@@ -427,17 +426,17 @@ function map_plot_taxes(data, topo, svg_plot, colorScheme, id_div, map_type, uni
 
 	const legendScale = d3
 		.scaleLinear()
-		.domain([min_value, max_value])
+		.domain([minVal, maxVal])
 		.range([0, legendWidth]);
-
+		Math.round(max_value / 2000) * 1000
 	const legendAxis = d3
 		.axisBottom(legendScale)
 		.tickValues([
-			min_value,
-			min_value + (max_value - min_value) / 4,
-			(min_value + max_value) / 2,
-			min_value + (3 * (max_value - min_value)) / 4,
-			max_value,
+			minVal,
+			Math.round((minVal + (maxVal - minVal) / 4) / 1000) * 1000,
+			Math.round(((minVal + maxVal) / 2) / 1000) * 1000,
+			Math.round((minVal + (3 * (maxVal - minVal)) / 4) / 1000) * 1000,
+			Math.round(maxVal / 1000) * 1000,
 		])
 
 	svg_plot
@@ -452,7 +451,7 @@ function map_plot_taxes(data, topo, svg_plot, colorScheme, id_div, map_type, uni
 		.attr("y", legendY - 10)
 		.attr("text-anchor", "middle")
 		.style("font-size", "12px")
-		.text(`Taxes (millions EUR)`);
+		.text("Environmental Taxes (millions EUR)");
 }
 
 function bubbe_plot(data, svg_plot, id_div) {
@@ -654,19 +653,23 @@ Promise.all([
 		};
 	}),
 ]).then(function (data) {
+	let min_value = d3.min([...data[1]], function(d) { return +d.taxes; })
+	let max_value = d3.max([...data[1]], function(d) { return +d.taxes; })
+	console.log(min_value);
+	console.log(max_value);
 	let topo = data[0];
 	let dataTotalTaxes = new Map(
-		data[1].map((d) => [d.ISO, d.taxes])
+		data[1].map((d) => [d.ISO, +d.taxes])
 	);
-	let colorScheme = d3.schemeReds[7];
+	let colorScheme = d3.schemeBlues[7];
 	map_plot_taxes(
 		dataTotalTaxes,
 		topo,
 		svg_plot14,
 		colorScheme,
 		"#plot14",
-		"mercator",
-		""
+		min_value,
+		max_value
 	);
 });
 
