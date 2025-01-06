@@ -6,6 +6,10 @@ const margin1 = { top: 30, right: 100, bottom: 100, left: 100 };
 let width1 = document.getElementById('plot1').clientWidth - margin.left - margin.right;
 let height1 = document.getElementById('plot1').clientHeight - margin.top - margin.bottom;
 
+const margin2 = { top: 30, right: 100, bottom: 10, left: 100 };
+let width2 = 700 - margin.left - margin.right;
+let height2 = 640 - margin.top - margin.bottom;
+
 let tooltip = d3
 		.select("#content-wrap")
 		.append("div")
@@ -31,10 +35,10 @@ const svg_plot1 = d3
 const svg_plot2 = d3
 	.select("#plot2")
 	.append("svg")
-	.attr("width", width + margin.left + margin.right)
-	.attr("height", height + margin.top + margin.bottom)
+	.attr("width", width2 + margin2.left + margin2.right)
+	.attr("height", height2 + margin2.top + margin2.bottom)
 	.append("g")
-	.attr("transform", `translate(${margin.left},${margin.top})`);
+	.attr("transform", `translate(${margin2.left},${margin2.top})`);
 
 const svg_plot3 = d3
 	.select("#plot3")
@@ -481,18 +485,8 @@ function customTickFormat(d) {
 }
 
 function map_plot(data, topo, svg_plot, colorScheme, id_div, map_type, units) {
-	const formatNumber = d3.format(",.0f");
-	const format = (d) => `${formatNumber(d)} ${units}`;
-	// Map and projection
-	const path = d3.geoPath();
-	let projection = NaN;
-	if (map_type === "orthographic") {
-		projection = d3.geoOrthographic().scale(200);
-	} else {
-		projection = d3.geoMercator().scale(100);
-	}
-
-	projection = projection.center([13, 52]).translate([width / 2, height / 2]);
+	projection = d3.geoMercator().scale(400);
+	projection = projection.center([13, 55]).translate([width / 2, height / 2]);
 
 	minVal = d3.min(data.values());
 	maxVal = d3.max(data.values());
@@ -521,8 +515,8 @@ function map_plot(data, topo, svg_plot, colorScheme, id_div, map_type, units) {
 		tooltip
 			.html(
 				"Country: " +
-					d.currentTarget.__data__.properties.name +
-					"<br>Total CO2 emission: " +
+					d.currentTarget.__data__.properties.NAME +
+					"<br>HDD: " +
 					d.currentTarget.__data__.total +
 					" " +
 					units
@@ -554,7 +548,7 @@ function map_plot(data, topo, svg_plot, colorScheme, id_div, map_type, units) {
 	// Draw the map
 	svg_plot
 		.append("g")
-		.attr("transform", `translate(${margin.left},${margin.top})`)
+		.attr("transform", `translate(${margin2.left},${margin2.top})`)
 		.append("g")
 		.selectAll("path")
 		.data(topo.features)
@@ -564,7 +558,7 @@ function map_plot(data, topo, svg_plot, colorScheme, id_div, map_type, units) {
 		.attr("d", d3.geoPath().projection(projection))
 		// set the color of each country
 		.attr("fill", function (d) {
-			d.total = data.get(d.id) || 0;
+			d.total = data.get(d.properties.ISO3) || 0;
 			return colorScale(d.total);
 		})
 		.style("stroke", "transparent")
@@ -597,9 +591,9 @@ function map_plot(data, topo, svg_plot, colorScheme, id_div, map_type, units) {
 
 	// Legend
 	const legendHeight = 20;
-	const legendWidth = width * 0.8;
-	const legendX = (width + margin.left) / 4;
-	const legendY = height + 100;
+	const legendWidth = width1 * 0.8;
+	const legendX = (width1 + margin1.left) / 4;
+	const legendY = height1 + 100;
 
 	svg_plot
 		.append("g")
@@ -638,55 +632,7 @@ function map_plot(data, topo, svg_plot, colorScheme, id_div, map_type, units) {
 		.attr("y", legendY - 10)
 		.attr("text-anchor", "middle")
 		.style("font-size", "12px")
-		.text(`Emissions (${units})`);
-		if (map_type === "orthographic") {
-			// Enable zoom and rotate
-			const zoomBehavior = d3.zoom().on("zoom", zoomed);
-			svg_plot.call(zoomBehavior);
-		
-			// Scale functions for converting pixel translations to geographic coordinates
-			var lambda = d3
-				.scaleLinear()
-				.domain([-width, width])
-				.range([-180, 180]);
-		
-			var theta = d3
-				.scaleLinear()
-				.domain([-height, height])
-				.range([90, -90]);
-		
-			// Variables to store the last translation and scale values
-			var lastX = 0,
-				lastY = 0;
-			var origin = { x: 0, y: 0 };
-			var scale = projection.scale(); // Initial scale of the projection
-		
-			// Function for zoom and drag
-			function zoomed(event) {
-				var transform = event.transform;
-				var r = {
-					x: lambda(transform.x),
-					y: theta(transform.y),
-				};
-		
-				if (event.sourceEvent && event.sourceEvent.type === "wheel") {
-					// Handle zooming (mouse wheel)
-					projection.scale(scale * transform.k);
-					transform.x = lastX;
-					transform.y = lastY;
-				} else {
-					// Handle panning (dragging)
-					projection.rotate([origin.x + r.x, origin.y + r.y]);
-					lastX = transform.x;
-					lastY = transform.y;
-				}
-		
-				// Update the map paths
-				svg_plot
-					.selectAll("path")
-					.attr("d", d3.geoPath().projection(projection));
-			}
-	}
+		.text(`HDD`);
 }
 
 
