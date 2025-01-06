@@ -2,9 +2,9 @@ const margin = { top: 30, right: 30, bottom: 100, left: 100 },
 	width = 550 - margin.left - margin.right,
 	height = 550 - margin.top - margin.bottom;
 
-const margin1 = { top: 30, right: 100, bottom: 100, left: 100 };
-let width1 = document.getElementById('plot1').clientWidth - margin.left - margin.right;
-let height1 = document.getElementById('plot1').clientHeight - margin.top - margin.bottom;
+const margin1 = { top: 30, right: 100, bottom: 50, left: 100 };
+let width1 = document.getElementById('plot1').clientWidth - margin1.left - margin1.right;
+let height1 = document.getElementById('plot1').clientHeight - margin1.top - margin1.bottom;
 
 const margin2 = { top: 30, right: 100, bottom: 10, left: 100 };
 let width2 = 700 - margin.left - margin.right;
@@ -30,7 +30,7 @@ const svg_plot1 = d3
 	.attr("width", width1 + margin1.left + margin1.right)
 	.attr("height", height1 + margin1.top + margin1.bottom)
 	.append("g")
-	.attr("transform", `translate(${margin.left},${margin.top})`);
+	.attr("transform", `translate(${margin1.left},${margin1.top})`);
 
 const svg_plot2 = d3
 	.select("#plot2")
@@ -97,7 +97,7 @@ function double_line_plot(data, svg_plot, id_div) {
 	add_axis_label(
 		svg_plot,
 		(width1 / 2)-(margin1.right-margin1.left),
-		height1 + margin1.bottom - 5,
+		height1 + margin1.top + 20,
 		"",
 		"middle",
 		"Years"
@@ -176,6 +176,32 @@ function double_line_plot(data, svg_plot, id_div) {
     .attr("fill", "none")
     .attr("stroke", "blue")
     .attr("stroke-width", 1.5)
+	.on("mouseover", function (event, d) {
+		// Rendi opachi tutti gli altri elementi (linee e pallini)
+		d3.selectAll(id_div + " path").style("opacity", 0.2);
+		d3.selectAll(id_div + " circle").style("opacity", 0.2);
+
+		// Metti in evidenza solo questa linea
+		d3.select(this).style("opacity", 1);
+
+		// Metti in evidenza i pallini di questa linea
+		d3.selectAll(".heating_circle").style("opacity", 1);
+		d3.selectAll(id_div + " .domain").style("opacity", 1);
+
+		tooltip
+			.html("HDD")
+			.style("opacity", 1);
+	})
+	.on("mousemove", function (event) {
+		tooltip.style("left", (event.pageX + 20) + "px")
+			.style("top", (event.pageY - 150) + "px");
+	})
+	.on("mouseleave", function () {
+		d3.selectAll(id_div + " path").style("opacity", 1);
+		d3.selectAll(id_div + " circle").style("opacity", 1);
+
+		tooltip.style("opacity", 0);
+	})
 	.attr("d", d3.line()
 		.x(d => x(years_map[d.year]))
 		.y(d => y_heating(d.heating))
@@ -200,6 +226,32 @@ function double_line_plot(data, svg_plot, id_div) {
     .attr("fill", "none")
     .attr("stroke", "red")
     .attr("stroke-width", 1.5)
+	.on("mouseover", function (event, d) {
+		// Rendi opachi tutti gli altri elementi (linee e pallini)
+		d3.selectAll(id_div + " path").style("opacity", 0.2);
+		d3.selectAll(id_div + " circle").style("opacity", 0.2);
+
+		// Metti in evidenza solo questa linea
+		d3.select(this).style("opacity", 1);
+
+		// Metti in evidenza i pallini di questa linea
+		d3.selectAll(".cooling_circle").style("opacity", 1);
+		d3.selectAll(id_div + " .domain").style("opacity", 1);
+
+		tooltip
+			.html("CDD")
+			.style("opacity", 1);
+	})
+	.on("mousemove", function (event) {
+		tooltip.style("left", (event.pageX + 20) + "px")
+			.style("top", (event.pageY - 150) + "px");
+	})
+	.on("mouseleave", function () {
+		d3.selectAll(id_div + " path").style("opacity", 1);
+		d3.selectAll(id_div + " circle").style("opacity", 1);
+
+		tooltip.style("opacity", 0);
+	})
 	.attr("d", d3.line()
 		.x(d => x(years_map[d.year]))
 		.y(d => y_cooling(d.cooling))
@@ -259,7 +311,7 @@ function single_line_plot(data, svg_plot, id_div) {
 		-margin.left + 50,
 		"rotate(-90)",
 		"middle",
-		"losses (milion euro)"
+		"losses (bilion euro)"
 	);
 
     svg_plot.append("g")
@@ -272,7 +324,7 @@ function single_line_plot(data, svg_plot, id_div) {
         d3.selectAll(id_div + " .domain").style("opacity", 1);
         info = d3.select(this).datum();
         tooltip
-            .html("Year: " + info.year + "<br>Losses: " + info.losses + " milion euro")
+            .html("Year: " + info.year + "<br>Losses: " + info.losses + " bilion euro")
             .style("opacity", 1);
     };
 
@@ -386,8 +438,9 @@ function heatmap_plot(data, svg_plot, id_div) {
         linearGradientpH
 		.selectAll("stop")
 		.data([
-			{ offset: "0%", color: "red" },
-            { offset: "100%", color: "white" },
+			{ offset: "0%", color: "#5F021F" },
+            { offset: "50%", color: "red" },
+			{ offset: "100%", color: "white" }
 		])
 		.enter()
 		.append("stop")
@@ -396,13 +449,13 @@ function heatmap_plot(data, svg_plot, id_div) {
 
 	const myColor = d3
 		.scaleLinear()
-		.range(["red", "white"])
-		.domain([min_value_pH, 8.2]);
+		.range(["#5F021F", "red", "white"])
+		.domain([min_value_pH, min_value_pH+((8.2-min_value_pH)/2), 8.2]);
 	
 	const legendScale = d3
 		.scaleLinear()
-		.domain([min_value_pH, 8.2])
-		.range([0, legendWidth]);
+		.domain([min_value_pH, min_value_pH+((8.2-min_value_pH)/2), 8.2])
+		.range([0, legendWidth/2, legendWidth]);
 
 	const legendAxis = d3
 		.axisBottom(legendScale)
@@ -591,9 +644,9 @@ function map_plot(data, topo, svg_plot, colorScheme, id_div, map_type, units) {
 
 	// Legend
 	const legendHeight = 20;
-	const legendWidth = width1 * 0.8;
-	const legendX = (width1 + margin1.left) / 4;
-	const legendY = height1 + 100;
+	const legendWidth = width2 * 0.8;
+	const legendX = (width2 + margin2.left) / 4;
+	const legendY = height2 + 100;
 
 	svg_plot
 		.append("g")
