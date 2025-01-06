@@ -178,6 +178,24 @@ p {
     flex-direction: row;
 }
 
+#range_plot2{
+	height: 70%;
+	writing-mode: vertical-lr;
+    direction: rtl;
+    vertical-align: middle;
+}
+
+#range_plot3{
+	height: 70%;
+	writing-mode: vertical-lr;
+    direction: rtl;
+    vertical-align: middle;
+}
+
+.slidecontainer{
+	width: 50px;
+}
+
 #footer {
 	position: absolute;
 	bottom: 0;

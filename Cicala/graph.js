@@ -6,7 +6,7 @@ const margin1 = { top: 30, right: 100, bottom: 50, left: 100 };
 let width1 = document.getElementById('plot1').clientWidth - margin1.left - margin1.right;
 let height1 = document.getElementById('plot1').clientHeight - margin1.top - margin1.bottom;
 
-const margin2 = { top: 30, right: 100, bottom: 10, left: 100 };
+const margin2 = { top: 30, right: 100, bottom: 130, left: 100 };
 let width2 = 700 - margin.left - margin.right;
 let height2 = 640 - margin.top - margin.bottom;
 
@@ -32,7 +32,7 @@ const svg_plot1 = d3
 	.append("g")
 	.attr("transform", `translate(${margin1.left},${margin1.top})`);
 
-const svg_plot2 = d3
+let svg_plot2 = d3
 	.select("#plot2")
 	.append("svg")
 	.attr("width", width2 + margin2.left + margin2.right)
@@ -43,10 +43,10 @@ const svg_plot2 = d3
 const svg_plot3 = d3
 	.select("#plot3")
 	.append("svg")
-	.attr("width", width + margin.left + margin.right)
-	.attr("height", height + margin.top + margin.bottom)
+	.attr("width", width2 + margin2.left + margin2.right)
+	.attr("height", height2 + margin2.top + margin2.bottom)
 	.append("g")
-	.attr("transform", `translate(${margin.left},${margin.top})`);
+	.attr("transform", `translate(${margin2.left},${margin2.top})`);
 
 const svg_plot4 = d3
 	.select("#plot4")
@@ -537,12 +537,12 @@ function customTickFormat(d) {
 	}
 }
 
-function map_plot(data, topo, svg_plot, colorScheme, id_div, map_type, units) {
-	projection = d3.geoMercator().scale(400);
-	projection = projection.center([13, 55]).translate([width / 2, height / 2]);
+function map_plot(data, topo, svg_plot, colorScheme, id_div, min_value, max_value, column) {
+	projection = d3.geoMercator().scale(420);
+	projection = projection.center([15, 55]).translate([width / 2, height / 2]);
 
-	minVal = d3.min(data.values());
-	maxVal = d3.max(data.values());
+	minVal = min_value;
+	maxVal = max_value;
 
 	const numThresholds = 8;
 	const thresholds = Array.from(
@@ -565,16 +565,24 @@ function map_plot(data, topo, svg_plot, colorScheme, id_div, map_type, units) {
 			.duration(200)
 			.style("opacity", 1)
 			.style("stroke", "black");
-		tooltip
-			.html(
-				"Country: " +
-					d.currentTarget.__data__.properties.NAME +
-					"<br>HDD: " +
-					d.currentTarget.__data__.total +
-					" " +
-					units
-			)
-			.style("opacity", 1);
+		if(d.currentTarget.__data__.total!=-1){
+			tooltip
+				.html(
+					"Country: " +
+						d.currentTarget.__data__.properties.NAME +
+						`<br>${column}: ` +
+						d.currentTarget.__data__.total
+				)
+				.style("opacity", 1);
+		}
+		else{
+			tooltip
+				.html(
+					"Country: " +
+						d.currentTarget.__data__.properties.NAME
+				)
+				.style("opacity", 1);
+		}
 	};
 
 	let mouseMove = function tooltipMousemove(event, d) {
@@ -611,7 +619,11 @@ function map_plot(data, topo, svg_plot, colorScheme, id_div, map_type, units) {
 		.attr("d", d3.geoPath().projection(projection))
 		// set the color of each country
 		.attr("fill", function (d) {
-			d.total = data.get(d.properties.ISO3) || 0;
+			d.total = data.get(d.properties.ISO3) ;
+			if(d.total==undefined){
+				d.total = -1
+				return 'gray';
+			}
 			return colorScale(d.total);
 		})
 		.style("stroke", "transparent")
@@ -645,8 +657,8 @@ function map_plot(data, topo, svg_plot, colorScheme, id_div, map_type, units) {
 	// Legend
 	const legendHeight = 20;
 	const legendWidth = width2 * 0.8;
-	const legendX = (width2 + margin2.left) / 4;
-	const legendY = height2 + 100;
+	const legendX = ((width2) /4)-30;
+	const legendY = height2 + 20;
 
 	svg_plot
 		.append("g")
@@ -685,7 +697,7 @@ function map_plot(data, topo, svg_plot, colorScheme, id_div, map_type, units) {
 		.attr("y", legendY - 10)
 		.attr("text-anchor", "middle")
 		.style("font-size", "12px")
-		.text(`HDD`);
+		.text(`${column}`);
 }
 
 
@@ -699,29 +711,163 @@ d3.csv("Cicala/plot1.csv", function (d) {
 	double_line_plot(data, svg_plot1, "#plot1");
 });
 
+let loadData0_slider2 = NaN;
+let loadData1_slider2 = NaN;
+
+var onchange_slider2 = function (event, d) {
+	d3.select("#text_sliders2").text(`Year: ${event.target.value}`)
+	let plot = document.getElementById('plot2');
+	while (plot.firstChild) {
+		plot.removeChild(plot.lastChild);
+	}
+	let svg_plot2 = d3.select("#plot2")
+	.append("svg")
+	.attr("width", width2 + margin2.left + margin2.right)
+	.attr("height", height2 + margin2.top + margin2.bottom)
+	.append("g")
+	.attr("transform", `translate(${margin2.left},${margin2.top})`);
+
+	let min_value = d3.min([...loadData1_slider2], function(d) { return +d.heating; })
+	let max_value = d3.max([...loadData1_slider2], function(d) { return +d.heating; })
+	let dataTotal = new Map(
+		loadData1_slider2.filter(d => d.year==event.target.value).map((d) => [d.code, d.heating])
+	);
+	let colorScheme = d3.schemeReds[7];
+	map_plot(
+		dataTotal,
+		loadData0_slider2,
+		svg_plot2,
+		colorScheme,
+		"plot_2",
+		min_value,
+		max_value,
+		'HDD'
+	);
+};
 
 Promise.all([
 	d3.json("Cicala/europe.geojson"),
 	d3.csv("Cicala/plot2.csv", function (d) {
-		return { code: d.Code, heating: +d.heating };
+		return { code: d.Code, year: d.year, heating: +d.heating };
 	}),
 ]).then(function (loadData) {
+	let min_year = d3.min([...loadData[1]], function(d) { return +d.year; })
+	let max_year = d3.max([...loadData[1]], function(d) { return +d.year; })
+	let min_value = d3.min([...loadData[1]], function(d) { return +d.heating; })
+	let max_value = d3.max([...loadData[1]], function(d) { return +d.heating; })
+	let text = d3
+		.select("#slidecontainer2")
+		.append("text")
+		.style("font-size", "18px")
+		.attr("id", "text_sliders2")
+		.text(`Year: ${max_year}`);
+	let slider = d3
+		.select("#slidecontainer2")
+		.append("input")
+		.attr("type", "range")
+		.attr("id", "range_plot2")
+		.attr("min", `${min_year}`)
+		.attr("max", `${max_year}`)
+		.attr("value", `${max_year}`)
+		.on("input", onchange_slider2)
+	
+	loadData0_slider2 = loadData[0];
+	loadData1_slider2 = loadData[1];
 	let topo = loadData[0];
-	let dataTotalEmissions = new Map(
-		loadData[1].map((d) => [d.code, d.heating])
+	let dataTotal = new Map(
+		loadData[1].filter(d => d.year==max_year).map((d) => [d.code, d.heating])
 	);
 	let colorScheme = d3.schemeReds[7];
 	map_plot(
-		dataTotalEmissions,
+		dataTotal,
 		topo,
 		svg_plot2,
 		colorScheme,
 		"plot_2",
-		"mercator",
-		""
+		min_value,
+		max_value,
+		'HDD'
 	);
 });
 
+let loadData0_slider3 = NaN;
+let loadData1_slider3 = NaN;
+
+var onchange_slider3 = function (event, d) {
+	d3.select("#text_sliders3").text(`Year: ${event.target.value}`)
+	let plot = document.getElementById('plot3');
+	while (plot.firstChild) {
+		plot.removeChild(plot.lastChild);
+	}
+	let svg_plot3 = d3.select("#plot3")
+	.append("svg")
+	.attr("width", width2 + margin2.left + margin2.right)
+	.attr("height", height2 + margin2.top + margin2.bottom)
+	.append("g")
+	.attr("transform", `translate(${margin2.left},${margin2.top})`);
+
+	let min_value = d3.min([...loadData1_slider3], function(d) { return +d.cooling; })
+	let max_value = d3.max([...loadData1_slider3], function(d) { return +d.cooling; })
+	let dataTotal = new Map(
+		loadData1_slider3.filter(d => d.year==event.target.value).map((d) => [d.code, d.cooling])
+	);
+	let colorScheme = d3.schemeBlues[7];
+	map_plot(
+		dataTotal,
+		loadData0_slider3,
+		svg_plot3,
+		colorScheme,
+		"plot_3",
+		min_value,
+		max_value,
+		'CDD'
+	);
+};
+
+Promise.all([
+	d3.json("Cicala/europe.geojson"),
+	d3.csv("Cicala/plot2.csv", function (d) {
+		return { code: d.Code, year: d.year, cooling: +d.cooling };
+	}),
+]).then(function (loadData) {
+	let min_year = d3.min([...loadData[1]], function(d) { return +d.year; })
+	let max_year = d3.max([...loadData[1]], function(d) { return +d.year; })
+	let min_value = d3.min([...loadData[1]], function(d) { return +d.cooling; })
+	let max_value = d3.max([...loadData[1]], function(d) { return +d.cooling; })
+	let text = d3
+		.select("#slidecontainer3")
+		.append("text")
+		.style("font-size", "18px")
+		.attr("id", "text_sliders3")
+		.text(`Year: ${max_year}`);
+	let slider = d3
+		.select("#slidecontainer3")
+		.append("input")
+		.attr("type", "range")
+		.attr("id", "range_plot3")
+		.attr("min", `${min_year}`)
+		.attr("max", `${max_year}`)
+		.attr("value", `${max_year}`)
+		.on("input", onchange_slider3)
+	
+	loadData0_slider3 = loadData[0];
+	loadData1_slider3 = loadData[1];
+	let topo = loadData[0];
+	let dataTotal = new Map(
+		loadData[1].filter(d => d.year==max_year).map((d) => [d.code, d.cooling])
+	);
+	let colorScheme = d3.schemeBlues[7];
+	map_plot(
+		dataTotal,
+		topo,
+		svg_plot3,
+		colorScheme,
+		"plot_3",
+		min_value,
+		max_value,
+		'CDD'
+	);
+});
 
 d3.csv("Cicala/plot4.csv", function (d) {
 	return {
