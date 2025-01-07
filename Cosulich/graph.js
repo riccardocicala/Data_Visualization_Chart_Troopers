@@ -1,3 +1,7 @@
+const margin_11 = { top: 30, right: 30, bottom: 100, left: 100 },
+	width_11 = 770 - margin_11.left - margin_11.right,
+	height_11 = 650 - margin_11.top - margin_11.bottom;
+
 const margin_11_15 = { top: 30, right: 30, bottom: 100, left: 100 },
 	width_11_15 = 550 - margin_11_15.left - margin_11_15.right,
 	height_11_15 = 550 - margin_11_15.top - margin_11_15.bottom;
@@ -25,10 +29,10 @@ const colours_11_15 = [
 const svg_plot11 = d3
 	.select("#plot11")
 	.append("svg")
-	.attr("width", width_11_15 + margin_11_15.left + margin_11_15.right)
-	.attr("height", height_11_15 + margin_11_15.top + margin_11_15.bottom)
+	.attr("width", width_11 + margin_11.left + margin_11.right + 130)
+	.attr("height", height_11 + margin_11.top + margin_11.bottom)
 	.append("g")
-	.attr("transform", `translate(${margin_11_15.left},${margin_11_15.top})`);
+	.attr("transform", `translate(${margin_11.left},${margin_11.top})`);
 
 const svg_plot12 = d3
 	.select("#plot12")
@@ -73,8 +77,103 @@ function add_axis_label(svg_plot, x, y, transform, text_anchor, label) {
 }
 
 function line_plot_energy_share(data, svg_plot, id_div) {
+    const x = d3.scaleLinear()
+        .domain([2004, 2023])
+        .range([0, width_11]);
+
+    const y = d3.scaleLinear()
+        .domain([0, d3.max(data, d => d3.max(d.production, p => p.value))])
+        .range([height_11, 0]);
+
+    svg_plot.append("g")
+        .attr("transform", `translate(0,${height_11})`)
+        .call(d3.axisBottom(x).tickFormat(d3.format("d")));
+
+	add_axis_label(
+		svg_plot,
+		width_11 / 2,
+		height_11 + 70,
+		"",
+		"middle",
+		"Year"
+	);
+
+    svg_plot.append("g")
+        .call(d3.axisLeft(y));
+
+	add_axis_label(
+		svg_plot,
+		-height_11 / 2,
+		-margin_11.left + 40,
+		"rotate(-90)",
+		"middle",
+		"Share of Energy (%)"
+	);
+
+	const tooltip = d3
+			.select("#content-wrap")
+			.append("div")
+			.style("opacity", 0)
+			.attr("class", "tooltip")
+			.style("background-color", "white")
+			.style("border", "solid")
+			.style("border-width", "1px")
+			.style("border-radius", "5px")
+			.style("padding", "10px")
+			.style("position", "absolute")
+			.style("left", "0px")
+			.style("top", "0px")
+			.style("line-height", "1.4");
+			
+	data.forEach(country => {
+		const isEuropeanUnion = country.country === "European Union Average";
 	
-}	
+		const line = svg_plot.append("path")
+			.datum(country.production)
+			.attr("fill", "none")
+			.attr("stroke", isEuropeanUnion ? "#F28C3B" : "#d3d3d3")
+			.attr("stroke-width", isEuropeanUnion ? 2.5 : 2)
+			.style("opacity", isEuropeanUnion ? 1 : 0.3)
+			.attr("class", isEuropeanUnion ? "is-eu" : "country-line")
+			.attr("d", d3.line()
+				.x(d => x(d.year))
+				.y(d => y(d.value))
+			);
+	
+		if (!isEuropeanUnion) {
+			line.on("mouseover", function (event, d) {
+				svg_plot.selectAll(".country-line")
+					.style("opacity", 0.2);
+	
+				d3.select(this)
+					.style("stroke", "blue")
+					.style("opacity", 1);
+	
+				tooltip
+					.style("opacity", 1)
+					.html("Country: <b>" + country.country + "</b>")
+					.style("left", (event.pageX + 30) + "px")
+					.style("top", (event.pageY - 130) + "px");
+			})
+			.on("mouseleave", function () {
+				svg_plot.selectAll(".country-line")
+					.style("opacity", 0.2)
+					.style("stroke", "#d3d3d3");
+				tooltip.style("opacity", 0);
+			});
+		}
+		else {
+            svg_plot.append("text")
+                .attr("x", x(d3.max(country.production, p => p.year)) + 5)
+                .attr("y", y(country.production[country.production.length - 1].value))
+                .attr("fill", "#F28C3B")
+                .attr("font-size", "12px")
+                .attr("alignment-baseline", "middle")
+                .text("European Union Average");
+        }
+	});
+	svg_plot.select(".is-eu").raise();		
+}
 
 function bar_plot(data, svg_plot, id_div) {
 	var max_value = 0;
