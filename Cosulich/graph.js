@@ -72,6 +72,10 @@ function add_axis_label(svg_plot, x, y, transform, text_anchor, label) {
 		.text(label);
 }
 
+function line_plot_energy_share(data, svg_plot, id_div) {
+	
+}	
+
 function bar_plot(data, svg_plot, id_div) {
 	var max_value = 0;
 	data.forEach((d) => {
@@ -655,7 +659,6 @@ function bubbe_plot(data, svg_plot, id_div) {
 
 		if (useForceLayout) {
 			buttonGroup.select("text").text("Show real data");
-
 			const simulation = d3.forceSimulation(data)
 				.force("x", d3.forceX(d => x(d.GDP)).strength(0.7))
 				.force("y", d3.forceY(d => y(d.taxes)).strength(0.7))
@@ -669,7 +672,6 @@ function bubbe_plot(data, svg_plot, id_div) {
 				});
 		} else {
 			buttonGroup.select("text").text("Expand the bubbles");
-
 			bubbles.transition()
 				.duration(2500)
 				.attr("cx", d => x(d.GDP))
@@ -678,13 +680,15 @@ function bubbe_plot(data, svg_plot, id_div) {
 	});
 }
 
-d3.csv("Cosulich/plot1.csv", function (d) {
-	return {
-		country: d.country,
-		production: +d.production
-	};
-}).then(function (data) {
-	bar_plot(data, svg_plot11, "#plot11");
+d3.csv("Cosulich/plot1.csv").then(function(data) {
+    const years = Object.keys(data[0]).filter(key => key !== 'country' && key !== '');
+    const dati = data.map(function(d) {
+        return {
+            country: d.country,
+            production: years.map(year => ({ year: +year, value: +d[year] }))
+        };
+    });
+    line_plot_energy_share(dati, svg_plot11, "#plot11");
 });
 
 d3.csv("Cosulich/plot2.csv", function (d) {
@@ -720,8 +724,6 @@ Promise.all([
 ]).then(function (data) {
 	let min_value = d3.min([...data[1]], function(d) { return +d.taxes; })
 	let max_value = d3.max([...data[1]], function(d) { return +d.taxes; })
-	console.log(min_value);
-	console.log(max_value);
 	let topo = data[0];
 	let dataTotalTaxes = new Map(
 		data[1].map((d) => [d.ISO, +d.taxes])
