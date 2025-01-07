@@ -631,65 +631,65 @@ function bubbe_plot(data, svg_plot, id_div) {
 				.style("opacity", 0);
 		});
 
-		// Legend
-		const legendHeight = 20;
-		const legendWidth = bubble_width * 0.5;
-		const legendX = (bubble_width) / 4;
-		const legendY = bubble_height + 120;
+	// Legend
+	const legendHeight = 20;
+	const legendWidth = bubble_width * 0.5;
+	const legendX = (bubble_width) / 4;
+	const legendY = bubble_height + 120;
+
+	var min_value = d3.min(data, d => d.investments);
+	var max_value = d3.max(data, d => d.investments);
+
+	svg_plot
+		.append("g")
+		.attr("class", "legend")
+		.attr("transform", `translate(${legendX}, ${legendY})`)
+		.append("rect")
+		.attr("width", legendWidth)
+		.attr("height", legendHeight)
+		.style("fill", `url(#linear-gradient-investments)`)
+		.style("stroke-width", 2);
+
+	const defs = svg_plot.append("defs");
 	
-		var min_value = d3.min(data, d => d.investments);
-		var max_value = d3.max(data, d => d.investments);
+	const linearGradient = defs
+			.append("linearGradient")
+			.attr("id", "linear-gradient-investments");
 	
-		svg_plot
-			.append("g")
-			.attr("class", "legend")
-			.attr("transform", `translate(${legendX}, ${legendY})`)
-			.append("rect")
-			.attr("width", legendWidth)
-			.attr("height", legendHeight)
-			.style("fill", `url(#linear-gradient-investments)`)
-			.style("stroke-width", 2);
+	linearGradient
+			.selectAll("stop")
+			.data([
+			{ offset: "0%", color: "red" },
+			{ offset: "50%", color: "#0066ff" },
+			{ offset: "100%", color: "#2bcf5f" }
+			])
+			.enter()
+			.append("stop")
+			.attr("offset", (d) => d.offset)
+			.attr("stop-color", (d) => d.color);
 	
-		const defs = svg_plot.append("defs");
-		
-		const linearGradient = defs
-				.append("linearGradient")
-				.attr("id", "linear-gradient-investments");
-		
-		linearGradient
-				.selectAll("stop")
-				.data([
-				{ offset: "0%", color: "red" },
-				{ offset: "50%", color: "#0066ff" },
-				{ offset: "100%", color: "#2bcf5f" }
-				])
-				.enter()
-				.append("stop")
-				.attr("offset", (d) => d.offset)
-				.attr("stop-color", (d) => d.color);
-		
-		const legendScale = d3
-			.scaleLinear()
-			.domain([min_value, max_value])
-			.range([0, legendWidth]);
-	
-		const legendAxis = d3
-			.axisBottom(legendScale)
-			.tickValues([min_value, Math.round(max_value / 2000) * 1000, Math.round(max_value/ 1000) * 1000]);
-	
-		svg_plot
-			.append("g")
-			.attr("class", "legend-axis")
-			.attr("transform", `translate(${legendX}, ${legendY + legendHeight})`)
-			.call(legendAxis);
-	
-		svg_plot
-			.append("text")
-			.attr("x", legendX + legendWidth / 2)
-			.attr("y", legendY - 10)
-			.attr("text-anchor", "middle")
-			.style("font-size", "12px")
-			.text("Investments (million EUR)");
+	const legendScale = d3
+		.scaleLinear()
+		.domain([min_value, max_value])
+		.range([0, legendWidth]);
+
+	const legendAxis = d3
+		.axisBottom(legendScale)
+		.tickValues([min_value, Math.round(max_value / 2000) * 1000, Math.round(max_value/ 1000) * 1000]);
+
+	svg_plot
+		.append("g")
+		.attr("class", "legend-axis")
+		.attr("transform", `translate(${legendX}, ${legendY + legendHeight})`)
+		.call(legendAxis);
+
+	svg_plot
+		.append("text")
+		.attr("x", legendX + legendWidth / 2)
+		.attr("y", legendY - 10)
+		.attr("text-anchor", "middle")
+		.style("font-size", "12px")
+		.text("Investments (million EUR)");
 
 	// Simulazione
 	let useForceLayout = false;
@@ -724,8 +724,12 @@ function bubbe_plot(data, svg_plot, id_div) {
 	});
 	
 	buttonGroup.on("click", function () {
+		if (buttonGroup.attr("disabled") === "true") return;
+	
+		buttonGroup.attr("disabled", "true").style("pointer-events", "none");
+	
 		useForceLayout = !useForceLayout;
-
+	
 		if (useForceLayout) {
 			buttonGroup.select("text").text("Show real data");
 			const simulation = d3.forceSimulation(data)
@@ -738,6 +742,9 @@ function bubbe_plot(data, svg_plot, id_div) {
 					bubbles
 						.attr("cx", d => d.x)
 						.attr("cy", d => d.y);
+				})
+				.on("end", function () {
+					buttonGroup.attr("disabled", null).style("pointer-events", null);
 				});
 		} else {
 			buttonGroup.select("text").text("Expand the bubbles");
@@ -745,8 +752,11 @@ function bubbe_plot(data, svg_plot, id_div) {
 				.duration(2500)
 				.attr("cx", d => x(d.GDP))
 				.attr("cy", d => y(d.taxes))
+				.on("end", function () {
+					buttonGroup.attr("disabled", null).style("pointer-events", null);
+				});
 		}
-	});
+	});	
 }
 
 d3.csv("Cosulich/plot1.csv").then(function(data) {
