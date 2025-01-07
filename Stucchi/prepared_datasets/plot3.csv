@@ -1,0 +1,251 @@
+,country,year,total_country_consumption_value,fuel_type,total_type_of_fuel_consumption_value,consumption_value
+0,Germany,2014,55433.299999999996,Gas oil and diesel oil (excluding biofuel portion),220712.017,32175.295
+1,Germany,2014,55433.299999999996,Motor gasoline (excluding biofuel portion),86583.057,17682.194
+2,Germany,2014,55433.299999999996,Blended biodiesels,11236.618,1952.484
+3,Germany,2014,55433.299999999996,Kerosene-type jet fuel (excluding biofuel portion),7414.037,715.582
+4,Germany,2014,55433.299999999996,Liquefied petroleum gases,10294.946,645.735
+5,France,2014,45589.411,Gas oil and diesel oil (excluding biofuel portion),220712.017,33036.384
+6,France,2014,45589.411,Motor gasoline (excluding biofuel portion),86583.057,7050.302
+7,France,2014,45589.411,Blended biodiesels,11236.618,2541.224
+8,France,2014,45589.411,Kerosene-type jet fuel (excluding biofuel portion),7414.037,1405.766
+9,France,2014,45589.411,Liquefied petroleum gases,10294.946,100.251
+10,United Kingdom,2014,40097.899000000005,Gas oil and diesel oil (excluding biofuel portion),220712.017,24436.704
+11,United Kingdom,2014,40097.899000000005,Motor gasoline (excluding biofuel portion),86583.057,13185.063
+12,United Kingdom,2014,40097.899000000005,Kerosene-type jet fuel (excluding biofuel portion),7414.037,824.093
+13,United Kingdom,2014,40097.899000000005,Blended biodiesels,11236.618,754.16
+14,United Kingdom,2014,40097.899000000005,Liquefied petroleum gases,10294.946,96.609
+15,Italy,2014,37007.271,Gas oil and diesel oil (excluding biofuel portion),220712.017,22773.316
+16,Italy,2014,37007.271,Motor gasoline (excluding biofuel portion),86583.057,8494.602
+17,Italy,2014,37007.271,Liquefied petroleum gases,10294.946,1718.353
+18,Italy,2014,37007.271,Blended biodiesels,11236.618,1055.173
+19,Italy,2014,37007.271,Kerosene-type jet fuel (excluding biofuel portion),7414.037,643.952
+20,Spain,2014,28423.957000000002,Gas oil and diesel oil (excluding biofuel portion),220712.017,20624.964
+21,Spain,2014,28423.957000000002,Motor gasoline (excluding biofuel portion),86583.057,4534.962
+22,Spain,2014,28423.957000000002,Kerosene-type jet fuel (excluding biofuel portion),7414.037,1687.403
+23,Spain,2014,28423.957000000002,Blended biodiesels,11236.618,783.931
+24,Spain,2014,28423.957000000002,Liquefied petroleum gases,10294.946,39.541
+25,Germany,2015,55131.245,Gas oil and diesel oil (excluding biofuel portion),229542.132,32943.915
+26,Germany,2015,55131.245,Motor gasoline (excluding biofuel portion),84724.597,16926.336
+27,Germany,2015,55131.245,Blended biodiesels,10901.421,1789.192
+28,Germany,2015,55131.245,Kerosene-type jet fuel (excluding biofuel portion),7828.114,716.605
+29,Germany,2015,55131.245,Liquefied petroleum gases,10577.705,593.784
+30,France,2015,46170.484,Gas oil and diesel oil (excluding biofuel portion),229542.132,33468.303
+31,France,2015,46170.484,Motor gasoline (excluding biofuel portion),84724.597,7153.339
+32,France,2015,46170.484,Blended biodiesels,10901.421,2562.43
+33,France,2015,46170.484,Kerosene-type jet fuel (excluding biofuel portion),7828.114,1405.77
+34,France,2015,46170.484,Liquefied petroleum gases,10577.705,89.019
+35,United Kingdom,2015,40878.881,Gas oil and diesel oil (excluding biofuel portion),229542.132,25709.742
+36,United Kingdom,2015,40878.881,Motor gasoline (excluding biofuel portion),84724.597,12925.976
+37,United Kingdom,2015,40878.881,Kerosene-type jet fuel (excluding biofuel portion),7828.114,832.061
+38,United Kingdom,2015,40878.881,Blended biodiesels,10901.421,528.534
+39,United Kingdom,2015,40878.881,Liquefied petroleum gases,10577.705,89.916
+40,Italy,2015,36372.273,Gas oil and diesel oil (excluding biofuel portion),229542.132,22089.567
+41,Italy,2015,36372.273,Motor gasoline (excluding biofuel portion),84724.597,8191.937
+42,Italy,2015,36372.273,Liquefied petroleum gases,10577.705,1817.235
+43,Italy,2015,36372.273,Blended biodiesels,10901.421,1141.779
+44,Italy,2015,36372.273,Kerosene-type jet fuel (excluding biofuel portion),7828.114,695.304
+45,Spain,2015,29435.177,Gas oil and diesel oil (excluding biofuel portion),229542.132,21433.243
+46,Spain,2015,29435.177,Motor gasoline (excluding biofuel portion),84724.597,4561.414
+47,Spain,2015,29435.177,Kerosene-type jet fuel (excluding biofuel portion),7828.114,1824.334
+48,Spain,2015,29435.177,Blended biodiesels,10901.421,792.14
+49,Spain,2015,29435.177,Liquefied petroleum gases,10577.705,48.579
+50,Germany,2016,56546.195,Gas oil and diesel oil (excluding biofuel portion),238981.203,34277.95
+51,Germany,2016,56546.195,Motor gasoline (excluding biofuel portion),84882.714,16938.454
+52,Germany,2016,56546.195,Blended biodiesels,10923.571,1792.109
+53,Germany,2016,56546.195,Kerosene-type jet fuel (excluding biofuel portion),8309.792,766.695
+54,Germany,2016,56546.195,Liquefied petroleum gases,11234.0,536.007
+55,France,2016,46393.605,Gas oil and diesel oil (excluding biofuel portion),238981.203,33502.557
+56,France,2016,46393.605,Motor gasoline (excluding biofuel portion),84882.714,7330.573
+57,France,2016,46393.605,Blended biodiesels,10923.571,2514.736
+58,France,2016,46393.605,Kerosene-type jet fuel (excluding biofuel portion),8309.792,1451.822
+59,France,2016,46393.605,Liquefied petroleum gases,11234.0,80.133
+60,United Kingdom,2016,41808.275,Gas oil and diesel oil (excluding biofuel portion),238981.203,26758.985
+61,United Kingdom,2016,41808.275,Motor gasoline (excluding biofuel portion),84882.714,12784.282
+62,United Kingdom,2016,41808.275,Kerosene-type jet fuel (excluding biofuel portion),8309.792,832.757
+63,United Kingdom,2016,41808.275,Blended biodiesels,10923.571,559.624
+64,United Kingdom,2016,41808.275,Liquefied petroleum gases,11234.0,77.864
+65,Italy,2016,35813.449,Gas oil and diesel oil (excluding biofuel portion),238981.203,22136.371
+66,Italy,2016,35813.449,Motor gasoline (excluding biofuel portion),84882.714,7649.661
+67,Italy,2016,35813.449,Liquefied petroleum gases,11234.0,1755.708
+68,Italy,2016,35813.449,Blended biodiesels,10923.571,1008.336
+69,Italy,2016,35813.449,Kerosene-type jet fuel (excluding biofuel portion),8309.792,708.656
+70,Spain,2016,30627.731,Gas oil and diesel oil (excluding biofuel portion),238981.203,21981.681
+71,Spain,2016,30627.731,Motor gasoline (excluding biofuel portion),84882.714,4767.741
+72,Spain,2016,30627.731,Kerosene-type jet fuel (excluding biofuel portion),8309.792,1985.49
+73,Spain,2016,30627.731,Blended biodiesels,10923.571,983.272
+74,Spain,2016,30627.731,Liquefied petroleum gases,11234.0,53.098
+75,Germany,2017,57236.83,Gas oil and diesel oil (excluding biofuel portion),244147.541,34800.538
+76,Germany,2017,57236.83,Motor gasoline (excluding biofuel portion),84850.534,17186.881
+77,Germany,2017,57236.83,Blended biodiesels,11920.214,1825.256
+78,Germany,2017,57236.83,Kerosene-type jet fuel (excluding biofuel portion),8482.294,663.447
+79,Germany,2017,57236.83,Liquefied petroleum gases,11534.247,496.913
+80,France,2017,46656.046,Gas oil and diesel oil (excluding biofuel portion),244147.541,33356.695
+81,France,2017,46656.046,Motor gasoline (excluding biofuel portion),84850.534,7526.588
+82,France,2017,46656.046,Blended biodiesels,11920.214,2593.901
+83,France,2017,46656.046,Kerosene-type jet fuel (excluding biofuel portion),8482.294,1499.885
+84,France,2017,46656.046,Liquefied petroleum gases,11534.247,70.708
+85,United Kingdom,2017,41917.524,Gas oil and diesel oil (excluding biofuel portion),244147.541,27007.618
+86,United Kingdom,2017,41917.524,Motor gasoline (excluding biofuel portion),84850.534,12603.991
+87,United Kingdom,2017,41917.524,Kerosene-type jet fuel (excluding biofuel portion),8482.294,894.7
+88,United Kingdom,2017,41917.524,Blended biodiesels,11920.214,542.747
+89,United Kingdom,2017,41917.524,Liquefied petroleum gases,11534.247,74.209
+90,Italy,2017,34524.358,Gas oil and diesel oil (excluding biofuel portion),244147.541,20987.313
+91,Italy,2017,34524.358,Motor gasoline (excluding biofuel portion),84850.534,7432.637
+92,Italy,2017,34524.358,Liquefied petroleum gases,11534.247,1831.927
+93,Italy,2017,34524.358,Blended biodiesels,11920.214,1028.682
+94,Italy,2017,34524.358,Kerosene-type jet fuel (excluding biofuel portion),8482.294,779.358
+95,Spain,2017,31745.322,Gas oil and diesel oil (excluding biofuel portion),244147.541,22352.441
+96,Spain,2017,31745.322,Motor gasoline (excluding biofuel portion),84850.534,4871.434
+97,Spain,2017,31745.322,Kerosene-type jet fuel (excluding biofuel portion),8482.294,2158.233
+98,Spain,2017,31745.322,Blended biodiesels,11920.214,1137.29
+99,Spain,2017,31745.322,Liquefied petroleum gases,11534.247,57.617
+100,Germany,2018,55461.045,Gas oil and diesel oil (excluding biofuel portion),243855.299,33506.402
+101,Germany,2018,55461.045,Motor gasoline (excluding biofuel portion),84371.26699999999,16413.325
+102,Germany,2018,55461.045,Blended biodiesels,13464.248,1911.118
+103,Germany,2018,55461.045,Kerosene-type jet fuel (excluding biofuel portion),8705.034,641.98
+104,Germany,2018,55461.045,Liquefied petroleum gases,11708.691,551.439
+105,France,2018,45913.926,Gas oil and diesel oil (excluding biofuel portion),243855.299,32315.339
+106,France,2018,45913.926,Motor gasoline (excluding biofuel portion),84371.26699999999,7772.967
+107,France,2018,45913.926,Blended biodiesels,13464.248,2546.99
+108,France,2018,45913.926,Kerosene-type jet fuel (excluding biofuel portion),8705.034,1577.591
+109,France,2018,45913.926,Liquefied petroleum gases,11708.691,62.056
+110,United Kingdom,2018,41749.064999999995,Gas oil and diesel oil (excluding biofuel portion),243855.299,26716.819
+111,United Kingdom,2018,41749.064999999995,Motor gasoline (excluding biofuel portion),84371.26699999999,12367.667
+112,United Kingdom,2018,41749.064999999995,Kerosene-type jet fuel (excluding biofuel portion),8705.034,901.256
+113,United Kingdom,2018,41749.064999999995,Blended biodiesels,13464.248,881.186
+114,United Kingdom,2018,41749.064999999995,Liquefied petroleum gases,11708.691,64.704
+115,Italy,2018,35574.227,Gas oil and diesel oil (excluding biofuel portion),243855.299,21607.464
+116,Italy,2018,35574.227,Motor gasoline (excluding biofuel portion),84371.26699999999,7639.952
+117,Italy,2018,35574.227,Liquefied petroleum gases,11708.691,1773.287
+118,Italy,2018,35574.227,Blended biodiesels,13464.248,1217.077
+119,Italy,2018,35574.227,Kerosene-type jet fuel (excluding biofuel portion),8705.034,874.108
+120,Spain,2018,32509.368,Gas oil and diesel oil (excluding biofuel portion),243855.299,22412.009
+121,Spain,2018,32509.368,Motor gasoline (excluding biofuel portion),84371.26699999999,5075.645
+122,Spain,2018,32509.368,Kerosene-type jet fuel (excluding biofuel portion),8705.034,2245.658
+123,Spain,2018,32509.368,Blended biodiesels,13464.248,1486.556
+124,Spain,2018,32509.368,Liquefied petroleum gases,11708.691,70.044
+125,Germany,2019,56212.14600000001,Gas oil and diesel oil (excluding biofuel portion),243259.88999999998,33965.932
+126,Germany,2019,56212.14600000001,Motor gasoline (excluding biofuel portion),85748.037,16585.002
+127,Germany,2019,56212.14600000001,Blended biodiesels,14431.554,1900.247
+128,Germany,2019,56212.14600000001,Kerosene-type jet fuel (excluding biofuel portion),8951.545,722.738
+129,Germany,2019,56212.14600000001,Liquefied petroleum gases,12115.249,478.394
+130,France,2019,45632.727999999996,Gas oil and diesel oil (excluding biofuel portion),243259.88999999998,31452.537
+131,France,2019,45632.727999999996,Motor gasoline (excluding biofuel portion),85748.037,8284.156
+132,France,2019,45632.727999999996,Blended biodiesels,14431.554,2539.585
+133,France,2019,45632.727999999996,Kerosene-type jet fuel (excluding biofuel portion),8951.545,1604.193
+134,France,2019,45632.727999999996,Liquefied petroleum gases,12115.249,57.809
+135,United Kingdom,2019,41452.277,Gas oil and diesel oil (excluding biofuel portion),243259.88999999998,25861.423
+136,United Kingdom,2019,41452.277,Motor gasoline (excluding biofuel portion),85748.037,12492.713
+137,United Kingdom,2019,41452.277,Blended biodiesels,14431.554,1266.705
+138,United Kingdom,2019,41452.277,Kerosene-type jet fuel (excluding biofuel portion),8951.545,908.651
+139,United Kingdom,2019,41452.277,Liquefied petroleum gases,12115.249,67.304
+140,Italy,2019,35859.151,Gas oil and diesel oil (excluding biofuel portion),243259.88999999998,21650.6
+141,Italy,2019,35859.151,Motor gasoline (excluding biofuel portion),85748.037,7711.665
+142,Italy,2019,35859.151,Liquefied petroleum gases,12115.249,1816.155
+143,Italy,2019,35859.151,Blended biodiesels,14431.554,1245.66
+144,Italy,2019,35859.151,Kerosene-type jet fuel (excluding biofuel portion),8951.545,904.573
+145,Spain,2019,32909.814999999995,Gas oil and diesel oil (excluding biofuel portion),243259.88999999998,22284.657
+146,Spain,2019,32909.814999999995,Motor gasoline (excluding biofuel portion),85748.037,5407.884
+147,Spain,2019,32909.814999999995,Kerosene-type jet fuel (excluding biofuel portion),8951.545,2373.108
+148,Spain,2019,32909.814999999995,Blended biodiesels,14431.554,1471.927
+149,Spain,2019,32909.814999999995,Liquefied petroleum gases,12115.249,97.158
+150,Germany,2020,50995.798,Gas oil and diesel oil (excluding biofuel portion),193173.52599999998,30618.749
+151,Germany,2020,50995.798,Motor gasoline (excluding biofuel portion),63833.745,14914.686
+152,Germany,2020,50995.798,Blended biodiesels,13236.432999999999,2575.667
+153,Germany,2020,50995.798,Electricity,5464.265,991.745
+154,Germany,2020,50995.798,Liquefied petroleum gases,10123.493,358.024
+155,France,2020,38378.757,Gas oil and diesel oil (excluding biofuel portion),193173.52599999998,26663.531
+156,France,2020,38378.757,Motor gasoline (excluding biofuel portion),63833.745,7138.176
+157,France,2020,38378.757,Blended biodiesels,13236.432999999999,2086.767
+158,France,2020,38378.757,Electricity,5464.265,716.973
+159,France,2020,38378.757,Liquefied petroleum gases,10123.493,39.008
+160,Italy,2020,28973.857,Gas oil and diesel oil (excluding biofuel portion),193173.52599999998,17648.984
+161,Italy,2020,28973.857,Motor gasoline (excluding biofuel portion),63833.745,6078.996
+162,Italy,2020,28973.857,Liquefied petroleum gases,10123.493,1438.693
+163,Italy,2020,28973.857,Blended biodiesels,13236.432999999999,1245.077
+164,Italy,2020,28973.857,Electricity,5464.265,869.663
+165,Türkiye,2020,26664.835000000003,Gas oil and diesel oil (excluding biofuel portion),193173.52599999998,19664.228
+166,Türkiye,2020,26664.835000000003,Liquefied petroleum gases,10123.493,3462.886
+167,Türkiye,2020,26664.835000000003,Motor gasoline (excluding biofuel portion),63833.745,2391.417
+168,Türkiye,2020,26664.835000000003,Electricity,5464.265,123.442
+169,Türkiye,2020,26664.835000000003,Blended biodiesels,13236.432999999999,48.615
+170,Spain,2020,26054.834000000003,Gas oil and diesel oil (excluding biofuel portion),193173.52599999998,18500.024
+171,Spain,2020,26054.834000000003,Motor gasoline (excluding biofuel portion),63833.745,4281.021
+172,Spain,2020,26054.834000000003,Blended biodiesels,13236.432999999999,1281.365
+173,Spain,2020,26054.834000000003,Electricity,5464.265,286.758
+174,Spain,2020,26054.834000000003,Liquefied petroleum gases,10123.493,74.563
+175,Germany,2021,49898.62,Gas oil and diesel oil (excluding biofuel portion),205738.577,29966.107
+176,Germany,2021,49898.62,Motor gasoline (excluding biofuel portion),68181.159,14795.522
+177,Germany,2021,49898.62,Blended biodiesels,13547.366,2141.247
+178,Germany,2021,49898.62,Electricity,5374.129,1106.449
+179,Germany,2021,49898.62,Liquefied petroleum gases,9023.316,339.506
+180,France,2021,43565.943999999996,Gas oil and diesel oil (excluding biofuel portion),205738.577,29762.968
+181,France,2021,43565.943999999996,Motor gasoline (excluding biofuel portion),68181.159,8570.218
+182,France,2021,43565.943999999996,Blended biodiesels,13547.366,2164.244
+183,France,2021,43565.943999999996,Electricity,5374.129,829.888
+184,France,2021,43565.943999999996,Liquefied petroleum gases,9023.316,54.681
+185,Italy,2021,34796.218,Gas oil and diesel oil (excluding biofuel portion),205738.577,21672.639
+186,Italy,2021,34796.218,Motor gasoline (excluding biofuel portion),68181.159,7364.876
+187,Italy,2021,34796.218,Liquefied petroleum gases,9023.316,1545.823
+188,Italy,2021,34796.218,Blended biodiesels,13547.366,1388.392
+189,Italy,2021,34796.218,Electricity,5374.129,738.628
+190,Spain,2021,30345.071000000004,Gas oil and diesel oil (excluding biofuel portion),205738.577,20929.149
+191,Spain,2021,30345.071000000004,Motor gasoline (excluding biofuel portion),68181.159,5276.535
+192,Spain,2021,30345.071000000004,Blended biodiesels,13547.366,1267.894
+193,Spain,2021,30345.071000000004,Electricity,5374.129,314.875
+194,Spain,2021,30345.071000000004,Liquefied petroleum gases,9023.316,93.973
+195,Türkiye,2021,30144.076999999997,Gas oil and diesel oil (excluding biofuel portion),205738.577,22163.781
+196,Türkiye,2021,30144.076999999997,Liquefied petroleum gases,9023.316,3484.695
+197,Türkiye,2021,30144.076999999997,Motor gasoline (excluding biofuel portion),68181.159,3022.034
+198,Türkiye,2021,30144.076999999997,Electricity,5374.129,135.09
+199,Türkiye,2021,30144.076999999997,Blended biodiesels,13547.366,58.889
+200,Germany,2022,50721.618,Gas oil and diesel oil (excluding biofuel portion),206873.324,29679.325
+201,Germany,2022,50721.618,Motor gasoline (excluding biofuel portion),72267.161,15346.908
+202,Germany,2022,50721.618,Blended biodiesels,13340.061,2176.319
+203,Germany,2022,50721.618,Kerosene-type jet fuel (excluding biofuel portion),7381.165999999999,336.324
+204,Germany,2022,50721.618,Liquefied petroleum gases,9228.02,234.567
+205,France,2022,45064.38,Gas oil and diesel oil (excluding biofuel portion),206873.324,29681.203
+206,France,2022,45064.38,Motor gasoline (excluding biofuel portion),72267.161,9388.2
+207,France,2022,45064.38,Blended biodiesels,13340.061,2105.698
+208,France,2022,45064.38,Kerosene-type jet fuel (excluding biofuel portion),7381.165999999999,1560.532
+209,France,2022,45064.38,Liquefied petroleum gases,9228.02,91.874
+210,Italy,2022,36684.017,Gas oil and diesel oil (excluding biofuel portion),206873.324,22405.959
+211,Italy,2022,36684.017,Motor gasoline (excluding biofuel portion),72267.161,8243.143
+212,Italy,2022,36684.017,Liquefied petroleum gases,9228.02,1686.799
+213,Italy,2022,36684.017,Blended biodiesels,13340.061,1354.083
+214,Italy,2022,36684.017,Kerosene-type jet fuel (excluding biofuel portion),7381.165999999999,813.497
+215,Spain,2022,32473.093999999997,Gas oil and diesel oil (excluding biofuel portion),206873.324,21489.531
+216,Spain,2022,32473.093999999997,Motor gasoline (excluding biofuel portion),72267.161,5831.182
+217,Spain,2022,32473.093999999997,Kerosene-type jet fuel (excluding biofuel portion),7381.165999999999,2499.886
+218,Spain,2022,32473.093999999997,Blended biodiesels,13340.061,1256.926
+219,Spain,2022,32473.093999999997,Liquefied petroleum gases,9228.02,121.435
+220,Türkiye,2022,30489.326,Gas oil and diesel oil (excluding biofuel portion),206873.324,22029.908
+221,Türkiye,2022,30489.326,Liquefied petroleum gases,9228.02,3477.783
+222,Türkiye,2022,30489.326,Motor gasoline (excluding biofuel portion),72267.161,3284.432
+223,Türkiye,2022,30489.326,Kerosene-type jet fuel (excluding biofuel portion),7381.165999999999,1123.533
+224,Türkiye,2022,30489.326,Blended biodiesels,13340.061,96.116
+225,Germany,2023,48897.416999999994,Gas oil and diesel oil (excluding biofuel portion),170283.841,28140.672
+226,Germany,2023,48897.416999999994,Motor gasoline (excluding biofuel portion),69218.382,15249.961
+227,Germany,2023,48897.416999999994,Blended biodiesels,13182.767,2156.514
+228,Germany,2023,48897.416999999994,Electricity,6064.706,1417.713
+229,Germany,2023,48897.416999999994,Kerosene-type jet fuel (excluding biofuel portion),6664.475,363.925
+230,France,2023,44065.503,Gas oil and diesel oil (excluding biofuel portion),170283.841,27903.53
+231,France,2023,44065.503,Motor gasoline (excluding biofuel portion),69218.382,9979.123
+232,France,2023,44065.503,Blended biodiesels,13182.767,2172.915
+233,France,2023,44065.503,Kerosene-type jet fuel (excluding biofuel portion),6664.475,1400.079
+234,France,2023,44065.503,Electricity,6064.706,1113.306
+235,Italy,2023,37613.335,Gas oil and diesel oil (excluding biofuel portion),170283.841,22298.563
+236,Italy,2023,37613.335,Motor gasoline (excluding biofuel portion),69218.382,8556.74
+237,Italy,2023,37613.335,Kerosene-type jet fuel (excluding biofuel portion),6664.475,1523.011
+238,Italy,2023,37613.335,Blended biodiesels,13182.767,1254.768
+239,Italy,2023,37613.335,Electricity,6064.706,760.653
+240,Spain,2023,32198.350000000002,Gas oil and diesel oil (excluding biofuel portion),170283.841,20305.52
+241,Spain,2023,32198.350000000002,Motor gasoline (excluding biofuel portion),69218.382,6093.986
+242,Spain,2023,32198.350000000002,Kerosene-type jet fuel (excluding biofuel portion),6664.475,2640.724
+243,Spain,2023,32198.350000000002,Blended biodiesels,13182.767,1746.32
+244,Spain,2023,32198.350000000002,Electricity,6064.706,370.994
+245,Poland,2023,23716.900999999998,Gas oil and diesel oil (excluding biofuel portion),170283.841,14722.484
+246,Poland,2023,23716.900999999998,Motor gasoline (excluding biofuel portion),69218.382,5195.674
+247,Poland,2023,23716.900999999998,Blended biodiesels,13182.767,1042.013
+248,Poland,2023,23716.900999999998,Electricity,6064.706,320.597
+249,Poland,2023,23716.900999999998,Kerosene-type jet fuel (excluding biofuel portion),6664.475,35.057
