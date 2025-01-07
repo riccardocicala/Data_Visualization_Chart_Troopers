@@ -132,7 +132,7 @@ function line_plot_energy_share(data, svg_plot, id_div) {
 			.datum(country.production)
 			.attr("fill", "none")
 			.attr("stroke", isEuropeanUnion ? "#F28C3B" : "#d3d3d3")
-			.attr("stroke-width", isEuropeanUnion ? 2.5 : 2)
+			.attr("stroke-width", isEuropeanUnion ? 3.5 : 3)
 			.style("opacity", isEuropeanUnion ? 1 : 0.3)
 			.attr("class", isEuropeanUnion ? "is-eu" : "country-line")
 			.attr("d", d3.line()
