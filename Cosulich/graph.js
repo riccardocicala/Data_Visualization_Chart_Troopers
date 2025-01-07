@@ -273,6 +273,7 @@ function bar_plot(data, svg_plot, id_div) {
 
 function stacked_bar_plot(data, svg_plot, id_div) {
 	const categories = ['hydro', 'geothermal', 'wind', 'solar', 'biofuels'];
+
 	const color = d3.scaleOrdinal()
 		.domain(categories)
 		.range(["lightblue", "red", "lightgreen", "yellow", "orange"]);
@@ -337,10 +338,13 @@ function stacked_bar_plot(data, svg_plot, id_div) {
 		d3.selectAll(id_div + "  rect").style("opacity", 0.2);
 		d3.select(this).style("opacity", 1);
 
+		energy_type = d3.select(this.parentNode).datum().key;
+		energy_type = energy_type.charAt(0).toUpperCase() + energy_type.slice(1);
+
 		const value = d[1] - d[0];
 
 		tooltip.style("opacity", 0.9);
-		tooltip.html(`Energy: <b>${value.toFixed(1)}</b> %`);
+		tooltip.html(`${energy_type}: <b>${value.toFixed(1)}</b> %`);
 	};
 
 	var mousemove = function (event, d) {
