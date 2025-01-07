@@ -3,9 +3,7 @@ document.write(`
     <meta charset="UTF-8">
     <meta name="theme-color" content="#2e68c0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="${
-		location.pathname.includes("assignment") ? "../main.css" : "main.css"
-	}"/>
+    <link rel="stylesheet" type="text/css" href="main.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
@@ -26,15 +24,12 @@ document.addEventListener("DOMContentLoaded", function () {
 	</div>
 	<div id="nav-title">
 		<h1>
-			<a href="https://andrestc21.github.io/Data_Visualization_Chart_Troopers">CO2 Global Emissions Visual Analysis</a>
+			<a href="https://riccardocicala.github.io/Data_Visualization_Chart_Troopers">Climate Change in EU - Visual Analysis</a>
 		</h1>
 	</div>
 	<div id="dropdown-menu">
-		<a class="links" href="https://andrestc21.github.io/Data_Visualization_Chart_Troopers">Homepage</a>
-		<a class="links" href="https://andrestc21.github.io/Data_Visualization_Chart_Troopers/assignment_1/website.html">CO2 emissions initial analysis</a>
-		<a class="links" href="https://andrestc21.github.io/Data_Visualization_Chart_Troopers/assignment_2/website.html">CO2 Emissions Flow Analysis</a>
-		<a class="links" href="https://andrestc21.github.io/Data_Visualization_Chart_Troopers/assignment_3/website.html">CO2 Emissions Topological Analysis</a>
-		<a class="links" href="https://andrestc21.github.io/Data_Visualization_Chart_Troopers/assignment_4/website.html">U.S.A. Temperature Analysis</a>
+		<a class="links" href="https://riccardocicala.github.io/Data_Visualization_Chart_Troopers">Homepage</a>
+		<a class="links" href="https://riccardocicala.github.io/Data_Visualization_Chart_Troopers/sources.html">Sources</a>
 	</div>`;
 
 	document.body.insertBefore(navbar, document.body.firstChild);
@@ -66,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				<div id="footer-bottom">
 					<div style="border-top: 1px solid white; margin: 16px 0;"></div>
 					<div style="text-align: center">
-						<a href="https://andrestc21.github.io/Data_Visualization_Chart_Troopers/sources.html" style="color: whitesmoke;">
+						<a href="https://riccardocicala.github.io/Data_Visualization_Chart_Troopers/sources.html" style="color: whitesmoke;">
 							Data sources
 						</a>
 					</div>
