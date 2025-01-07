@@ -1,0 +1,532 @@
+,node,value,year
+0,Final consumption - industry sector - energy use,314344.638,2014
+1,Final consumption - industry sector - energy use,312158.018,2015
+2,Final consumption - industry sector - energy use,313948.969,2016
+3,Final consumption - industry sector - energy use,322414.596,2017
+4,Final consumption - industry sector - energy use,326047.796,2018
+5,Final consumption - industry sector - energy use,320543.48099999997,2019
+6,Final consumption - industry sector - energy use,292531.286,2020
+7,Final consumption - industry sector - energy use,292281.177,2021
+8,Final consumption - industry sector - energy use,270458.58,2022
+9,Final consumption - industry sector - energy use,215075.71899999998,2023
+10,Final consumption - other sectors - commercial and public services - energy use,160177.062,2014
+11,Final consumption - other sectors - commercial and public services - energy use,167406.03,2015
+12,Final consumption - other sectors - commercial and public services - energy use,171108.426,2016
+13,Final consumption - other sectors - commercial and public services - energy use,175727.39,2017
+14,Final consumption - other sectors - commercial and public services - energy use,173578.851,2018
+15,Final consumption - other sectors - commercial and public services - energy use,171763.128,2019
+16,Final consumption - other sectors - commercial and public services - energy use,146012.258,2020
+17,Final consumption - other sectors - commercial and public services - energy use,147590.038,2021
+18,Final consumption - other sectors - commercial and public services - energy use,139251.186,2022
+19,Final consumption - other sectors - commercial and public services - energy use,118013.96800000001,2023
+20,Final consumption - other sectors - households - energy use,322544.05,2014
+21,Final consumption - other sectors - households - energy use,332446.89,2015
+22,Final consumption - other sectors - households - energy use,341460.099,2016
+23,Final consumption - other sectors - households - energy use,341619.226,2017
+24,Final consumption - other sectors - households - energy use,339781.021,2018
+25,Final consumption - other sectors - households - energy use,336157.897,2019
+26,Final consumption - other sectors - households - energy use,299811.207,2020
+27,Final consumption - other sectors - households - energy use,303996.863,2021
+28,Final consumption - other sectors - households - energy use,283162.603,2022
+29,Final consumption - other sectors - households - energy use,229398.733,2023
+30,Final consumption - transport sector - energy use,353009.473,2014
+31,Final consumption - transport sector - energy use,359768.183,2015
+32,Final consumption - transport sector - energy use,370545.919,2016
+33,Final consumption - transport sector - energy use,378143.85000000003,2017
+34,Final consumption - transport sector - energy use,379572.578,2018
+35,Final consumption - transport sector - energy use,382566.423,2019
+36,Final consumption - transport sector - energy use,298758.961,2020
+37,Final consumption - transport sector - energy use,316387.3,2021
+38,Final consumption - transport sector - energy use,324746.016,2022
+39,Final consumption - transport sector - energy use,279651.717,2023
+40,Albania,1942.228,2014
+41,Albania,1859.614,2015
+42,Albania,1794.1,2016
+43,Albania,1943.597,2017
+44,Albania,2015.3029999999999,2018
+45,Albania,1934.568,2019
+46,Albania,1721.5639999999999,2020
+47,Albania,1891.306,2021
+48,Albania,1845.24,2022
+49,Austria,24231.978,2014
+50,Austria,24938.949,2015
+51,Austria,25551.067000000003,2016
+52,Austria,25947.384,2017
+53,Austria,25509.997000000003,2018
+54,Austria,25697.839,2019
+55,Austria,24352.564,2020
+56,Austria,25839.957,2021
+57,Austria,24439.040999999997,2022
+58,Austria,23330.439000000002,2023
+59,Belgium,30761.021,2014
+60,Belgium,32317.422,2015
+61,Belgium,32519.068,2016
+62,Belgium,32040.735,2017
+63,Belgium,32245.075,2018
+64,Belgium,31477.9,2019
+65,Belgium,29944.503,2020
+66,Belgium,32097.35,2021
+67,Belgium,29520.721,2022
+68,Belgium,28944.277000000002,2023
+69,Bosnia and Herzegovina,2850.656,2014
+70,Bosnia and Herzegovina,3258.3360000000002,2015
+71,Bosnia and Herzegovina,3525.7880000000005,2016
+72,Bosnia and Herzegovina,3479.123,2017
+73,Bosnia and Herzegovina,4169.713,2018
+74,Bosnia and Herzegovina,4168.554,2019
+75,Bosnia and Herzegovina,3977.5389999999998,2020
+76,Bosnia and Herzegovina,4254.28,2021
+77,Bosnia and Herzegovina,4236.668,2022
+78,Bulgaria,8691.003,2014
+79,Bulgaria,9202.796,2015
+80,Bulgaria,9332.688,2016
+81,Bulgaria,9568.302,2017
+82,Bulgaria,9571.768,2018
+83,Bulgaria,9522.636,2019
+84,Bulgaria,9304.465,2020
+85,Bulgaria,9962.151,2021
+86,Bulgaria,9652.375,2022
+87,Bulgaria,9292.465,2023
+88,Croatia,5889.606,2014
+89,Croatia,6247.5380000000005,2015
+90,Croatia,6292.6759999999995,2016
+91,Croatia,6555.573,2017
+92,Croatia,6440.546,2018
+93,Croatia,6482.054999999999,2019
+94,Croatia,6174.794,2020
+95,Croatia,6629.2029999999995,2021
+96,Croatia,6458.662,2022
+97,Croatia,6667.949,2023
+98,Cyprus,1319.277,2014
+99,Cyprus,1366.735,2015
+100,Cyprus,1430.292,2016
+101,Cyprus,1489.451,2017
+102,Cyprus,1519.695,2018
+103,Cyprus,1564.906,2019
+104,Cyprus,1463.724,2020
+105,Cyprus,1524.1860000000001,2021
+106,Cyprus,1552.114,2022
+107,Cyprus,1564.771,2023
+108,Czechia,21757.273999999998,2014
+109,Czechia,22420.037,2015
+110,Czechia,23010.799,2016
+111,Czechia,23735.122,2017
+112,Czechia,23529.471999999998,2018
+113,Czechia,23552.679,2019
+114,Czechia,23079.752,2020
+115,Czechia,24593.533,2021
+116,Czechia,23501.212,2022
+117,Czechia,22099.29,2023
+118,Denmark,12145.529,2014
+119,Denmark,12664.722,2015
+120,Denmark,12972.698,2016
+121,Denmark,13041.900999999998,2017
+122,Denmark,13045.150000000001,2018
+123,Denmark,12794.296999999999,2019
+124,Denmark,12325.315,2020
+125,Denmark,13035.416000000001,2021
+126,Denmark,12280.755,2022
+127,Denmark,12232.255000000001,2023
+128,Estonia,2643.114,2014
+129,Estonia,2617.867,2015
+130,Estonia,2663.466,2016
+131,Estonia,2674.293,2017
+132,Estonia,2752.044,2018
+133,Estonia,2712.639,2019
+134,Estonia,2615.523,2020
+135,Estonia,2701.023,2021
+136,Estonia,2623.477,2022
+137,Estonia,2480.216,2023
+138,Finland,22351.052,2014
+139,Finland,21952.686,2015
+140,Finland,22916.126,2016
+141,Finland,23618.249,2017
+142,Finland,24051.783,2018
+143,Finland,23806.478,2019
+144,Finland,22202.154,2020
+145,Finland,23829.151,2021
+146,Finland,22166.099000000002,2022
+147,Finland,21501.344,2023
+148,France,132568.242,2014
+149,France,135860.869,2015
+150,France,138917.309,2016
+151,France,137912.83000000002,2017
+152,France,135897.20799999998,2018
+153,France,134709.285,2019
+154,France,122671.73300000001,2020
+155,France,134458.311,2021
+156,France,128474.427,2022
+157,France,123053.164,2023
+158,Georgia,3643.312,2014
+159,Georgia,3745.853,2015
+160,Georgia,3971.6040000000003,2016
+161,Georgia,4009.696,2017
+162,Georgia,3963.0600000000004,2018
+163,Georgia,4062.6589999999997,2019
+164,Georgia,3944.65,2020
+165,Georgia,4364.088,2021
+166,Georgia,4610.438,2022
+167,Germany,195585.602,2014
+168,Germany,198462.042,2015
+169,Germany,202062.768,2016
+170,Germany,203008.22999999998,2017
+171,Germany,197275.662,2018
+172,Germany,197146.602,2019
+173,Germany,190585.484,2020
+174,Germany,193802.502,2021
+175,Germany,185910.995,2022
+176,Germany,175983.518,2023
+177,Greece,14282.7,2014
+178,Greece,15217.404999999999,2015
+179,Greece,15345.149000000001,2016
+180,Greece,15170.875,2017
+181,Greece,14632.911,2018
+182,Greece,14868.133000000002,2019
+183,Greece,13846.67,2020
+184,Greece,14419.839,2021
+185,Greece,14846.372,2022
+186,Greece,14458.79,2023
+187,Hungary,15180.552,2014
+188,Hungary,16221.944,2015
+189,Hungary,16589.857,2016
+190,Hungary,17227.879,2017
+191,Hungary,17160.893,2018
+192,Hungary,17257.379,2019
+193,Hungary,16861.814,2020
+194,Hungary,18075.452,2021
+195,Hungary,17306.766,2022
+196,Hungary,15939.169,2023
+197,Iceland,2469.185,2014
+198,Iceland,2549.652,2015
+199,Iceland,2523.243,2016
+200,Iceland,2569.049,2017
+201,Iceland,2788.3199999999997,2018
+202,Iceland,2659.494,2019
+203,Iceland,2576.365,2020
+204,Iceland,2652.723,2021
+205,Ireland,9956.86,2014
+206,Ireland,10290.021,2015
+207,Ireland,10690.252,2016
+208,Ireland,10629.621,2017
+209,Ireland,11077.172,2018
+210,Ireland,11054.465,2019
+211,Ireland,10588.774,2020
+212,Ireland,10788.523000000001,2021
+213,Ireland,10655.143,2022
+214,Ireland,10659.119999999999,2023
+215,Italy,105961.11600000001,2014
+216,Italy,109113.695,2015
+217,Italy,108528.51699999999,2016
+218,Italy,110591.962,2017
+219,Italy,111151.091,2018
+220,Italy,110120.323,2019
+221,Italy,100051.12299999999,2020
+222,Italy,111435.958,2021
+223,Italy,107492.084,2022
+224,Italy,105306.849,2023
+225,Kosovo,1208.348,2014
+226,Kosovo,1312.297,2015
+227,Kosovo,1403.7060000000001,2016
+228,Kosovo,1486.444,2017
+229,Kosovo,1439.679,2018
+230,Kosovo,1478.9170000000001,2019
+231,Kosovo,1491.017,2020
+232,Kosovo,1620.798,2021
+233,Kosovo,1449.4360000000001,2022
+234,Latvia,3620.768,2014
+235,Latvia,3517.32,2015
+236,Latvia,3518.493,2016
+237,Latvia,3676.7980000000002,2017
+238,Latvia,3829.671,2018
+239,Latvia,3708.4179999999997,2019
+240,Latvia,3582.1530000000002,2020
+241,Latvia,3775.0099999999998,2021
+242,Latvia,3613.689,2022
+243,Latvia,3560.375,2023
+244,Lithuania,4682.9130000000005,2014
+245,Lithuania,4666.995,2015
+246,Lithuania,4889.245,2016
+247,Lithuania,5120.193,2017
+248,Lithuania,5350.865,2018
+249,Lithuania,5338.317999999999,2019
+250,Lithuania,5160.362,2020
+251,Lithuania,5530.498,2021
+252,Lithuania,5239.325,2022
+253,Lithuania,5194.612,2023
+254,Luxembourg,3571.41,2014
+255,Luxembourg,3509.785,2015
+256,Luxembourg,3505.053,2016
+257,Luxembourg,3581.768,2017
+258,Luxembourg,3711.4120000000003,2018
+259,Luxembourg,3767.702,2019
+260,Luxembourg,3242.1440000000002,2020
+261,Luxembourg,3412.3140000000003,2021
+262,Luxembourg,3000.826,2022
+263,Luxembourg,2895.466,2023
+264,Malta,428.052,2014
+265,Malta,455.712,2015
+266,Malta,450.534,2016
+267,Malta,483.93399999999997,2017
+268,Malta,499.28700000000003,2018
+269,Malta,526.827,2019
+270,Malta,483.788,2020
+271,Malta,508.038,2021
+272,Malta,569.45,2022
+273,Malta,572.785,2023
+274,Moldova,2227.676,2014
+275,Moldova,2287.351,2015
+276,Moldova,2370.706,2016
+277,Moldova,2472.562,2017
+278,Moldova,2561.187,2018
+279,Moldova,2448.913,2019
+280,Moldova,2340.125,2020
+281,Moldova,2587.083,2021
+282,Moldova,2285.877,2022
+283,Montenegro,621.292,2014
+284,Montenegro,654.255,2015
+285,Montenegro,683.432,2016
+286,Montenegro,724.139,2017
+287,Montenegro,724.0699999999999,2018
+288,Montenegro,755.721,2019
+289,Montenegro,692.006,2020
+290,Montenegro,791.669,2021
+291,Montenegro,747.3100000000001,2022
+292,Netherlands,38620.152,2014
+293,Netherlands,39466.973,2015
+294,Netherlands,40411.516,2016
+295,Netherlands,40617.755,2017
+296,Netherlands,40659.047999999995,2018
+297,Netherlands,39848.772,2019
+298,Netherlands,37749.8,2020
+299,Netherlands,39178.363,2021
+300,Netherlands,36232.379,2022
+301,Netherlands,34995.647,2023
+302,North Macedonia,1774.6970000000001,2014
+303,North Macedonia,1814.133,2015
+304,North Macedonia,1825.772,2016
+305,North Macedonia,1837.753,2017
+306,North Macedonia,1811.61,2018
+307,North Macedonia,1916.345,2019
+308,North Macedonia,1794.7649999999999,2020
+309,North Macedonia,1947.762,2021
+310,North Macedonia,1792.758,2022
+311,Norway,18324.17,2014
+312,Norway,18608.441,2015
+313,Norway,18939.728,2016
+314,Norway,19046.011,2017
+315,Norway,19181.69,2018
+316,Norway,19100.242,2019
+317,Norway,18769.294,2020
+318,Norway,19711.39,2021
+319,Norway,19156.912,2022
+320,Poland,56781.265,2014
+321,Poland,57531.652,2015
+322,Poland,61598.585,2016
+323,Poland,65343.002,2017
+324,Poland,69130.77799999999,2018
+325,Poland,68040.248,2019
+326,Poland,66309.016,2020
+327,Poland,70321.861,2021
+328,Poland,67741.64300000001,2022
+329,Poland,65738.12,2023
+330,Portugal,14931.036,2014
+331,Portugal,15074.833999999999,2015
+332,Portugal,15181.528,2016
+333,Portugal,15417.317,2017
+334,Portugal,15659.788,2018
+335,Portugal,15851.329,2019
+336,Portugal,14626.247,2020
+337,Portugal,15212.719000000001,2021
+338,Portugal,15647.118,2022
+339,Portugal,15930.925,2023
+340,Romania,20871.826999999997,2014
+341,Romania,20893.752,2015
+342,Romania,21223.144,2016
+343,Romania,22177.381999999998,2017
+344,Romania,22667.411,2018
+345,Romania,22948.39,2019
+346,Romania,22739.547,2020
+347,Romania,24354.564,2021
+348,Romania,22987.101,2022
+349,Romania,22259.112,2023
+350,Serbia,7522.287,2014
+351,Serbia,7733.478,2015
+352,Serbia,8014.147,2016
+353,Serbia,8172.731,2017
+354,Serbia,8264.723,2018
+355,Serbia,8236.015,2019
+356,Serbia,8566.650000000001,2020
+357,Serbia,9129.936000000002,2021
+358,Serbia,9342.35,2022
+359,Slovakia,8976.405,2014
+360,Slovakia,9375.007,2015
+361,Slovakia,9735.47,2016
+362,Slovakia,10395.996,2017
+363,Slovakia,10267.323,2018
+364,Slovakia,10113.594,2019
+365,Slovakia,9479.332,2020
+366,Slovakia,10376.589,2021
+367,Slovakia,9799.652,2022
+368,Slovakia,9259.061,2023
+369,Slovenia,4513.6720000000005,2014
+370,Slovenia,4627.57,2015
+371,Slovenia,4813.621,2016
+372,Slovenia,4881.876,2017
+373,Slovenia,4869.656,2018
+374,Slovenia,4777.508,2019
+375,Slovenia,4349.376,2020
+376,Slovenia,4679.483,2021
+377,Slovenia,4621.3189999999995,2022
+378,Slovenia,4384.9259999999995,2023
+379,Spain,71469.09700000001,2014
+380,Spain,73645.263,2015
+381,Spain,75447.695,2016
+382,Spain,77408.978,2017
+383,Spain,79242.20199999999,2018
+384,Spain,79055.051,2019
+385,Spain,69819.192,2020
+386,Spain,75969.63500000001,2021
+387,Spain,75536.523,2022
+388,Spain,74774.948,2023
+389,Sweden,29134.801,2014
+390,Sweden,29748.08,2015
+391,Sweden,30072.098,2016
+392,Sweden,29913.102,2017
+393,Sweden,29751.975000000002,2018
+394,Sweden,29307.367,2019
+395,Sweden,28954.217,2020
+396,Sweden,30087.424,2021
+397,Sweden,28896.091,2022
+398,Sweden,29060.544,2023
+399,Türkiye,76261.854,2014
+400,Türkiye,82960.261,2015
+401,Türkiye,86487.136,2016
+402,Türkiye,96161.935,2017
+403,Türkiye,94041.179,2018
+404,Türkiye,94412.595,2019
+405,Türkiye,96154.682,2020
+406,Türkiye,104705.29000000001,2021
+407,Türkiye,101386.037,2022
+408,Ukraine,55890.541,2014
+409,Ukraine,45539.11,2015
+410,Ukraine,46666.635,2016
+411,Ukraine,45505.655,2017
+412,Ukraine,46540.764,2018
+413,Ukraine,45004.205,2019
+414,Ukraine,42521.489,2020
+415,United Kingdom,114412.65299999999,2014
+416,United Kingdom,118048.669,2015
+417,United Kingdom,119187.70199999999,2016
+418,United Kingdom,118265.859,2017
+419,United Kingdom,119979.065,2018
+420,United Kingdom,118801.56099999999,2019
+421,Electricity,278766.261,2014
+422,Electricity,282607.263,2015
+423,Electricity,286580.397,2016
+424,Electricity,290136.173,2017
+425,Electricity,291410.772,2018
+426,Electricity,288239.856,2019
+427,Electricity,254737.096,2020
+428,Electricity,257289.519,2021
+429,Electricity,247814.978,2022
+430,Electricity,200427.911,2023
+431,Heat,57677.7,2014
+432,Heat,56982.566,2015
+433,Heat,59615.086,2016
+434,Heat,59505.041,2017
+435,Heat,58270.132,2018
+436,Heat,57691.146,2019
+437,Heat,54532.786,2020
+438,Heat,49200.327,2021
+439,Heat,44712.563,2022
+440,Heat,40184.459,2023
+441,Manufactured gases,8413.633,2014
+442,Manufactured gases,7905.438,2015
+443,Manufactured gases,7752.045,2016
+444,Manufactured gases,6986.368,2017
+445,Manufactured gases,7319.609,2018
+446,Manufactured gases,6850.079,2019
+447,Manufactured gases,6369.554,2020
+448,Manufactured gases,5162.947,2021
+449,Manufactured gases,5082.366,2022
+450,Manufactured gases,4244.795,2023
+451,Natural gas,263229.173,2014
+452,Natural gas,268741.915,2015
+453,Natural gas,277700.778,2016
+454,Natural gas,282234.501,2017
+455,Natural gas,283047.25800000003,2018
+456,Natural gas,280075.079,2019
+457,Natural gas,235341.633,2020
+458,Natural gas,247805.769,2021
+459,Natural gas,217589.522,2022
+460,Natural gas,172379.05299999999,2023
+461,Non-renewable waste,3900.4809999999998,2014
+462,Non-renewable waste,3928.131,2015
+463,Non-renewable waste,4374.919,2016
+464,Non-renewable waste,4406.5650000000005,2017
+465,Non-renewable waste,5678.4349999999995,2018
+466,Non-renewable waste,5847.408,2019
+467,Non-renewable waste,6065.446,2020
+468,Non-renewable waste,6191.537,2021
+469,Non-renewable waste,6298.311,2022
+470,Non-renewable waste,4818.862,2023
+471,Nuclear heat,0.0,2014
+472,Nuclear heat,0.0,2015
+473,Nuclear heat,0.0,2016
+474,Nuclear heat,0.0,2017
+475,Nuclear heat,0.0,2018
+476,Nuclear heat,0.0,2019
+477,Nuclear heat,0.0,2020
+478,Nuclear heat,0.0,2021
+479,Nuclear heat,0.0,2022
+480,Nuclear heat,0.0,2023
+481,Oil and petroleum products (excluding biofuel portion),431174.387,2014
+482,Oil and petroleum products (excluding biofuel portion),439988.12,2015
+483,Oil and petroleum products (excluding biofuel portion),448079.546,2016
+484,Oil and petroleum products (excluding biofuel portion),456739.756,2017
+485,Oil and petroleum products (excluding biofuel portion),454774.378,2018
+486,Oil and petroleum products (excluding biofuel portion),454994.067,2019
+487,Oil and petroleum products (excluding biofuel portion),368457.597,2020
+488,Oil and petroleum products (excluding biofuel portion),379851.001,2021
+489,Oil and petroleum products (excluding biofuel portion),386301.351,2022
+490,Oil and petroleum products (excluding biofuel portion),327077.965,2023
+491,Oil shale and oil sands,33.911,2014
+492,Oil shale and oil sands,14.961,2015
+493,Oil shale and oil sands,9.738,2016
+494,Oil shale and oil sands,19.981,2017
+495,Oil shale and oil sands,22.423,2018
+496,Oil shale and oil sands,19.881,2019
+497,Oil shale and oil sands,1.38,2020
+498,Oil shale and oil sands,0.0,2021
+499,Oil shale and oil sands,0.0,2022
+500,Oil shale and oil sands,0.0,2023
+501,Peat and peat products,507.576,2014
+502,Peat and peat products,507.995,2015
+503,Peat and peat products,510.74899999999997,2016
+504,Peat and peat products,556.761,2017
+505,Peat and peat products,571.2339999999999,2018
+506,Peat and peat products,575.5989999999999,2019
+507,Peat and peat products,414.421,2020
+508,Peat and peat products,358.10200000000003,2021
+509,Peat and peat products,304.969,2022
+510,Peat and peat products,252.88799999999998,2023
+511,Renewables and biofuels,102436.916,2014
+512,Renewables and biofuels,107480.892,2015
+513,Renewables and biofuels,109564.0,2016
+514,Renewables and biofuels,115875.001,2017
+515,Renewables and biofuels,121521.867,2018
+516,Renewables and biofuels,123696.292,2019
+517,Renewables and biofuels,117241.322,2020
+518,Renewables and biofuels,122653.112,2021
+519,Renewables and biofuels,121798.537,2022
+520,Renewables and biofuels,110630.12299999999,2023
+521,Solid fossil fuels,44600.539,2014
+522,Solid fossil fuels,42865.077,2015
+523,Solid fossil fuels,43256.856999999996,2016
+524,Solid fossil fuels,42446.178,2017
+525,Solid fossil fuels,39973.754,2018
+526,Solid fossil fuels,37030.575,2019
+527,Solid fossil fuels,36117.978,2020
+528,Solid fossil fuels,32907.475,2021
+529,Solid fossil fuels,26784.048,2022
+530,Solid fossil fuels,14586.544,2023
