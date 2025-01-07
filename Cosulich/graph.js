@@ -327,7 +327,7 @@ function map_plot_taxes(data, topo, svg_plot, colorScheme, id_div, min_value, ma
 	const formatta = d3.format(".3~s");
 
 	let mouseOver = function (d) {
-		if(d.currentTarget.__data__.total!=-1){
+		if (d.currentTarget.__data__.total!=-1) {
 			d3.selectAll(".Country " + id_div)
 				.transition()
 				.duration(200)
@@ -351,7 +351,7 @@ function map_plot_taxes(data, topo, svg_plot, colorScheme, id_div, min_value, ma
 	};
 
 	let mouseLeave = function (d) {
-		if(d.currentTarget.__data__.total != -1){
+		if (d.currentTarget.__data__.total != -1) {
 			d3.selectAll(".Country " + id_div)
 				.transition()
 				.duration(200)
@@ -557,7 +557,6 @@ function bubbe_plot(data, svg_plot, id_div) {
 				.duration(500)
 				.style("opacity", 0);
 		});
-		
 
 		// Legend
 		const legendHeight = 20;
@@ -618,6 +617,65 @@ function bubbe_plot(data, svg_plot, id_div) {
 			.attr("text-anchor", "middle")
 			.style("font-size", "12px")
 			.text("Investments (millions EUR)");
+
+	// Simulazione
+	let useForceLayout = false;
+
+	const buttonX = legendX - 280;
+	const buttonY = legendY;
+
+	const buttonGroup = svg_plot.append("g")
+		.attr("class", "button")
+		.attr("transform", `translate(${buttonX}, ${buttonY})`)
+		.style("cursor", "pointer");
+
+	const buttonRect = buttonGroup.append("rect")
+		.attr("width", 150)
+		.attr("height", 30)
+		.attr("rx", 5)
+		.attr("ry", 5)
+		.style("fill", "#007acc")
+
+	buttonGroup.append("text")
+		.attr("x", 75)
+		.attr("y", 20)
+		.attr("text-anchor", "middle")
+		.style("fill", "white")
+		.style("font-size", "14px")
+		.text("Expand the bubbles");
+
+	buttonGroup.on("mouseover", function () {
+		d3.select(this).select("rect").style("fill", "#005f99");
+	}).on("mouseout", function () {
+		d3.select(this).select("rect").style("fill", "#007acc");
+	});
+	
+	buttonGroup.on("click", function () {
+		useForceLayout = !useForceLayout;
+
+		if (useForceLayout) {
+			buttonGroup.select("text").text("Show real data");
+
+			const simulation = d3.forceSimulation(data)
+				.force("x", d3.forceX(d => x(d.GDP)).strength(0.7))
+				.force("y", d3.forceY(d => y(d.taxes)).strength(0.7))
+				.force("collide", d3.forceCollide(d => radius(d.investments) + 2))
+				.alpha(0.7)
+				.alphaDecay(0.02)
+				.on("tick", () => {
+					bubbles
+						.attr("cx", d => d.x)
+						.attr("cy", d => d.y);
+				});
+		} else {
+			buttonGroup.select("text").text("Expand the bubbles");
+
+			bubbles.transition()
+				.duration(2500)
+				.attr("cx", d => x(d.GDP))
+				.attr("cy", d => y(d.taxes));
+		}
+	});
 }
 
 d3.csv("Cosulich/plot1.csv", function (d) {
