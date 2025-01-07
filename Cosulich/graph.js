@@ -1,3 +1,7 @@
+const margin_11 = { top: 30, right: 30, bottom: 100, left: 100 },
+	width_11 = 770 - margin_11.left - margin_11.right,
+	height_11 = 650 - margin_11.top - margin_11.bottom;
+
 const margin_11_15 = { top: 30, right: 30, bottom: 100, left: 100 },
 	width_11_15 = 550 - margin_11_15.left - margin_11_15.right,
 	height_11_15 = 550 - margin_11_15.top - margin_11_15.bottom;
@@ -25,10 +29,10 @@ const colours_11_15 = [
 const svg_plot11 = d3
 	.select("#plot11")
 	.append("svg")
-	.attr("width", width_11_15 + margin_11_15.left + margin_11_15.right)
-	.attr("height", height_11_15 + margin_11_15.top + margin_11_15.bottom)
+	.attr("width", width_11 + margin_11.left + margin_11.right + 130)
+	.attr("height", height_11 + margin_11.top + margin_11.bottom)
 	.append("g")
-	.attr("transform", `translate(${margin_11_15.left},${margin_11_15.top})`);
+	.attr("transform", `translate(${margin_11.left},${margin_11.top})`);
 
 const svg_plot12 = d3
 	.select("#plot12")
@@ -73,8 +77,103 @@ function add_axis_label(svg_plot, x, y, transform, text_anchor, label) {
 }
 
 function line_plot_energy_share(data, svg_plot, id_div) {
+    const x = d3.scaleLinear()
+        .domain([2004, 2023])
+        .range([0, width_11]);
+
+    const y = d3.scaleLinear()
+        .domain([0, d3.max(data, d => d3.max(d.production, p => p.value))])
+        .range([height_11, 0]);
+
+    svg_plot.append("g")
+        .attr("transform", `translate(0,${height_11})`)
+        .call(d3.axisBottom(x).tickFormat(d3.format("d")));
+
+	add_axis_label(
+		svg_plot,
+		width_11 / 2,
+		height_11 + 70,
+		"",
+		"middle",
+		"Year"
+	);
+
+    svg_plot.append("g")
+        .call(d3.axisLeft(y));
+
+	add_axis_label(
+		svg_plot,
+		-height_11 / 2,
+		-margin_11.left + 40,
+		"rotate(-90)",
+		"middle",
+		"Share of Energy (%)"
+	);
+
+	const tooltip = d3
+			.select("#content-wrap")
+			.append("div")
+			.style("opacity", 0)
+			.attr("class", "tooltip")
+			.style("background-color", "white")
+			.style("border", "solid")
+			.style("border-width", "1px")
+			.style("border-radius", "5px")
+			.style("padding", "10px")
+			.style("position", "absolute")
+			.style("left", "0px")
+			.style("top", "0px")
+			.style("line-height", "1.4");
+			
+	data.forEach(country => {
+		const isEuropeanUnion = country.country === "European Union Average";
 	
-}	
+		const line = svg_plot.append("path")
+			.datum(country.production)
+			.attr("fill", "none")
+			.attr("stroke", isEuropeanUnion ? "#F28C3B" : "#d3d3d3")
+			.attr("stroke-width", isEuropeanUnion ? 2.5 : 2)
+			.style("opacity", isEuropeanUnion ? 1 : 0.3)
+			.attr("class", isEuropeanUnion ? "is-eu" : "country-line")
+			.attr("d", d3.line()
+				.x(d => x(d.year))
+				.y(d => y(d.value))
+			);
+	
+		if (!isEuropeanUnion) {
+			line.on("mouseover", function (event, d) {
+				svg_plot.selectAll(".country-line")
+					.style("opacity", 0.2);
+	
+				d3.select(this)
+					.style("stroke", "blue")
+					.style("opacity", 1);
+	
+				tooltip
+					.style("opacity", 1)
+					.html("Country: <b>" + country.country + "</b>")
+					.style("left", (event.pageX + 30) + "px")
+					.style("top", (event.pageY - 130) + "px");
+			})
+			.on("mouseleave", function () {
+				svg_plot.selectAll(".country-line")
+					.style("opacity", 0.2)
+					.style("stroke", "#d3d3d3");
+				tooltip.style("opacity", 0);
+			});
+		}
+		else {
+            svg_plot.append("text")
+                .attr("x", x(d3.max(country.production, p => p.year)) + 5)
+                .attr("y", y(country.production[country.production.length - 1].value))
+                .attr("fill", "#F28C3B")
+                .attr("font-size", "12px")
+                .attr("alignment-baseline", "middle")
+                .text("European Union Average");
+        }
+	});
+	svg_plot.select(".is-eu").raise();		
+}
 
 function bar_plot(data, svg_plot, id_div) {
 	var max_value = 0;
@@ -150,7 +249,7 @@ function bar_plot(data, svg_plot, id_div) {
 	var mousemove = function (event, d) {
 		tooltip
 			.style("left", event.pageX + 20 + "px")
-			.style("top", event.pageY - 100 + "px");
+			.style("top", event.pageY - 140 + "px");
 	};
 
 	var mouseleave = function (event, d) {
@@ -173,142 +272,107 @@ function bar_plot(data, svg_plot, id_div) {
 }
 
 function stacked_bar_plot(data, svg_plot, id_div) {
-	const nestedData = Array.from(
-		d3.group(data, (d) => d.country),
-		([region, values]) => {
-			const regionData = { country: region };
-			values.forEach((v) => (regionData[v.rank] = v.production));
-			return regionData;
-		}
-	);
+	const categories = ['hydro', 'geothermal', 'wind', 'solar', 'biofuels'];
 
-	var mapping_entity = {};
-	data.forEach((d) => (mapping_entity[d.region + d.rank] = d.entity));
+	const color = d3.scaleOrdinal()
+		.domain(categories)
+		.range(["lightblue", "red", "lightgreen", "yellow", "orange"]);
+	
+	const x = d3.scaleLinear()
+		.domain([0, d3.max(data, d => d.hydro + d.geothermal + d.wind + d.solar + d.biofuels)])
+		.range([0, width_11_15]);
 
-	const subgroups = Array.from(new Set(data.map((d) => d.rank)));
-	const groups = Array.from(new Set(data.map((d) => d.region)));
+	svg_plot.append("g")
+		.attr("class", "x-axis")
+		.attr("transform", `translate(0,${height_11_15})`)
+		.call(d3.axisBottom(x));
 
-	for (let i = 0; i < 6; i++) {
-		let value_region = 0;
-		subgroups.forEach((j) => (value_region += nestedData[i][j]));
-		subgroups.forEach(
-			(j) =>
-				(nestedData[i][j] = parseFloat(
-					((nestedData[i][j] / value_region) * 100).toFixed(1)
-				))
-		);
-	}
-
-	// Get the max value for the Y axis
-	var max_value = 0;
-	for (let i = 0; i < 6; i++) {
-		let value_region = 0;
-		subgroups.forEach((j) => (value_region += nestedData[i][j]));
-		if (value_region > max_value) {
-			max_value = value_region;
-		}
-	}
-
-	// Add X axis
-	/* legend_width_11_15 = 50; */
-	var x;
-	x = d3.scaleLinear()
-			.domain([0, max_value])
-			.range([0, width_11_15]); /* width_11_15 - legend_width_11_15 - 10]); */
-
-	svg_plot
-		.append("g")
-		.attr("transform", `translate(0, ${height_11_15})`)
-		.call(d3.axisBottom(x).tickSizeOuter([0]))
-		.selectAll("text")
-		.attr("transform", "translate(-10,0)rotate(-45)")
-		.style("text-anchor", "end");
-
-	label_x = "CO2 emissions (%)";
 	add_axis_label(
 		svg_plot,
 		width_11_15 / 2,
-		height_11_15 + margin_11_15.bottom - 5,
+		height_11_15 + margin_11_15.bottom - 25,
 		"",
 		"middle",
-		label_x
+		"Electricity Production Capacity (%)"
 	);
 
-	// Add Y axis
-	const y = d3.scaleBand().range([0, height_11_15]).domain(groups).padding(0.2);
+	const y = d3.scaleBand()
+		.domain(data.map(d => d.country))
+		.range([0, height_11_15])
+		.padding(0.1);
 
-	svg_plot.append("g").call(d3.axisLeft(y).tickSizeOuter([0]));
+	svg_plot.append("g")
+		.attr("class", "y-axis")
+		.call(d3.axisLeft(y));
 
 	add_axis_label(
 		svg_plot,
-		-height_11_15 / 2,
-		-margin_11_15.left + 15,
+		-height_11 / 2,
+		-margin_11.left + 20,
 		"rotate(-90)",
 		"middle",
-		"Region"
+		"Country"
 	);
+	
+	const stack = d3.stack()
+		.keys(categories)
+		.offset(d3.stackOffsetNone);
 
-	var tooltip = d3
-		.select("#content-wrap")
-		.append("div")
-		.style("opacity", 0)
-		.attr("class", "tooltip")
-		.style("background-color", "white")
-		.style("border", "solid")
-		.style("border-width", "1px")
-		.style("border-radius", "5px")
-		.style("padding", "10px")
-		.style("position", "absolute")
-		.style("left", "0px")
-		.style("top", "0px")
-		.style("line-height", "1.4");	
+	const series = stack(data);
+	
+	const tooltip = d3.select(id_div)
+				.append("div")
+				.style("opacity", 0)
+				.attr("class", "tooltip")
+				.style("background-color", "white")
+				.style("border", "solid")
+				.style("border-width", "1px")
+				.style("border-radius", "5px")
+				.style("padding", "10px")
+				.style("position", "absolute")
+				.style("left", "0px")
+				.style("top", "0px")
+				.style("line-height", "1.4");
+	
+	var mouseover = function(event, d) {
+		d3.selectAll(id_div + "  rect").style("opacity", 0.2);
+		d3.select(this).style("opacity", 1);
 
-	var mouseover = function (event, d) {
-						d3.selectAll(id_div + "  rect").style("opacity", 0.2);
-						d3.select(this).style("opacity", 1);
-						info = d3.select(this).datum();
-						info_parent = d3.select(this.parentNode).datum();
-						tooltip.html(
-									"Country: " +
-									mapping_entity[info.data.country] +
-									"<br>" + "Value: " +
-									info.data[info_parent.key] + "%").style("opacity", 1);
-					};
+		energy_type = d3.select(this.parentNode).datum().key;
+		energy_type = energy_type.charAt(0).toUpperCase() + energy_type.slice(1);
 
-	var mousemove = function (event, d) {
-		tooltip
-			.style("left", event.pageX + 20 + "px")
-			.style("top", event.pageY - 100 + "px");
+		const value = d[1] - d[0];
+
+		tooltip.style("opacity", 0.9);
+		tooltip.html(`${energy_type}: <b>${value.toFixed(1)}</b> %`);
 	};
 
-	var mouseleave = function (event, d) {
-		d3.selectAll(id_div + " rect").style("opacity", 1);
+	var mousemove = function (event, d) {
+        tooltip
+            .style("left", event.pageX + 20 + "px")
+            .style("top", event.pageY - 140 + "px");
+    };
+
+	var mouseleave = function() {
+		d3.selectAll(id_div + "  rect").style("opacity", 1);
 		tooltip.style("opacity", 0);
 	};
 
-	const color = d3.scaleOrdinal().domain(subgroups).range(colours_11_15);
-
-	const stackedData = d3.stack().keys(subgroups)(nestedData);
-
-	svg_plot
-		.append("g")
-		.selectAll("g")
-		// Enter in the stack data = loop key per key = group per group
-		.data(stackedData)
-		.join("g")
-		.attr("fill", (d) => color(d.key))
-		.selectAll("rect")
-		// enter a second time = loop subgroup per subgroup to add all rectangles
-		.data((d) => d)
-		.join("rect")
-		.attr("y", (d) => y(d.data.region))
-		.attr("x", (d) => x(d[0]))
-		.attr("width", (d) => x(d[1]) - x(d[0]))
-		.attr("height", y.bandwidth())
-		.attr("stroke", "grey")
-		.on("mouseover", mouseover)
-		.on("mousemove", mousemove)
-		.on("mouseleave", mouseleave);
+	svg_plot.selectAll(".layer")
+			.data(series)
+			.enter().append("g")
+			.attr("class", "layer")
+			.attr("fill", (d, i) => color(categories[i]))
+			.selectAll("rect")
+			.data(d => d)
+			.enter().append("rect")
+			.attr("x", d => x(d[0]))
+			.attr("y", d => y(d.data.country))
+			.attr("width", d => x(d[1]) - x(d[0]))
+			.attr("height", y.bandwidth())
+			.on("mouseover", mouseover)
+			.on("mousemove", mousemove)
+			.on("mouseout", mouseleave);
 }
 
 function map_plot_taxes(data, topo, svg_plot, colorScheme, id_div, min_value, max_value, column) {
@@ -343,7 +407,7 @@ function map_plot_taxes(data, topo, svg_plot, colorScheme, id_div, min_value, ma
 				.style("opacity", 1)
 				.style("stroke", "black");
 			tooltip
-				.html("Country: <b>" + d.currentTarget.__data__.properties.NAME + "</b><br>Taxes (millions EUR): <b>" + formatta(d.currentTarget.__data__.total))
+				.html("Country: <b>" + d.currentTarget.__data__.properties.NAME + "</b><br>Taxes: <b>" + formatta(d.currentTarget.__data__.total) + "</b> million EUR")
 				.style("opacity", 1);
 		}
 	};
@@ -351,7 +415,7 @@ function map_plot_taxes(data, topo, svg_plot, colorScheme, id_div, min_value, ma
 	let mouseMove = function tooltipMousemove(event, d) {
 		tooltip
 			.style("left", event.pageX + 20 + "px")
-			.style("top", event.pageY - 150 + "px");
+			.style("top", event.pageY - 140 + "px");
 	};
 
 	let mouseLeave = function (d) {
@@ -455,7 +519,7 @@ function map_plot_taxes(data, topo, svg_plot, colorScheme, id_div, min_value, ma
 		.attr("y", legendY - 10)
 		.attr("text-anchor", "middle")
 		.style("font-size", "12px")
-		.text("Environmental Taxes (millions EUR)");
+		.text("Environmental Taxes (million EUR)");
 }
 
 function bubbe_plot(data, svg_plot, id_div) {
@@ -494,7 +558,7 @@ function bubbe_plot(data, svg_plot, id_div) {
         .attr("x", -bubble_height / 2)
         .attr("y", -70)
         .style("text-anchor", "middle")
-        .text("Environmental Tax (millions EUR)");
+        .text("Environmental Tax (million EUR)");
 
     const tooltip = d3.select(id_div)
 				.append("div")
@@ -529,6 +593,12 @@ function bubbe_plot(data, svg_plot, id_div) {
     .attr("stroke-dasharray", "5,5")
     .attr("stroke-width", 2);
 
+	var mousemove = function (event, d) {
+        tooltip
+            .style("left", event.pageX + 20 + "px")
+            .style("top", event.pageY - 140 + "px");
+    };
+
     const bubbles = svg_plot.selectAll(".bubble")
         .data(data)
         .enter().append("circle")
@@ -549,10 +619,9 @@ function bubbe_plot(data, svg_plot, id_div) {
 			tooltip.transition()
 				.duration(200)
 				.style("opacity", 0.9);
-			tooltip.html("Country: <b>" + d.country + "</b><br>Investments: <b>" + formatta(d.investments) + "</b> millions EUR<br>GDP: <b>" + d.GDP + "</b><br>Tax: <b>" + formatta(d.taxes) + "</b> millions EUR")
-				.style("left", (event.pageX + 30) + "px")
-				.style("top", (event.pageY - 130) + "px");
+			tooltip.html("Country: <b>" + d.country + "</b><br>Investments: <b>" + formatta(d.investments) + "</b> million EUR<br>GDP: <b>" + d.GDP + "</b><br>Tax: <b>" + formatta(d.taxes) + "</b> million EUR");
 		})
+		.on("mousemove", mousemove)
 		.on("mouseout", function(event, d) {
 			bubbles.style("opacity", 0.7);
 			d3.select(this)
@@ -620,7 +689,7 @@ function bubbe_plot(data, svg_plot, id_div) {
 			.attr("y", legendY - 10)
 			.attr("text-anchor", "middle")
 			.style("font-size", "12px")
-			.text("Investments (millions EUR)");
+			.text("Investments (million EUR)");
 
 	// Simulazione
 	let useForceLayout = false;
