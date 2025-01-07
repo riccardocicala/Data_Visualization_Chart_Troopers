@@ -249,7 +249,7 @@ function bar_plot(data, svg_plot, id_div) {
 	var mousemove = function (event, d) {
 		tooltip
 			.style("left", event.pageX + 20 + "px")
-			.style("top", event.pageY - 100 + "px");
+			.style("top", event.pageY - 140 + "px");
 	};
 
 	var mouseleave = function (event, d) {
@@ -272,142 +272,103 @@ function bar_plot(data, svg_plot, id_div) {
 }
 
 function stacked_bar_plot(data, svg_plot, id_div) {
-	const nestedData = Array.from(
-		d3.group(data, (d) => d.country),
-		([region, values]) => {
-			const regionData = { country: region };
-			values.forEach((v) => (regionData[v.rank] = v.production));
-			return regionData;
-		}
-	);
+	const categories = ['hydro', 'geothermal', 'wind', 'solar', 'biofuels'];
+	const color = d3.scaleOrdinal()
+		.domain(categories)
+		.range(["lightblue", "red", "lightgreen", "yellow", "orange"]);
+	
+	const x = d3.scaleLinear()
+		.domain([0, d3.max(data, d => d.hydro + d.geothermal + d.wind + d.solar + d.biofuels)])
+		.range([0, width_11_15]);
 
-	var mapping_entity = {};
-	data.forEach((d) => (mapping_entity[d.region + d.rank] = d.entity));
+	svg_plot.append("g")
+		.attr("class", "x-axis")
+		.attr("transform", `translate(0,${height_11_15})`)
+		.call(d3.axisBottom(x));
 
-	const subgroups = Array.from(new Set(data.map((d) => d.rank)));
-	const groups = Array.from(new Set(data.map((d) => d.region)));
-
-	for (let i = 0; i < 6; i++) {
-		let value_region = 0;
-		subgroups.forEach((j) => (value_region += nestedData[i][j]));
-		subgroups.forEach(
-			(j) =>
-				(nestedData[i][j] = parseFloat(
-					((nestedData[i][j] / value_region) * 100).toFixed(1)
-				))
-		);
-	}
-
-	// Get the max value for the Y axis
-	var max_value = 0;
-	for (let i = 0; i < 6; i++) {
-		let value_region = 0;
-		subgroups.forEach((j) => (value_region += nestedData[i][j]));
-		if (value_region > max_value) {
-			max_value = value_region;
-		}
-	}
-
-	// Add X axis
-	/* legend_width_11_15 = 50; */
-	var x;
-	x = d3.scaleLinear()
-			.domain([0, max_value])
-			.range([0, width_11_15]); /* width_11_15 - legend_width_11_15 - 10]); */
-
-	svg_plot
-		.append("g")
-		.attr("transform", `translate(0, ${height_11_15})`)
-		.call(d3.axisBottom(x).tickSizeOuter([0]))
-		.selectAll("text")
-		.attr("transform", "translate(-10,0)rotate(-45)")
-		.style("text-anchor", "end");
-
-	label_x = "CO2 emissions (%)";
 	add_axis_label(
 		svg_plot,
 		width_11_15 / 2,
-		height_11_15 + margin_11_15.bottom - 5,
+		height_11_15 + margin_11_15.bottom - 25,
 		"",
 		"middle",
-		label_x
+		"Electricity Production Capacity (%)"
 	);
 
-	// Add Y axis
-	const y = d3.scaleBand().range([0, height_11_15]).domain(groups).padding(0.2);
+	const y = d3.scaleBand()
+		.domain(data.map(d => d.country))
+		.range([0, height_11_15])
+		.padding(0.1);
 
-	svg_plot.append("g").call(d3.axisLeft(y).tickSizeOuter([0]));
+	svg_plot.append("g")
+		.attr("class", "y-axis")
+		.call(d3.axisLeft(y));
 
 	add_axis_label(
 		svg_plot,
-		-height_11_15 / 2,
-		-margin_11_15.left + 15,
+		-height_11 / 2,
+		-margin_11.left + 20,
 		"rotate(-90)",
 		"middle",
-		"Region"
+		"Country"
 	);
+	
+	const stack = d3.stack()
+		.keys(categories)
+		.offset(d3.stackOffsetNone);
 
-	var tooltip = d3
-		.select("#content-wrap")
-		.append("div")
-		.style("opacity", 0)
-		.attr("class", "tooltip")
-		.style("background-color", "white")
-		.style("border", "solid")
-		.style("border-width", "1px")
-		.style("border-radius", "5px")
-		.style("padding", "10px")
-		.style("position", "absolute")
-		.style("left", "0px")
-		.style("top", "0px")
-		.style("line-height", "1.4");	
+	const series = stack(data);
+	
+	const tooltip = d3.select(id_div)
+				.append("div")
+				.style("opacity", 0)
+				.attr("class", "tooltip")
+				.style("background-color", "white")
+				.style("border", "solid")
+				.style("border-width", "1px")
+				.style("border-radius", "5px")
+				.style("padding", "10px")
+				.style("position", "absolute")
+				.style("left", "0px")
+				.style("top", "0px")
+				.style("line-height", "1.4");
+	
+	var mouseover = function(event, d) {
+		d3.selectAll(id_div + "  rect").style("opacity", 0.2);
+		d3.select(this).style("opacity", 1);
 
-	var mouseover = function (event, d) {
-						d3.selectAll(id_div + "  rect").style("opacity", 0.2);
-						d3.select(this).style("opacity", 1);
-						info = d3.select(this).datum();
-						info_parent = d3.select(this.parentNode).datum();
-						tooltip.html(
-									"Country: " +
-									mapping_entity[info.data.country] +
-									"<br>" + "Value: " +
-									info.data[info_parent.key] + "%").style("opacity", 1);
-					};
+		const value = d[1] - d[0];
 
-	var mousemove = function (event, d) {
-		tooltip
-			.style("left", event.pageX + 20 + "px")
-			.style("top", event.pageY - 100 + "px");
+		tooltip.style("opacity", 0.9);
+		tooltip.html(`Energy: <b>${value.toFixed(1)}</b> %`);
 	};
 
-	var mouseleave = function (event, d) {
-		d3.selectAll(id_div + " rect").style("opacity", 1);
+	var mousemove = function (event, d) {
+        tooltip
+            .style("left", event.pageX + 20 + "px")
+            .style("top", event.pageY - 140 + "px");
+    };
+
+	var mouseleave = function() {
+		d3.selectAll(id_div + "  rect").style("opacity", 1);
 		tooltip.style("opacity", 0);
 	};
 
-	const color = d3.scaleOrdinal().domain(subgroups).range(colours_11_15);
-
-	const stackedData = d3.stack().keys(subgroups)(nestedData);
-
-	svg_plot
-		.append("g")
-		.selectAll("g")
-		// Enter in the stack data = loop key per key = group per group
-		.data(stackedData)
-		.join("g")
-		.attr("fill", (d) => color(d.key))
-		.selectAll("rect")
-		// enter a second time = loop subgroup per subgroup to add all rectangles
-		.data((d) => d)
-		.join("rect")
-		.attr("y", (d) => y(d.data.region))
-		.attr("x", (d) => x(d[0]))
-		.attr("width", (d) => x(d[1]) - x(d[0]))
-		.attr("height", y.bandwidth())
-		.attr("stroke", "grey")
-		.on("mouseover", mouseover)
-		.on("mousemove", mousemove)
-		.on("mouseleave", mouseleave);
+	svg_plot.selectAll(".layer")
+			.data(series)
+			.enter().append("g")
+			.attr("class", "layer")
+			.attr("fill", (d, i) => color(categories[i]))
+			.selectAll("rect")
+			.data(d => d)
+			.enter().append("rect")
+			.attr("x", d => x(d[0]))
+			.attr("y", d => y(d.data.country))
+			.attr("width", d => x(d[1]) - x(d[0]))
+			.attr("height", y.bandwidth())
+			.on("mouseover", mouseover)
+			.on("mousemove", mousemove)
+			.on("mouseout", mouseleave);
 }
 
 function map_plot_taxes(data, topo, svg_plot, colorScheme, id_div, min_value, max_value, column) {
@@ -450,7 +411,7 @@ function map_plot_taxes(data, topo, svg_plot, colorScheme, id_div, min_value, ma
 	let mouseMove = function tooltipMousemove(event, d) {
 		tooltip
 			.style("left", event.pageX + 20 + "px")
-			.style("top", event.pageY - 150 + "px");
+			.style("top", event.pageY - 140 + "px");
 	};
 
 	let mouseLeave = function (d) {
@@ -628,6 +589,12 @@ function bubbe_plot(data, svg_plot, id_div) {
     .attr("stroke-dasharray", "5,5")
     .attr("stroke-width", 2);
 
+	var mousemove = function (event, d) {
+        tooltip
+            .style("left", event.pageX + 20 + "px")
+            .style("top", event.pageY - 140 + "px");
+    };
+
     const bubbles = svg_plot.selectAll(".bubble")
         .data(data)
         .enter().append("circle")
@@ -648,10 +615,9 @@ function bubbe_plot(data, svg_plot, id_div) {
 			tooltip.transition()
 				.duration(200)
 				.style("opacity", 0.9);
-			tooltip.html("Country: <b>" + d.country + "</b><br>Investments: <b>" + formatta(d.investments) + "</b> millions EUR<br>GDP: <b>" + d.GDP + "</b><br>Tax: <b>" + formatta(d.taxes) + "</b> millions EUR")
-				.style("left", (event.pageX + 30) + "px")
-				.style("top", (event.pageY - 130) + "px");
+			tooltip.html("Country: <b>" + d.country + "</b><br>Investments: <b>" + formatta(d.investments) + "</b> millions EUR<br>GDP: <b>" + d.GDP + "</b><br>Tax: <b>" + formatta(d.taxes) + "</b> millions EUR");
 		})
+		.on("mousemove", mousemove)
 		.on("mouseout", function(event, d) {
 			bubbles.style("opacity", 0.7);
 			d3.select(this)
