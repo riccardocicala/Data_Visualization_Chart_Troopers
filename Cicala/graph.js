@@ -568,10 +568,12 @@ function map_plot(data, topo, svg_plot, colorScheme, id_div, min_value, max_valu
 				.style("stroke", "black");
 			tooltip
 				.html(
-					"Country: " +
+					"Country: <b>" +
 						d.currentTarget.__data__.properties.NAME +
-						`<br>${column}: ` +
-						d.currentTarget.__data__.total
+						`</b><br>${column}: ` +
+						"<b>" + 
+						d.currentTarget.__data__.total +
+						"</b>"
 				)
 				.style("opacity", 1);
 		}
@@ -598,8 +600,6 @@ function map_plot(data, topo, svg_plot, colorScheme, id_div, min_value, max_valu
 		}
 	};
 
-	
-
 	// Draw the map
 	svg_plot
 		.append("g")
@@ -616,7 +616,7 @@ function map_plot(data, topo, svg_plot, colorScheme, id_div, min_value, max_valu
 			d.total = data.get(d.properties.ISO3) ;
 			if(d.total==undefined){
 				d.total = -1
-				return 'gray';
+				return 'lightgray';
 			}
 			return colorScale(d.total);
 		})
