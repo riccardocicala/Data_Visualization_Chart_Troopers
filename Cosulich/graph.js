@@ -407,7 +407,7 @@ function map_plot_taxes(data, topo, svg_plot, colorScheme, id_div, min_value, ma
 				.style("opacity", 1)
 				.style("stroke", "black");
 			tooltip
-				.html("Country: <b>" + d.currentTarget.__data__.properties.NAME + "</b><br>Taxes (millions EUR): <b>" + formatta(d.currentTarget.__data__.total))
+				.html("Country: <b>" + d.currentTarget.__data__.properties.NAME + "</b><br>Taxes: <b>" + formatta(d.currentTarget.__data__.total) + "</b> million EUR")
 				.style("opacity", 1);
 		}
 	};
@@ -519,7 +519,7 @@ function map_plot_taxes(data, topo, svg_plot, colorScheme, id_div, min_value, ma
 		.attr("y", legendY - 10)
 		.attr("text-anchor", "middle")
 		.style("font-size", "12px")
-		.text("Environmental Taxes (millions EUR)");
+		.text("Environmental Taxes (million EUR)");
 }
 
 function bubbe_plot(data, svg_plot, id_div) {
@@ -558,7 +558,7 @@ function bubbe_plot(data, svg_plot, id_div) {
         .attr("x", -bubble_height / 2)
         .attr("y", -70)
         .style("text-anchor", "middle")
-        .text("Environmental Tax (millions EUR)");
+        .text("Environmental Tax (million EUR)");
 
     const tooltip = d3.select(id_div)
 				.append("div")
@@ -619,7 +619,7 @@ function bubbe_plot(data, svg_plot, id_div) {
 			tooltip.transition()
 				.duration(200)
 				.style("opacity", 0.9);
-			tooltip.html("Country: <b>" + d.country + "</b><br>Investments: <b>" + formatta(d.investments) + "</b> millions EUR<br>GDP: <b>" + d.GDP + "</b><br>Tax: <b>" + formatta(d.taxes) + "</b> millions EUR");
+			tooltip.html("Country: <b>" + d.country + "</b><br>Investments: <b>" + formatta(d.investments) + "</b> million EUR<br>GDP: <b>" + d.GDP + "</b><br>Tax: <b>" + formatta(d.taxes) + "</b> million EUR");
 		})
 		.on("mousemove", mousemove)
 		.on("mouseout", function(event, d) {
@@ -689,7 +689,7 @@ function bubbe_plot(data, svg_plot, id_div) {
 			.attr("y", legendY - 10)
 			.attr("text-anchor", "middle")
 			.style("font-size", "12px")
-			.text("Investments (millions EUR)");
+			.text("Investments (million EUR)");
 
 	// Simulazione
 	let useForceLayout = false;
