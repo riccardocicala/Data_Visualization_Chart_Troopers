@@ -797,7 +797,7 @@ Promise.all([
 	let dataTotalTaxes = new Map(
 		data[1].map((d) => [d.ISO, +d.taxes])
 	);
-	let colorScheme = d3.schemeBlues[7];
+	let colorScheme = d3.schemePurples[7];
 	map_plot_taxes(
 		dataTotalTaxes,
 		topo,
