@@ -731,7 +731,7 @@ function bubbe_plot(data, svg_plot, id_div) {
 			const simulation = d3.forceSimulation(data)
 				.force("x", d3.forceX(d => x(d.GDP)).strength(0.7))
 				.force("y", d3.forceY(d => y(d.taxes)).strength(0.7))
-				.force("collide", d3.forceCollide(d => radius(d.investments) + 2))
+				.force("collide", d3.forceCollide(d => radius(d.investments)))
 				.alpha(0.7)
 				.alphaDecay(0.02)
 				.on("tick", () => {
@@ -744,7 +744,7 @@ function bubbe_plot(data, svg_plot, id_div) {
 			bubbles.transition()
 				.duration(2500)
 				.attr("cx", d => x(d.GDP))
-				.attr("cy", d => y(d.taxes));
+				.attr("cy", d => y(d.taxes))
 		}
 	});
 }
