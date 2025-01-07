@@ -539,18 +539,25 @@ function bubbe_plot(data, svg_plot, id_div) {
         .style("stroke", "black")
         .style("stroke-width", 1)
         .on("mouseover", function(event, d) {
-            tooltip.transition()
-                .duration(200)
-                .style("opacity", .9);
-            tooltip.html("Country: <b>" + d.country + "</b><br>Investments: <b>" + formatta(d.investments) + "</b> millions EUR<br>GDP: <b>" + d.GDP + "</b><br>Tax: <b>" + formatta(d.taxes) + "</b> millions EUR")
-                .style("left", (event.pageX + 30) + "px")
-                .style("top", (event.pageY - 130) + "px");
-        })
-        .on("mouseout", function(d) {
-            tooltip.transition()
-                .duration(500)
-                .style("opacity", 0);
-        });
+			bubbles.style("opacity", 0.3);
+			d3.select(this)
+				.style("opacity", 1)
+			tooltip.transition()
+				.duration(200)
+				.style("opacity", 0.9);
+			tooltip.html("Country: <b>" + d.country + "</b><br>Investments: <b>" + formatta(d.investments) + "</b> millions EUR<br>GDP: <b>" + d.GDP + "</b><br>Tax: <b>" + formatta(d.taxes) + "</b> millions EUR")
+				.style("left", (event.pageX + 30) + "px")
+				.style("top", (event.pageY - 130) + "px");
+		})
+		.on("mouseout", function(event, d) {
+			bubbles.style("opacity", 0.7);
+			d3.select(this)
+				.style("stroke-width", 1);
+			tooltip.transition()
+				.duration(500)
+				.style("opacity", 0);
+		});
+		
 
 		// Legend
 		const legendHeight = 20;
