@@ -394,7 +394,15 @@ function heatmap_plot(data, svg_plot, id_div) {
 		.call(d3.axisBottom(x).tickSizeOuter([0]))
 		.selectAll("text")
 		.attr("transform", "translate(-10,0)rotate(-45)")
-		.style("text-anchor", "end");
+		.style("text-anchor", "end")
+		.attr("class", "tick_axis_heatmap");
+
+	let ticks_axis = document.querySelectorAll('.tick_axis_heatmap');
+	for(let i=0; i<ticks_axis.length; i = i + 1){
+		if(i % 3 != 0){
+			ticks_axis[i].parentNode.style.opacity = 0;
+		}
+	}
 
 	add_axis_label(
 		svg_plot,
