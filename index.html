@@ -19,20 +19,27 @@
 					<div class="large-graph-container">
 						<div class="mini-description">
 							<h3 class="graph-titles">
-								Main plot
+								Climate Trends in Europe: A Growing Challenge
 							</h3>
 							<p>
-								The plot displays two variables the heating degree days (HDD) index and the cooling degree days (CDD) index and are calculated on a daily basis with the following formulas HDD = max(18-T, 0) and CDD = max(T-21, 0) where T is the temperature of the day.<br>
-								The HDD is a measure that gives a view of how many degrees of difference there is between the temperature in a house and the temperature outside, thus giving a measure of how much you need to heat; in contrast, the CDD gives a view of how much you need to cool a house relative to the temperature outside.<br>
-								The plot shows the data with an annual granularity, and the value for a single year is calculated by summing all the values for that specific year.<br>
-								The data depicted represent European HDDs (in blue) and European CDDs (in red) from 1979 to 2023, obviously being very different values there is a double vertical axis one for HDDs (left) and the other for CDDs (right), on the horizontal axis instead we find the years.
+								The plot illustrates two indices, Heating Degree Days (HDD) and Cooling Degree Days (CDD), calculated daily using the following formulas:
+								HDD = max(18 - T, 0); CDD = max(T - 21, 0); where T represents the daily temperature.
+								<br>The HDD index measures the difference between indoor and outdoor temperatures, indicating how much heating is required to maintain a comfortable indoor environment.
+								<br>Conversely, the CDD index reflects the cooling needed to offset the outdoor temperature's impact on indoor comfort.
+								<br>The data are aggregated annually, with yearly values obtained by summing the daily calculations for each respective year.
+ 								<br>The plot covers <span style="color:blue;">European HDDs</span>and <span style="color:red;">European CDDs</span>from 1979 to 2023. Given the stark differences in values between the two indices, the graph uses a dual vertical axis:
+								the left axis represents HDDs, while the right axis represents CDDs.
+								The horizontal axis displays the years from 1979 to 2023.	
 							</p>
 						</div>
 						<div id="plot1"></div>
 						<div class="large-description">
 							<p>
-								As we can see from the plot, HDDs are steadily decreasing while CDDs are steadily increasing, which indicates to us how there are more and more warmer winters and summers in Europe over the years.<br>
-								The trend is remarkably marked and this shows us how going forward over the years this situation will be more and more unbearable and will cause greater and greater damage, so something needs to be done to change the trend.<br>
+								The plot clearly demonstrates a steady decrease in HDDs alongside a consistent increase in CDDs over time.
+								This trend highlights the gradual warming of winters and summers in Europe, indicating a shift towards a warmer climate over the years.
+								The pronounced nature of these changes underscores the urgency of addressing this issue.
+								<br><br>As this trend continues, the situation is likely to become increasingly challenging, leading to greater environmental consequences.
+								Immediate action is essential if we want to mitigate these impacts and change the trend.
 							</p>
 						</div>
 					</div>
@@ -41,15 +48,15 @@
 						<div id="plot2"></div>
 						<div class="description">
 							<h3 class="graph-titles">
-								HDD Europe map
+								Warming Winters: Tracking Europe's Heating Degree Days (HDDs)
 							</h3>
 							<p>
-								The HDD (heating degree days) index is a measure that gives a view of how many degrees of difference there is between the temperature in a house and the temperature outside, thus giving a measure of how much you need to heat and is calculated as HDD = max(18-T, 0) where T is the mean daily temperature.<br>
-								The data represented have an annual granularity and are calculated as the sum of daily HDDs.<br>
-								Shown on the map, in gray are the countries that are not in the European union and for which we do not have data, and in a scale of blue the European countries.<br>
-								Darker shades of blue indicate a higher HDD value and lighter ones the opposite.<br>
-								On the left is a slider so that the reference year can be chosen.<br>
-								We can see from the graph the transition of HDDs over the years, noting especially how in the past the shades of blue were much darker throughout Europe, indicating that winters are getting warmer throughout Europe.<br>
+								The HDD (Heating Degree Days) index measures the difference between the indoor and outdoor temperatures, providing an estimate of the heating required to maintain indoor comfort.
+								<br>It is calculated using the formula: <b>HDD = max(18 - T, 0)</b>, where <i>T</i> represents the mean daily temperature.
+								<br><br>The data, presented with annual granularity, are derived by summing the daily HDD values for each year.
+								<br><br>The map illustrates this data, showing European countries in varying shades of blue, while non-European Union countries, for which data are unavailable, are displayed in gray. Darker blue shades represent higher HDD values, while lighter blue shades indicate lower values.
+								<br><br>A slider on the left allows users to select a specific year, enabling a comparison of HDD values across time.
+								<br><br>The visualization reveals a noticeable trend: in earlier years, much darker shades of blue covered Europe, reflecting colder winters. Over time, the map transitions to lighter shades, highlighting the gradual warming of winters across Europe.
 							</p>
 						</div>
 					</div>
@@ -58,15 +65,14 @@
 						<div id="plot3"></div>
 						<div class="description">
 							<h3 class="graph-titles">
-								CDD Europe map
+								Rising Summer Heat: Mapping Europe's Cooling Degree Days (CDDs)
 							</h3>
 							<p>
-								The CDD (cooling degree days) index is a measure that gives a view of how many degrees of difference there is between the temperature in a house and the temperature outside, thus giving a measure of how much you need to cool and is calculated as CDD = max(T-21, 0) where T is the mean daily temperature.<br>
-								The data represented have an annual granularity and are calculated as the sum of daily CDDs.<br>
-								Shown on the map, in gray are the countries that are not in the European union and for which we do not have data, and in a scale of red the European countries.<br>
-								Darker shades of red indicate a higher CDD value and lighter ones the opposite.<br>
-								On the left is a slider so that the reference year can be chosen.<br>
-								We can see from the graph the transition of CDDs over the years, noting especially how in the past the shades of red were much lighter especially in the southernmost countries, indicating that summers are getting more and more warmer.<br>
+								The CDD (Cooling Degree Days) index measures the difference between indoor and outdoor temperatures, providing an estimate of the cooling required to maintain indoor comfort. It is calculated using the formula: <b>CDD = max(T - 21, 0)</b>, where <i>T</i> represents the mean daily temperature.
+								<br><br>The data, aggregated annually, represent the sum of daily CDD values for each year.
+								<br><br>On the map, European countries are displayed in varying shades of red, while non-European Union countries, for which data are unavailable, are shown in gray. Darker red shades indicate higher CDD values, while lighter shades signify lower values.
+								<br><br>A slider on the left allows users to select a specific year, offering a dynamic view of CDD trends over time.
+								<br><br>The visualization reveals a clear pattern: in earlier years, much lighter red shades dominated, especially in southern European countries. Over time, darker shades have become more prevalent, highlighting the increasing warmth of summers across Europe.
 							</p>
 						</div>
 					</div>
@@ -74,15 +80,15 @@
 						<div id="plot4"></div>
 						<div class="description">
 							<h3 class="graph-titles">
-								Ocean acidification
+								Ocean Acidification
 							</h3>
 							<p>
-								The heatmap shows the pH value of the ocean as the years change (starting from 1985).<br>
-								On the horizontal axis we can find the years while on the vertical axis we have a single value, pH.<br>
-								Shades of red indicate pH values lower than the optimal value 8.2 (in white), the darker red the further away we are from the optimal value.<br>
-								As we can see going forward in years the sea is becoming more and more acidic and even in 1985 we were already far away from the optimal value that was present before the industrial revolution.<br>
-								Ocean acidification can create conditions that eat away at the minerals used by oysters, clams, lobsters, shrimp, coral reefs, and other marine life to build their shells and skeletons.<br>
-								In addition, too rapid a change in pH could lead to other life forms becoming extinct, unable to adapt so quickly to these changes.
+								The heatmap shows the pH value of the ocean as the years change (starting from 1985).
+								<br><br>On the horizontal axis we can find the years while on the vertical axis we have a single value, pH.
+								<br>Shades of red indicate pH values lower than the optimal value 8.2 (in white), the darker red the further away we are from the optimal value.
+								<br><br>As we can see going forward in years the sea is becoming more and more acidic and even in 1985 we were already far away from the optimal value that was present before the industrial revolution.
+								<br>Ocean acidification can create conditions that eat away at the minerals used by oysters, clams, lobsters, shrimp, coral reefs, and other marine life to build their shells and skeletons.
+								<br>In addition, a rapid shift in pH levels could cause other life forms to go extinct, as they may be unable to adapt swiftly enough to these changes.
 							</p>
 						</div>
 					</div>
@@ -90,13 +96,13 @@
 						<div id="plot5"></div>
 						<div class="description">
 							<h3 class="graph-titles">
-								European economic losses
+								European Economic Losses
 							</h3>
 							<p>
-								Many times when we talk about global warming someone intervenes by saying that climate change has always been there, thus somehow lifting the blame that human beings have in this change.<br>
-								So it is also important to show the fact that we are the first to lose from this change, in fact the plot shows the rolling average of the last 30 years of european econimical losses due to climate change as the years change.<br>
-								This measurement is perfect for showing the trend of a variable, which as in this case points out to us how economic losses are steadily and steeply increasing.<br>
-								On the horizontal axis, in fact, we have the years, while on the vertical axis we have the economic losses in millions of euros, and we can see how only between 2011 and 2012 and between 2019 and 2020 this trend has dropped slightly while in all other years it is always increasing.
+								Many times when we talk about global warming someone intervenes by saying that climate change has always been there, thus somehow lifting the blame that human beings have in this change.
+								<br>So it is also important to show the fact that we are the first to lose from this change, in fact the plot shows the rolling average of the last 30 years of european econimical losses due to climate change as the years change.
+								<br><br>This measurement is perfect for showing the trend of a variable, which as in this case points out to us how economic losses are steadily and steeply increasing.
+								<br><br>On the horizontal axis, the years are displayed, while the vertical axis represents economic losses in millions of euros. Notably, the trend experienced slight drops only between 2011 and 2012 and between 2019 and 2020. In all other years, the losses have consistently risen.
 							</p>
 						</div>
 					</div>
@@ -107,7 +113,7 @@
 								Plot 6
 							</h3>
 							<p>
-								description.<br /><br />
+								description.
 							</p>
 						</div>
 					</div>
@@ -118,7 +124,7 @@
 								Plot 7
 							</h3>
 							<p>
-								description.<br /><br />
+								description.
 							</p>
 						</div>
 					</div>
@@ -129,7 +135,7 @@
 								Plot 8
 							</h3>
 							<p>
-								description.<br /><br />
+								description.
 							</p>
 						</div>
 					</div>
@@ -140,7 +146,7 @@
 								Plot 9
 							</h3>
 							<p>
-								description.<br /><br />
+								description.
 							</p>
 						</div>
 					</div>
@@ -151,7 +157,7 @@
 								Plot 10
 							</h3>
 							<p>
-								description.<br /><br />
+								description.
 							</p>
 						</div>
 					</div>
@@ -234,8 +240,8 @@
 								  <li><b>Horizontal Axis (GDP):</b> Represents the GDP per capita of each country relative to the European Union's average GDP per capita (100 being the average; e.g., 120 means a GDP 20% higher than the average).</li>
 								  <li><b>Dashed vertical<span style="color:red;">Red</span>line:</b> Represents the average GDP.</li>
 								  <br>
-								  <li><b>Bubble Size:</b> Indicates the amount of investment each country makes; larger bubbles mean higher investments.</li>
-								  <li><b>Bubble Color:</b> Reflects the same metric as the size:</li>
+								  <li><b>Bubble Size (Investments):</b> Indicates the amount of investment each country makes; larger bubbles mean higher investments.</li>
+								  <li><b>Bubble Color (Investments):</b> Reflects the same metric as the size:</li>
 								  <ul style="text-align: left;">
 									<li><span style="color:red;">Red</span>: Low investment.</li>
 									<li><span style="color:blue;">Blue</span>: Moderate investment.</li>
