@@ -1,6 +1,14 @@
+const margin_11 = { top: 30, right: 30, bottom: 100, left: 100 },
+	width_11 = 770 - margin_11.left - margin_11.right,
+	height_11 = 650 - margin_11.top - margin_11.bottom;
+
 const margin_11_15 = { top: 30, right: 30, bottom: 100, left: 100 },
 	width_11_15 = 550 - margin_11_15.left - margin_11_15.right,
 	height_11_15 = 550 - margin_11_15.top - margin_11_15.bottom;
+
+const margin_14 = { top: 30, right: 30, bottom: 100, left: 100 },
+	width_14 = 550 - margin_14.left - margin_14.right,
+	height_14 = 650 - margin_14.top - margin_14.bottom;
 
 const bubble_margin = { top: 30, right: 30, bottom: 100, left: 100 },
 	bubble_width = 1250 - bubble_margin.left - bubble_margin.right,
@@ -21,10 +29,10 @@ const colours_11_15 = [
 const svg_plot11 = d3
 	.select("#plot11")
 	.append("svg")
-	.attr("width", width_11_15 + margin_11_15.left + margin_11_15.right)
-	.attr("height", height_11_15 + margin_11_15.top + margin_11_15.bottom)
+	.attr("width", width_11 + margin_11.left + margin_11.right + 130)
+	.attr("height", height_11 + margin_11.top + margin_11.bottom)
 	.append("g")
-	.attr("transform", `translate(${margin_11_15.left},${margin_11_15.top})`);
+	.attr("transform", `translate(${margin_11.left},${margin_11.top})`);
 
 const svg_plot12 = d3
 	.select("#plot12")
@@ -45,10 +53,10 @@ const svg_plot13 = d3
 const svg_plot14 = d3
 		.select("#plot14")
 		.append("svg")
-		.attr("width", width_11_15 + margin_11_15.left + margin_11_15.right)
-		.attr("height", height_11_15 + margin_11_15.top + margin_11_15.bottom)
+		.attr("width", width_14 + margin_14.left + margin_14.right)
+		.attr("height", height_14 + margin_14.top + margin_14.bottom + 60)
 		.append("g")
-		.attr("transform", `translate(${margin_11_15.left},${margin_11_15.top})`);
+		.attr("transform", `translate(${margin_14.left},${margin_14.top})`);
 
 const svg_plot15 = d3
 	.select("#plot15")
@@ -66,6 +74,105 @@ function add_axis_label(svg_plot, x, y, transform, text_anchor, label) {
 		.attr("y", y)
 		.attr("transform", transform)
 		.text(label);
+}
+
+function line_plot_energy_share(data, svg_plot, id_div) {
+    const x = d3.scaleLinear()
+        .domain([2004, 2023])
+        .range([0, width_11]);
+
+    const y = d3.scaleLinear()
+        .domain([0, d3.max(data, d => d3.max(d.production, p => p.value))])
+        .range([height_11, 0]);
+
+    svg_plot.append("g")
+        .attr("transform", `translate(0,${height_11})`)
+        .call(d3.axisBottom(x).tickFormat(d3.format("d")));
+
+	add_axis_label(
+		svg_plot,
+		width_11 / 2,
+		height_11 + 70,
+		"",
+		"middle",
+		"Year"
+	);
+
+    svg_plot.append("g")
+        .call(d3.axisLeft(y));
+
+	add_axis_label(
+		svg_plot,
+		-height_11 / 2,
+		-margin_11.left + 40,
+		"rotate(-90)",
+		"middle",
+		"Share of Energy (%)"
+	);
+
+	const tooltip = d3
+			.select("#content-wrap")
+			.append("div")
+			.style("opacity", 0)
+			.attr("class", "tooltip")
+			.style("background-color", "white")
+			.style("border", "solid")
+			.style("border-width", "1px")
+			.style("border-radius", "5px")
+			.style("padding", "10px")
+			.style("position", "absolute")
+			.style("left", "0px")
+			.style("top", "0px")
+			.style("line-height", "1.4");
+			
+	data.forEach(country => {
+		const isEuropeanUnion = country.country === "European Union Average";
+	
+		const line = svg_plot.append("path")
+			.datum(country.production)
+			.attr("fill", "none")
+			.attr("stroke", isEuropeanUnion ? "#F28C3B" : "#d3d3d3")
+			.attr("stroke-width", isEuropeanUnion ? 3.5 : 3)
+			.style("opacity", isEuropeanUnion ? 1 : 0.3)
+			.attr("class", isEuropeanUnion ? "is-eu" : "country-line")
+			.attr("d", d3.line()
+				.x(d => x(d.year))
+				.y(d => y(d.value))
+			);
+	
+		if (!isEuropeanUnion) {
+			line.on("mouseover", function (event, d) {
+				svg_plot.selectAll(".country-line")
+					.style("opacity", 0.2);
+	
+				d3.select(this)
+					.style("stroke", "blue")
+					.style("opacity", 1);
+	
+				tooltip
+					.style("opacity", 1)
+					.html("Country: <b>" + country.country + "</b>")
+					.style("left", (event.pageX + 30) + "px")
+					.style("top", (event.pageY - 130) + "px");
+			})
+			.on("mouseleave", function () {
+				svg_plot.selectAll(".country-line")
+					.style("opacity", 0.2)
+					.style("stroke", "#d3d3d3");
+				tooltip.style("opacity", 0);
+			});
+		}
+		else {
+            svg_plot.append("text")
+                .attr("x", x(d3.max(country.production, p => p.year)) + 5)
+                .attr("y", y(country.production[country.production.length - 1].value))
+                .attr("fill", "#F28C3B")
+                .attr("font-size", "12px")
+                .attr("alignment-baseline", "middle")
+                .text("European Union Average");
+        }
+	});
+	svg_plot.select(".is-eu").raise();		
 }
 
 function bar_plot(data, svg_plot, id_div) {
@@ -142,7 +249,7 @@ function bar_plot(data, svg_plot, id_div) {
 	var mousemove = function (event, d) {
 		tooltip
 			.style("left", event.pageX + 20 + "px")
-			.style("top", event.pageY - 100 + "px");
+			.style("top", event.pageY - 140 + "px");
 	};
 
 	var mouseleave = function (event, d) {
@@ -165,218 +272,182 @@ function bar_plot(data, svg_plot, id_div) {
 }
 
 function stacked_bar_plot(data, svg_plot, id_div) {
-	const nestedData = Array.from(
-		d3.group(data, (d) => d.country),
-		([region, values]) => {
-			const regionData = { country: region };
-			values.forEach((v) => (regionData[v.rank] = v.production));
-			return regionData;
-		}
-	);
+	const categories = ['hydro', 'geothermal', 'wind', 'solar', 'biofuels'];
 
-	var mapping_entity = {};
-	data.forEach((d) => (mapping_entity[d.region + d.rank] = d.entity));
+	const color = d3.scaleOrdinal()
+		.domain(categories)
+		.range(["lightblue", "red", "lightgreen", "yellow", "orange"]);
+	
+	const x = d3.scaleLinear()
+		.domain([0, d3.max(data, d => d.hydro + d.geothermal + d.wind + d.solar + d.biofuels)])
+		.range([0, width_11_15]);
 
-	const subgroups = Array.from(new Set(data.map((d) => d.rank)));
-	const groups = Array.from(new Set(data.map((d) => d.region)));
+	svg_plot.append("g")
+		.attr("class", "x-axis")
+		.attr("transform", `translate(0,${height_11_15})`)
+		.call(d3.axisBottom(x));
 
-	for (let i = 0; i < 6; i++) {
-		let value_region = 0;
-		subgroups.forEach((j) => (value_region += nestedData[i][j]));
-		subgroups.forEach(
-			(j) =>
-				(nestedData[i][j] = parseFloat(
-					((nestedData[i][j] / value_region) * 100).toFixed(1)
-				))
-		);
-	}
-
-	// Get the max value for the Y axis
-	var max_value = 0;
-	for (let i = 0; i < 6; i++) {
-		let value_region = 0;
-		subgroups.forEach((j) => (value_region += nestedData[i][j]));
-		if (value_region > max_value) {
-			max_value = value_region;
-		}
-	}
-
-	// Add X axis
-	/* legend_width_11_15 = 50; */
-	var x;
-	x = d3.scaleLinear()
-			.domain([0, max_value])
-			.range([0, width_11_15]); /* width_11_15 - legend_width_11_15 - 10]); */
-
-	svg_plot
-		.append("g")
-		.attr("transform", `translate(0, ${height_11_15})`)
-		.call(d3.axisBottom(x).tickSizeOuter([0]))
-		.selectAll("text")
-		.attr("transform", "translate(-10,0)rotate(-45)")
-		.style("text-anchor", "end");
-
-	label_x = "CO2 emissions (%)";
 	add_axis_label(
 		svg_plot,
 		width_11_15 / 2,
-		height_11_15 + margin_11_15.bottom - 5,
+		height_11_15 + margin_11_15.bottom - 25,
 		"",
 		"middle",
-		label_x
+		"Electricity Production Capacity (%)"
 	);
 
-	// Add Y axis
-	const y = d3.scaleBand().range([0, height_11_15]).domain(groups).padding(0.2);
+	const y = d3.scaleBand()
+		.domain(data.map(d => d.country))
+		.range([0, height_11_15])
+		.padding(0.1);
 
-	svg_plot.append("g").call(d3.axisLeft(y).tickSizeOuter([0]));
+	svg_plot.append("g")
+		.attr("class", "y-axis")
+		.call(d3.axisLeft(y));
 
 	add_axis_label(
 		svg_plot,
-		-height_11_15 / 2,
-		-margin_11_15.left + 15,
+		-height_11 / 2,
+		-margin_11.left + 20,
 		"rotate(-90)",
 		"middle",
-		"Region"
+		"Country"
 	);
+	
+	const stack = d3.stack()
+		.keys(categories)
+		.offset(d3.stackOffsetNone);
 
-	var tooltip = d3
-		.select("#content-wrap")
-		.append("div")
-		.style("opacity", 0)
-		.attr("class", "tooltip")
-		.style("background-color", "white")
-		.style("border", "solid")
-		.style("border-width", "1px")
-		.style("border-radius", "5px")
-		.style("padding", "10px")
-		.style("position", "absolute")
-		.style("left", "0px")
-		.style("top", "0px")
-		.style("line-height", "1.4");	
+	const series = stack(data);
+	
+	const tooltip = d3.select(id_div)
+				.append("div")
+				.style("opacity", 0)
+				.attr("class", "tooltip")
+				.style("background-color", "white")
+				.style("border", "solid")
+				.style("border-width", "1px")
+				.style("border-radius", "5px")
+				.style("padding", "10px")
+				.style("position", "absolute")
+				.style("left", "0px")
+				.style("top", "0px")
+				.style("line-height", "1.4");
+	
+	var mouseover = function(event, d) {
+		d3.selectAll(id_div + "  rect").style("opacity", 0.2);
+		d3.select(this).style("opacity", 1);
 
-	var mouseover = function (event, d) {
-						d3.selectAll(id_div + "  rect").style("opacity", 0.2);
-						d3.select(this).style("opacity", 1);
-						info = d3.select(this).datum();
-						info_parent = d3.select(this.parentNode).datum();
-						tooltip.html(
-									"Country: " +
-									mapping_entity[info.data.country] +
-									"<br>" + "Value: " +
-									info.data[info_parent.key] + "%").style("opacity", 1);
-					};
+		energy_type = d3.select(this.parentNode).datum().key;
+		energy_type = energy_type.charAt(0).toUpperCase() + energy_type.slice(1);
 
-	var mousemove = function (event, d) {
-		tooltip
-			.style("left", event.pageX + 20 + "px")
-			.style("top", event.pageY - 100 + "px");
+		const value = d[1] - d[0];
+
+		tooltip.style("opacity", 0.9);
+		tooltip.html(`${energy_type}: <b>${value.toFixed(1)}</b> %`);
 	};
 
-	var mouseleave = function (event, d) {
-		d3.selectAll(id_div + " rect").style("opacity", 1);
+	var mousemove = function (event, d) {
+        tooltip
+            .style("left", event.pageX + 20 + "px")
+            .style("top", event.pageY - 140 + "px");
+    };
+
+	var mouseleave = function() {
+		d3.selectAll(id_div + "  rect").style("opacity", 1);
 		tooltip.style("opacity", 0);
 	};
 
-	const color = d3.scaleOrdinal().domain(subgroups).range(colours_11_15);
-
-	const stackedData = d3.stack().keys(subgroups)(nestedData);
-
-	svg_plot
-		.append("g")
-		.selectAll("g")
-		// Enter in the stack data = loop key per key = group per group
-		.data(stackedData)
-		.join("g")
-		.attr("fill", (d) => color(d.key))
-		.selectAll("rect")
-		// enter a second time = loop subgroup per subgroup to add all rectangles
-		.data((d) => d)
-		.join("rect")
-		.attr("y", (d) => y(d.data.region))
-		.attr("x", (d) => x(d[0]))
-		.attr("width", (d) => x(d[1]) - x(d[0]))
-		.attr("height", y.bandwidth())
-		.attr("stroke", "grey")
-		.on("mouseover", mouseover)
-		.on("mousemove", mousemove)
-		.on("mouseleave", mouseleave);
+	svg_plot.selectAll(".layer")
+			.data(series)
+			.enter().append("g")
+			.attr("class", "layer")
+			.attr("fill", (d, i) => color(categories[i]))
+			.selectAll("rect")
+			.data(d => d)
+			.enter().append("rect")
+			.attr("x", d => x(d[0]))
+			.attr("y", d => y(d.data.country))
+			.attr("width", d => x(d[1]) - x(d[0]))
+			.attr("height", y.bandwidth())
+			.on("mouseover", mouseover)
+			.on("mousemove", mousemove)
+			.on("mouseout", mouseleave);
 }
 
-function map_plot_taxes(data, topo, svg_plot, colorScheme, id_div, map_type, units) {
-	console.log(data);
-	projection = d3.geoMercator().scale(400);
-	projection = projection.center([13, 55]).translate([width_11_15 / 2, height_11_15 / 2]);
+function map_plot_taxes(data, topo, svg_plot, colorScheme, id_div, min_value, max_value, column) {
+	projection = d3.geoMercator().scale(430);
+	projection = projection.center([30, 55]).translate([width / 2, height / 2]);
 
-	minVal = d3.min(data.values());
-	maxVal = d3.max(data.values());
+	minVal = min_value;
+	maxVal = max_value;
 
-	const numThresholds = 8;
+	const numThresholds = 5;
 	const thresholds = Array.from(
 		{ length: numThresholds },
 		(_, i) => minVal + ((i + 1) * (maxVal - minVal)) / (numThresholds + 1)
 	);
+
 	thresholds.unshift(minVal);
 	thresholds.push(maxVal);
 
 	let colorScale = d3.scaleThreshold().domain(thresholds).range(colorScheme);
+	const formatta = d3.format(".3~s");
 
 	let mouseOver = function (d) {
-		d3.selectAll(".Country " + id_div)
-			.transition()
-			.duration(200)
-			.style("opacity", 0.5)
-			.style("stroke", "transparent");
-		d3.select(this)
-			.transition()
-			.duration(200)
-			.style("opacity", 1)
-			.style("stroke", "black");
-		tooltip
-			.html(
-				"Country: " +
-					d.currentTarget.__data__.properties.NAME +
-					"<br>Taxes (millions EUR): " +
-					d.currentTarget.__data__.total +
-					" " +
-					units
-			)
-			.style("opacity", 1);
+		if (d.currentTarget.__data__.total!=-1) {
+			d3.selectAll(".Country " + id_div)
+				.transition()
+				.duration(200)
+				.style("opacity", 0.5)
+				.style("stroke", "transparent");
+			d3.select(this)
+				.transition()
+				.duration(200)
+				.style("opacity", 1)
+				.style("stroke", "black");
+			tooltip
+				.html("Country: <b>" + d.currentTarget.__data__.properties.NAME + "</b><br>Taxes: <b>" + formatta(d.currentTarget.__data__.total) + "</b> million EUR")
+				.style("opacity", 1);
+		}
 	};
 
 	let mouseMove = function tooltipMousemove(event, d) {
 		tooltip
 			.style("left", event.pageX + 20 + "px")
-			.style("top", event.pageY - 100 + "px");
+			.style("top", event.pageY - 140 + "px");
 	};
 
 	let mouseLeave = function (d) {
-		d3.selectAll(".Country " + id_div)
-			.transition()
-			.duration(200)
-			.style("opacity", 1)
-			.style("stroke", "transparent");
-		d3.select(this)
-			.transition()
-			.duration(200)
-			.style("stroke", "transparent");
-		tooltip.style("opacity", 0);
+		if (d.currentTarget.__data__.total != -1) {
+			d3.selectAll(".Country " + id_div)
+				.transition()
+				.duration(200)
+				.style("opacity", 1)
+				.style("stroke", "transparent");
+			d3.select(this)
+				.transition()
+				.duration(200)
+				.style("stroke", "transparent");
+			tooltip.style("opacity", 0);
+		}
 	};
 
-	// Draw the map
 	svg_plot
 		.append("g")
-		.attr("transform", `translate(${margin_11_15.left},${margin_11_15.top})`)
+		.attr("transform", `translate(${margin_14.left},${margin_14.top})`)
 		.append("g")
 		.selectAll("path")
 		.data(topo.features)
 		.enter()
 		.append("path")
-		// draw each country
 		.attr("d", d3.geoPath().projection(projection))
-		// set the color of each country
 		.attr("fill", function (d) {
-			d.total = data.get(d.properties.ISO3) || 0;
+			d.total = data.get(d.properties.ISO3) ;
+			if (d.total == undefined) {
+				d.total = -1
+				return 'lightgray';
+			}
 			return colorScale(d.total);
 		})
 		.style("stroke", "transparent")
@@ -388,7 +459,6 @@ function map_plot_taxes(data, topo, svg_plot, colorScheme, id_div, map_type, uni
 		.on("mouseleave", mouseLeave)
 		.on("mousemove", mouseMove);
 
-	// Create gradient for the legend
 	const defs = svg_plot.append("defs");
 	const linearGradient = defs
 		.append("linearGradient")
@@ -409,12 +479,9 @@ function map_plot_taxes(data, topo, svg_plot, colorScheme, id_div, map_type, uni
 
 	// Legend
 	const legendHeight = 20;
-	const legendWidth = width_11_15 * 0.8;
-	const legendX = (width_11_15 +  margin_11_15.left) / 4;
-	const legendY = height_11_15 + 100;
-
-	var min_value = d3.min(data, d => d.taxes);
-	var max_value = d3.min(data, d => d.taxes);
+	const legendWidth = width_14 * 0.8;
+	const legendX = ((width_14) /4) - 80;
+	const legendY = height_14 + 40;
 
 	svg_plot
 		.append("g")
@@ -427,17 +494,17 @@ function map_plot_taxes(data, topo, svg_plot, colorScheme, id_div, map_type, uni
 
 	const legendScale = d3
 		.scaleLinear()
-		.domain([min_value, max_value])
+		.domain([minVal, maxVal])
 		.range([0, legendWidth]);
-
+		Math.round(max_value / 2000) * 1000
 	const legendAxis = d3
 		.axisBottom(legendScale)
 		.tickValues([
-			min_value,
-			min_value + (max_value - min_value) / 4,
-			(min_value + max_value) / 2,
-			min_value + (3 * (max_value - min_value)) / 4,
-			max_value,
+			minVal,
+			Math.round((minVal + (maxVal - minVal) / 4) / 1000) * 1000,
+			Math.round(((minVal + maxVal) / 2) / 1000) * 1000,
+			Math.round((minVal + (3 * (maxVal - minVal)) / 4) / 1000) * 1000,
+			Math.round(maxVal / 1000) * 1000,
 		])
 
 	svg_plot
@@ -452,7 +519,7 @@ function map_plot_taxes(data, topo, svg_plot, colorScheme, id_div, map_type, uni
 		.attr("y", legendY - 10)
 		.attr("text-anchor", "middle")
 		.style("font-size", "12px")
-		.text(`Taxes (millions EUR)`);
+		.text("Environmental Taxes (million EUR)");
 }
 
 function bubbe_plot(data, svg_plot, id_div) {
@@ -491,7 +558,7 @@ function bubbe_plot(data, svg_plot, id_div) {
         .attr("x", -bubble_height / 2)
         .attr("y", -70)
         .style("text-anchor", "middle")
-        .text("Environmental Tax (millions EUR)");
+        .text("Environmental Taxes (million EUR)");
 
     const tooltip = d3.select(id_div)
 				.append("div")
@@ -526,6 +593,12 @@ function bubbe_plot(data, svg_plot, id_div) {
     .attr("stroke-dasharray", "5,5")
     .attr("stroke-width", 2);
 
+	var mousemove = function (event, d) {
+        tooltip
+            .style("left", event.pageX + 20 + "px")
+            .style("top", event.pageY - 140 + "px");
+    };
+
     const bubbles = svg_plot.selectAll(".bubble")
         .data(data)
         .enter().append("circle")
@@ -540,87 +613,161 @@ function bubbe_plot(data, svg_plot, id_div) {
         .style("stroke", "black")
         .style("stroke-width", 1)
         .on("mouseover", function(event, d) {
-            tooltip.transition()
-                .duration(200)
-                .style("opacity", .9);
-            tooltip.html("Country: <b>" + d.country + "</b><br>Investments: <b>" + formatta(d.investments) + "</b> millions EUR<br>GDP: <b>" + d.GDP + "</b><br>Tax: <b>" + formatta(d.taxes) + "</b> millions EUR")
-                .style("left", (event.pageX + 30) + "px")
-                .style("top", (event.pageY - 130) + "px");
-        })
-        .on("mouseout", function(d) {
-            tooltip.transition()
-                .duration(500)
-                .style("opacity", 0);
-        });
+			bubbles.style("opacity", 0.3);
+			d3.select(this)
+				.style("opacity", 1)
+			tooltip.transition()
+				.duration(200)
+				.style("opacity", 0.9);
+			tooltip.html("Country: <b>" + d.country + "</b><br>GDP: <b>" + d.GDP + "</b><br>Taxes: <b>" + formatta(d.taxes) + "</b> million EUR"+ "<br>Investments: <b>" + formatta(d.investments) + "</b> million EUR");
+		})
+		.on("mousemove", mousemove)
+		.on("mouseout", function(event, d) {
+			bubbles.style("opacity", 0.7);
+			d3.select(this)
+				.style("stroke-width", 1);
+			tooltip.transition()
+				.duration(500)
+				.style("opacity", 0);
+		});
 
-		// Legend
-		const legendHeight = 20;
-		const legendWidth = bubble_width * 0.5;
-		const legendX = (bubble_width) / 4;
-		const legendY = bubble_height + 120;
+	// Legend
+	const legendHeight = 20;
+	const legendWidth = bubble_width * 0.5;
+	const legendX = (bubble_width) / 4;
+	const legendY = bubble_height + 120;
+
+	var min_value = d3.min(data, d => d.investments);
+	var max_value = d3.max(data, d => d.investments);
+
+	svg_plot
+		.append("g")
+		.attr("class", "legend")
+		.attr("transform", `translate(${legendX}, ${legendY})`)
+		.append("rect")
+		.attr("width", legendWidth)
+		.attr("height", legendHeight)
+		.style("fill", `url(#linear-gradient-investments)`)
+		.style("stroke-width", 2);
+
+	const defs = svg_plot.append("defs");
 	
-		var min_value = d3.min(data, d => d.investments);
-		var max_value = d3.max(data, d => d.investments);
+	const linearGradient = defs
+			.append("linearGradient")
+			.attr("id", "linear-gradient-investments");
 	
-		svg_plot
-			.append("g")
-			.attr("class", "legend")
-			.attr("transform", `translate(${legendX}, ${legendY})`)
-			.append("rect")
-			.attr("width", legendWidth)
-			.attr("height", legendHeight)
-			.style("fill", `url(#linear-gradient-investments)`)
-			.style("stroke-width", 2);
+	linearGradient
+			.selectAll("stop")
+			.data([
+			{ offset: "0%", color: "red" },
+			{ offset: "50%", color: "#0066ff" },
+			{ offset: "100%", color: "#2bcf5f" }
+			])
+			.enter()
+			.append("stop")
+			.attr("offset", (d) => d.offset)
+			.attr("stop-color", (d) => d.color);
 	
-		const defs = svg_plot.append("defs");
-		
-		const linearGradient = defs
-				.append("linearGradient")
-				.attr("id", "linear-gradient-investments");
-		
-		linearGradient
-				.selectAll("stop")
-				.data([
-				{ offset: "0%", color: "red" },
-				{ offset: "50%", color: "#0066ff" },
-				{ offset: "100%", color: "#2bcf5f" }
-				])
-				.enter()
-				.append("stop")
-				.attr("offset", (d) => d.offset)
-				.attr("stop-color", (d) => d.color);
-		
-		const legendScale = d3
-			.scaleLinear()
-			.domain([min_value, max_value])
-			.range([0, legendWidth]);
+	const legendScale = d3
+		.scaleLinear()
+		.domain([min_value, max_value])
+		.range([0, legendWidth]);
+
+	const legendAxis = d3
+		.axisBottom(legendScale)
+		.tickValues([min_value, Math.round(max_value / 2000) * 1000, Math.round(max_value/ 1000) * 1000]);
+
+	svg_plot
+		.append("g")
+		.attr("class", "legend-axis")
+		.attr("transform", `translate(${legendX}, ${legendY + legendHeight})`)
+		.call(legendAxis);
+
+	svg_plot
+		.append("text")
+		.attr("x", legendX + legendWidth / 2)
+		.attr("y", legendY - 10)
+		.attr("text-anchor", "middle")
+		.style("font-size", "12px")
+		.text("Investments (million EUR)");
+
+	// Simulazione
+	let useForceLayout = false;
+
+	const buttonX = legendX - 280;
+	const buttonY = legendY;
+
+	const buttonGroup = svg_plot.append("g")
+		.attr("class", "button")
+		.attr("transform", `translate(${buttonX}, ${buttonY})`)
+		.style("cursor", "pointer");
+
+	const buttonRect = buttonGroup.append("rect")
+		.attr("width", 150)
+		.attr("height", 30)
+		.attr("rx", 5)
+		.attr("ry", 5)
+		.style("fill", "#007acc")
+
+	buttonGroup.append("text")
+		.attr("x", 75)
+		.attr("y", 20)
+		.attr("text-anchor", "middle")
+		.style("fill", "white")
+		.style("font-size", "14px")
+		.text("Expand the bubbles");
+
+	buttonGroup.on("mouseover", function () {
+		d3.select(this).select("rect").style("fill", "#005f99");
+	}).on("mouseout", function () {
+		d3.select(this).select("rect").style("fill", "#007acc");
+	});
 	
-		const legendAxis = d3
-			.axisBottom(legendScale)
-			.tickValues([min_value, Math.round(max_value / 2000) * 1000, Math.round(max_value/ 1000) * 1000]);
+	buttonGroup.on("click", function () {
+		if (buttonGroup.attr("disabled") === "true") return;
 	
-		svg_plot
-			.append("g")
-			.attr("class", "legend-axis")
-			.attr("transform", `translate(${legendX}, ${legendY + legendHeight})`)
-			.call(legendAxis);
+		buttonGroup.attr("disabled", "true").style("pointer-events", "none");
 	
-		svg_plot
-			.append("text")
-			.attr("x", legendX + legendWidth / 2)
-			.attr("y", legendY - 10)
-			.attr("text-anchor", "middle")
-			.style("font-size", "12px")
-			.text("Investments (millions EUR)");
+		useForceLayout = !useForceLayout;
+	
+		if (useForceLayout) {
+			buttonGroup.select("text").text("Show real data");
+			const simulation = d3.forceSimulation(data)
+				.force("x", d3.forceX(d => x(d.GDP)).strength(0.7))
+				.force("y", d3.forceY(d => y(d.taxes)).strength(0.7))
+				.force("collide", d3.forceCollide(d => radius(d.investments)))
+				.alpha(0.7)
+				.alphaDecay(0.02)
+				.on("tick", () => {
+					bubbles
+						.attr("cx", d => d.x)
+						.attr("cy", d => d.y);
+				})
+				.on("end", function () {
+					buttonGroup.attr("disabled", null).style("pointer-events", null);
+				});
+		} else {
+			buttonGroup.select("text").text("Expand the bubbles");
+			bubbles.transition()
+				.duration(2500)
+				.attr("cx", d => x(d.GDP))
+				.attr("cy", d => y(d.taxes))
+				.on("end", function () {
+					buttonGroup.attr("disabled", null).style("pointer-events", null);
+				});
+		}
+	});	
 }
 
-d3.csv("Cosulich/plot1.csv", function (d) {
-	return {
-		country: d.country,
-		production: +d.production
-	};
-}).then(function (data) {
-	bar_plot(data, svg_plot11, "#plot11");
+d3.csv("Cosulich/plot1.csv").then(function(data) {
+    const years = Object.keys(data[0]).filter(key => key !== 'country' && key !== '');
+    const dati = data.map(function(d) {
+        return {
+            country: d.country,
+            production: years.map(year => ({ year: +year, value: +d[year] }))
+        };
+    });
+    line_plot_energy_share(dati, svg_plot11, "#plot11");
 });
 
 d3.csv("Cosulich/plot2.csv", function (d) {
@@ -654,19 +801,21 @@ Promise.all([
 		};
 	}),
 ]).then(function (data) {
+	let min_value = d3.min([...data[1]], function(d) { return +d.taxes; })
+	let max_value = d3.max([...data[1]], function(d) { return +d.taxes; })
 	let topo = data[0];
 	let dataTotalTaxes = new Map(
-		data[1].map((d) => [d.ISO, d.taxes])
+		data[1].map((d) => [d.ISO, +d.taxes])
 	);
-	let colorScheme = d3.schemeReds[7];
+	let colorScheme = d3.schemePurples[7];
 	map_plot_taxes(
 		dataTotalTaxes,
 		topo,
 		svg_plot14,
 		colorScheme,
 		"#plot14",
-		"mercator",
-		""
+		min_value,
+		max_value
 	);
 });
 

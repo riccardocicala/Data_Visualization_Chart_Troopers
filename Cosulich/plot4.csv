@@ -1,7 +1,7 @@
 ,country,ISO,taxes
 0,Belgium,BEL,12280
 1,Bulgaria,BGR,4100
-2,Czechia,,4020
+2,Czechia,CZE,4020
 3,Denmark,DNK,8990
 4,Germany,DEU,66720
 5,Estonia,EST,830
@@ -15,7 +15,7 @@
 13,Latvia,LVA,870
 14,Lithuania,LTU,1020
 15,Luxembourg,LUX,950
-16,Hungary,,3100
+16,Hungary,HUN,3100
 17,Malta,MLT,290
 18,Netherlands,NLD,22760
 19,Austria,AUT,8370

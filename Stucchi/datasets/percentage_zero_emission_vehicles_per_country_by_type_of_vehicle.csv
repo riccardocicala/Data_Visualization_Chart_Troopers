@@ -1,0 +1,1351 @@
+DATAFLOW,LAST UPDATE,freq,mot_nrg,vehicle,unit,geo,TIME_PERIOD,OBS_VALUE,OBS_FLAG
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Austria,2014,0.111,n
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Austria,2015,1.334,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Austria,2016,2.109,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Austria,2017,0.482,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Austria,2018,1.511,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Austria,2019,1.891,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Austria,2020,1.605,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Austria,2021,1.24,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Austria,2022,3.533,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Austria,2023,5.06,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Belgium,2014,0.262,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Belgium,2015,0,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Belgium,2016,0.14,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Belgium,2017,0,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Belgium,2018,1.318,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Belgium,2019,2.817,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Belgium,2020,1.515,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Belgium,2021,3.072,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Belgium,2022,7.058,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Belgium,2023,23.874,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Bulgaria,2014,29.354,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Bulgaria,2015,12.401,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Bulgaria,2016,0.275,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Bulgaria,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Bulgaria,2018,3.365,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Bulgaria,2019,10.773,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Bulgaria,2020,7.734,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Bulgaria,2021,25.555,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Bulgaria,2022,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Bulgaria,2023,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Cyprus,2014,0,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Cyprus,2015,0,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Cyprus,2016,0,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Cyprus,2017,0,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Cyprus,2018,0,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Cyprus,2019,0,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Cyprus,2020,0.406,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Cyprus,2021,0,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Cyprus,2022,0,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Cyprus,2023,13.698,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Czechia,2014,0.275,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Czechia,2015,0.21,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Czechia,2016,0.28,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Czechia,2017,2.657,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Czechia,2018,15.723,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Czechia,2019,0.999,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Czechia,2020,0.506,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Czechia,2021,0.239,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Czechia,2022,3.445,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Czechia,2023,0.5,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Germany,2014,0.46,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Germany,2015,0.342,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Germany,2016,0.808,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Germany,2017,0.343,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Germany,2018,0.672,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Germany,2019,2.967,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Germany,2020,6.114,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Germany,2021,9.391,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Germany,2022,13.516,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Germany,2023,15,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Denmark,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Denmark,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Denmark,2016,0.288,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Denmark,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Denmark,2018,0.262,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Denmark,2019,3.846,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Denmark,2020,0.681,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Denmark,2021,30.026,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Denmark,2022,56.302,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Denmark,2023,42.722,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Estonia,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Estonia,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Estonia,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Estonia,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Estonia,2018,0,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Estonia,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Estonia,2020,0,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Estonia,2021,0,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Estonia,2022,0,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Estonia,2023,0,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Greece,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Greece,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Greece,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Greece,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Greece,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Greece,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Greece,2020,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Greece,2021,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Greece,2022,0.383,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Greece,2023,2.692,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Spain,2014,0.52,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Spain,2015,0.657,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Spain,2016,0.308,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Spain,2017,0.417,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Spain,2018,0.593,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Spain,2019,2.093,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Spain,2020,1.841,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Spain,2021,6.711,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Spain,2022,6.078,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Spain,2023,16.188,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Finland,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Finland,2015,0,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Finland,2016,1.706,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Finland,2017,1.75,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Finland,2018,0.21,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Finland,2019,6.745,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Finland,2020,8.802,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Finland,2021,50,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Finland,2022,66.906,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Finland,2023,42.57,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,France,2014,0.729,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,France,2015,0.694,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,France,2016,1.213,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,France,2017,1.565,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,France,2018,1.421,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,France,2019,3.988,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,France,2020,2.812,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,France,2021,8.63,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,France,2022,12.79,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,France,2023,12.065,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Croatia,2014,0,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Croatia,2015,0.414,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Croatia,2016,0.176,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Croatia,2017,0,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Croatia,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Croatia,2019,0,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Croatia,2020,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Croatia,2021,1.315,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Croatia,2022,0.452,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Croatia,2023,1.315,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Hungary,2014,0.19,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Hungary,2015,3.2,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Hungary,2016,0.409,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Hungary,2017,0,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Hungary,2018,0.131,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Hungary,2019,0,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Hungary,2020,3.142,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Hungary,2021,4.327,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Hungary,2022,5.729,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Hungary,2023,7.1,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Ireland,2014,0,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Ireland,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Ireland,2016,0,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Ireland,2017,0,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Ireland,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Ireland,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Ireland,2020,1.123,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Ireland,2021,0.584,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Ireland,2022,4.796,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Ireland,2023,12.663,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Italy,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Italy,2015,0.242,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Italy,2016,0.889,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Italy,2017,0.851,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Italy,2018,1.348,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Italy,2019,1.553,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Italy,2020,0.81,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Italy,2021,6.648,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Italy,2022,2.954,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Italy,2023,8.711,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Lithuania,2014,0,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Lithuania,2015,0,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Lithuania,2016,0,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Lithuania,2017,0,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Lithuania,2018,1.796,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Lithuania,2019,1.604,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Lithuania,2020,2.215,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Lithuania,2021,2.054,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Lithuania,2022,38.392,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Lithuania,2023,25.367,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Luxembourg,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Luxembourg,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Luxembourg,2016,0.487,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Luxembourg,2017,3.347,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Luxembourg,2018,8.256,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Luxembourg,2019,25.641,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Luxembourg,2020,14.953,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Luxembourg,2021,17.365,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Luxembourg,2022,45.847,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Luxembourg,2023,32.786,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Latvia,2014,0,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Latvia,2015,8.896,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Latvia,2016,11.261,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Latvia,2017,0.696,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Latvia,2018,3.37,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Latvia,2019,3.076,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Latvia,2020,30.487,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Latvia,2021,13.178,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Latvia,2022,7.553,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Latvia,2023,25.842,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Malta,2014,0,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Malta,2015,0,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Malta,2016,0,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Malta,2017,0,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Malta,2018,0,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Malta,2019,0,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Malta,2020,0,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Malta,2021,6.896,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Malta,2022,2.105,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Malta,2023,27.192,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Netherlands,2014,0.747,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Netherlands,2015,3.488,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Netherlands,2016,9.523,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Netherlands,2017,15.67,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Netherlands,2018,18.327,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Netherlands,2019,40.748,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Netherlands,2020,69.362,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Netherlands,2021,55.917,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Netherlands,2022,45.991,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Netherlands,2023,47.582,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Poland,2014,0.601,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Poland,2015,0.968,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Poland,2016,0.413,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Poland,2017,2.574,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Poland,2018,0.887,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Poland,2019,1.806,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Poland,2020,12.57,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Poland,2021,15.336,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Poland,2022,15.211,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Poland,2023,22.796,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Portugal,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Portugal,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Portugal,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Portugal,2017,0,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Portugal,2018,4.199,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Portugal,2019,4.775,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Portugal,2020,5.387,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Portugal,2021,5.68,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Portugal,2022,4.241,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Portugal,2023,38.755,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Romania,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Romania,2015,0.081,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Romania,2016,0.448,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Romania,2017,0.194,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Romania,2018,0.831,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Romania,2019,2.816,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Romania,2020,29.67,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Romania,2021,13.389,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Romania,2022,20.232,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Romania,2023,23.288,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Sweden,2014,0.282,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Sweden,2015,0.702,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Sweden,2016,1.374,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Sweden,2017,1.165,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Sweden,2018,4.685,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Sweden,2019,11.588,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Sweden,2020,9.77,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Sweden,2021,24.367,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Sweden,2022,20.616,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Sweden,2023,27.384,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Slovenia,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Slovenia,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Slovenia,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Slovenia,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Slovenia,2018,1.104,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Slovenia,2019,2.564,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Slovenia,2020,4.687,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Slovenia,2021,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Slovenia,2022,2.013,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Slovenia,2023,12.244,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Slovakia,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Slovakia,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Slovakia,2016,2.445,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Slovakia,2017,1.496,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Slovakia,2018,5.056,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Slovakia,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Slovakia,2020,0.336,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Slovakia,2021,0.187,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Slovakia,2022,0.246,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Slovakia,2023,5.548,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Austria,2014,0.423,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Austria,2015,0.546,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Austria,2016,1.162,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Austria,2017,1.537,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Austria,2018,1.983,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Austria,2019,2.811,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Austria,2020,6.426,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Austria,2021,13.919,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Austria,2022,15.893,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Austria,2023,19.916,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Belgium,2014,0.239,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Belgium,2015,0.268,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Belgium,2016,0.377,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Belgium,2017,0.49,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Belgium,2018,0.674,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Belgium,2019,1.594,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Belgium,2020,3.427,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Belgium,2021,5.798,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Belgium,2022,10.08,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Belgium,2023,19.289,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Bulgaria,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Bulgaria,2015,0.057,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Bulgaria,2016,0.053,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Bulgaria,2017,0.05,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Bulgaria,2018,0.507,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Bulgaria,2019,0.571,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Bulgaria,2020,1.355,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Bulgaria,2021,2.247,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Bulgaria,2022,3.573,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Bulgaria,2023,4.682,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Cyprus,2014,0.012,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Cyprus,2015,0.039,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Cyprus,2016,0.056,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Cyprus,2017,0.137,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Cyprus,2018,0.038,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Cyprus,2019,0.46,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Cyprus,2020,0.41,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Cyprus,2021,0.735,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Cyprus,2022,3.463,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Cyprus,2023,5.383,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Czechia,2014,0.03,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Czechia,2015,0.135,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Czechia,2016,0.081,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Czechia,2017,0.139,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Czechia,2018,0.281,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Czechia,2019,0.314,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Czechia,2020,1.646,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Czechia,2021,1.548,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Czechia,2022,2.132,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Czechia,2023,3.095,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Germany,2014,0.28,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Germany,2015,0.387,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Germany,2016,0.348,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Germany,2017,0.731,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Germany,2018,1.054,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Germany,2019,1.76,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Germany,2020,6.665,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Germany,2021,13.593,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Germany,2022,17.779,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Germany,2023,18.437,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Denmark,2014,0.83,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Denmark,2015,0.618,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Denmark,2016,0.574,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Denmark,2017,0.318,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Denmark,2018,0.709,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Denmark,2019,2.441,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Denmark,2020,7.168,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Denmark,2021,13.371,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Denmark,2022,20.635,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Denmark,2023,36.096,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Estonia,2014,1.566,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Estonia,2015,0.142,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Estonia,2016,0.139,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Estonia,2017,0.101,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Estonia,2018,0.315,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Estonia,2019,0.279,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Estonia,2020,1.782,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Estonia,2021,2.158,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Estonia,2022,3.375,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Estonia,2023,6.303,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Greece,2014,0.053,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Greece,2015,0.042,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Greece,2016,0.025,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Greece,2017,0.042,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Greece,2018,0.074,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Greece,2019,0.164,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Greece,2020,0.851,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Greece,2021,2.168,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Greece,2022,2.685,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Greece,2023,4.742,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Spain,2014,0.112,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Spain,2015,0.25,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Spain,2016,0.169,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Spain,2017,0.301,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Spain,2018,0.433,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Spain,2019,0.758,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Spain,2020,1.964,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Spain,2021,2.656,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Spain,2022,3.727,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Spain,2023,5.631,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Finland,2014,0.172,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Finland,2015,0.223,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Finland,2016,0.187,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Finland,2017,0.423,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Finland,2018,0.643,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Finland,2019,1.661,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Finland,2020,4.402,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Finland,2021,10.31,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Finland,2022,17.785,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Finland,2023,33.753,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,France,2014,0.598,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,France,2015,0.916,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,France,2016,1.096,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,France,2017,1.178,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,France,2018,1.426,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,France,2019,1.931,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,France,2020,6.655,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,France,2021,9.693,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,France,2022,13.149,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,France,2023,16.504,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Croatia,2014,0.138,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Croatia,2015,0.229,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Croatia,2016,0.153,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Croatia,2017,0.109,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Croatia,2018,0.304,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Croatia,2019,0.443,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Croatia,2020,1.772,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Croatia,2021,3.18,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Croatia,2022,2.866,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Croatia,2023,2.564,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Hungary,2014,0.047,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Hungary,2015,0.149,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Hungary,2016,0.181,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Hungary,2017,0.643,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Hungary,2018,0.95,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Hungary,2019,1.159,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Hungary,2020,2.376,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Hungary,2021,3.533,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Hungary,2022,4.217,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Hungary,2023,5.383,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Ireland,2014,0.23,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Ireland,2015,0.38,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Ireland,2016,0.269,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Ireland,2017,0.472,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Ireland,2018,0.973,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Ireland,2019,2.906,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Ireland,2020,4.41,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Ireland,2021,8.469,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Ireland,2022,14.748,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Ireland,2023,18.466,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Italy,2014,0.084,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Italy,2015,0.098,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Italy,2016,0.08,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Italy,2017,0.105,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Italy,2018,0.267,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Italy,2019,0.545,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Italy,2020,2.152,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Italy,2021,4.555,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Italy,2022,3.666,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Italy,2023,4.161,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Lithuania,2014,0.068,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Lithuania,2015,0.188,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Lithuania,2016,0.378,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Lithuania,2017,0.225,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Lithuania,2018,0.65,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Lithuania,2019,0.683,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Lithuania,2020,1.174,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Lithuania,2021,4.526,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Lithuania,2022,6.249,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Lithuania,2023,8.226,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Luxembourg,2014,0.05,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Luxembourg,2015,0.096,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Luxembourg,2016,0.32,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Luxembourg,2017,0.702,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Luxembourg,2018,0.931,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Luxembourg,2019,1.792,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Luxembourg,2020,5.472,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Luxembourg,2021,10.479,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Luxembourg,2022,15.187,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Luxembourg,2023,22.475,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Latvia,2014,1.32,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Latvia,2015,0.118,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Latvia,2016,0.113,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Latvia,2017,0.24,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Latvia,2018,0.453,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Latvia,2019,0.625,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Latvia,2020,2.557,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Latvia,2021,3.282,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Latvia,2022,6.395,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Latvia,2023,8.828,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Malta,2014,0.465,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Malta,2015,0.32,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Malta,2016,0.26,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Malta,2017,0.308,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Malta,2018,3.486,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Malta,2019,3.65,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Malta,2020,3.867,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Malta,2021,7.923,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Malta,2022,15.398,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Malta,2023,20.31,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Netherlands,2014,0.751,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Netherlands,2015,0.715,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Netherlands,2016,1.044,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Netherlands,2017,1.922,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Netherlands,2018,5.41,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Netherlands,2019,13.859,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Netherlands,2020,20.54,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Netherlands,2021,19.787,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Netherlands,2022,23.5,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Netherlands,2023,30.843,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Poland,2014,0.028,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Poland,2015,0.031,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Poland,2016,0.037,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Poland,2017,0.103,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Poland,2018,0.128,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Poland,2019,0.26,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Poland,2020,0.849,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Poland,2021,1.589,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Poland,2022,2.688,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Poland,2023,3.595,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Portugal,2014,0.138,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Portugal,2015,0.387,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Portugal,2016,0.395,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Portugal,2017,0.853,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Portugal,2018,1.954,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Portugal,2019,3.075,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Portugal,2020,5.443,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Portugal,2021,9.239,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Portugal,2022,11.643,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Portugal,2023,18.206,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Romania,2014,0.024,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Romania,2015,0.034,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Romania,2016,0.072,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Romania,2017,0.217,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Romania,2018,0.461,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Romania,2019,0.932,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Romania,2020,2.251,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Romania,2021,5.233,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Romania,2022,8.999,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Romania,2023,10.626,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Sweden,2014,0.39,n
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Sweden,2015,0.806,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Sweden,2016,0.776,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Sweden,2017,1.113,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Sweden,2018,1.956,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Sweden,2019,4.304,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Sweden,2020,9.526,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Sweden,2021,18.955,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Sweden,2022,32.912,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Sweden,2023,38.629,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Slovenia,2014,0.024,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Slovenia,2015,0.202,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Slovenia,2016,0.232,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Slovenia,2017,0.409,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Slovenia,2018,0.699,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Slovenia,2019,0.955,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Slovenia,2020,3.222,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Slovenia,2021,3.26,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Slovenia,2022,5.019,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Slovenia,2023,8.886,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Slovakia,2014,0.033,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Slovakia,2015,0.019,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Slovakia,2016,0.062,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Slovakia,2017,0.222,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Slovakia,2018,0.305,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Slovakia,2019,0.163,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Slovakia,2020,1.188,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Slovakia,2021,1.505,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Slovakia,2022,1.918,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Slovakia,2023,2.9,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Austria,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Austria,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Austria,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Austria,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Austria,2018,0.232,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Austria,2019,0.043,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Austria,2020,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Austria,2021,1.011,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Austria,2022,1.82,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Austria,2023,1.139,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Belgium,2014,0.027,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Belgium,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Belgium,2016,0.025,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Belgium,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Belgium,2018,0.02,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Belgium,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Belgium,2020,0.069,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Belgium,2021,0.074,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Belgium,2022,0.53,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Belgium,2023,1.362,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Bulgaria,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Bulgaria,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Bulgaria,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Bulgaria,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Bulgaria,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Bulgaria,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Bulgaria,2020,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Bulgaria,2021,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Bulgaria,2022,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Bulgaria,2023,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Cyprus,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Cyprus,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Cyprus,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Cyprus,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Cyprus,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Cyprus,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Cyprus,2020,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Cyprus,2021,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Cyprus,2022,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Cyprus,2023,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Czechia,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Czechia,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Czechia,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Czechia,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Czechia,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Czechia,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Czechia,2020,0.143,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Czechia,2021,0.087,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Czechia,2022,0.044,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Czechia,2023,0.112,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Germany,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Germany,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Germany,2016,0.025,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Germany,2017,0.07,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Germany,2018,0.556,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Germany,2019,1.199,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Germany,2020,2.185,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Germany,2021,2.473,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Germany,2022,2.197,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Germany,2023,4.395,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Denmark,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Denmark,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Denmark,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Denmark,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Denmark,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Denmark,2019,0.132,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Denmark,2020,0.813,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Denmark,2021,1.211,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Denmark,2022,4.232,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Denmark,2023,12.864,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Estonia,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Estonia,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Estonia,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Estonia,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Estonia,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Estonia,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Estonia,2020,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Estonia,2021,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Estonia,2022,0.387,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Estonia,2023,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Greece,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Greece,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Greece,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Greece,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Greece,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Greece,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Greece,2020,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Greece,2021,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Greece,2022,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Greece,2023,0.44,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Spain,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Spain,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Spain,2016,0.03,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Spain,2017,0.041,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Spain,2018,0.067,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Spain,2019,0.044,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Spain,2020,0.115,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Spain,2021,0.277,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Spain,2022,2.222,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Spain,2023,2.43,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Finland,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Finland,2015,0.036,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Finland,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Finland,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Finland,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Finland,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Finland,2020,0.145,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Finland,2021,0.056,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Finland,2022,0.448,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Finland,2023,0.962,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,France,2014,0.072,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,France,2015,0.007,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,France,2016,0.005,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,France,2017,0.015,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,France,2018,0.004,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,France,2019,0.019,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,France,2020,0.108,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,France,2021,0.178,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,France,2022,2.78,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,France,2023,2.711,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Croatia,2014,0.269,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Croatia,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Croatia,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Croatia,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Croatia,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Croatia,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Croatia,2020,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Croatia,2021,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Croatia,2022,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Croatia,2023,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Hungary,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Hungary,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Hungary,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Hungary,2017,0.072,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Hungary,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Hungary,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Hungary,2020,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Hungary,2021,1.034,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Hungary,2022,0.223,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Hungary,2023,2.298,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Ireland,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Ireland,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Ireland,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Ireland,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Ireland,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Ireland,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Ireland,2020,0.405,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Ireland,2021,0.542,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Ireland,2022,0.624,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Ireland,2023,0.983,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Italy,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Italy,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Italy,2016,0.023,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Italy,2017,0.124,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Italy,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Italy,2019,0.099,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Italy,2020,0.182,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Italy,2021,0.064,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Italy,2022,0.162,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Italy,2023,0.58,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Lithuania,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Lithuania,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Lithuania,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Lithuania,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Lithuania,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Lithuania,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Lithuania,2020,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Lithuania,2021,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Lithuania,2022,0.317,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Lithuania,2023,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Luxembourg,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Luxembourg,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Luxembourg,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Luxembourg,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Luxembourg,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Luxembourg,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Luxembourg,2020,0.236,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Luxembourg,2021,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Luxembourg,2022,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Luxembourg,2023,1.985,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Latvia,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Latvia,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Latvia,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Latvia,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Latvia,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Latvia,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Latvia,2020,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Latvia,2021,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Latvia,2022,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Latvia,2023,0.269,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Malta,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Malta,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Malta,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Malta,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Malta,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Malta,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Malta,2020,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Malta,2021,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Malta,2022,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Malta,2023,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Netherlands,2014,0.183,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Netherlands,2015,0.14,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Netherlands,2016,0.36,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Netherlands,2017,0.312,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Netherlands,2018,0.477,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Netherlands,2019,0.662,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Netherlands,2020,0.925,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Netherlands,2021,1.784,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Netherlands,2022,2.449,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Netherlands,2023,19.09,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Poland,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Poland,2015,0.036,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Poland,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Poland,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Poland,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Poland,2019,0.014,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Poland,2020,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Poland,2021,0.075,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Poland,2022,0.081,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Poland,2023,1.027,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Portugal,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Portugal,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Portugal,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Portugal,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Portugal,2018,0.749,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Portugal,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Portugal,2020,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Portugal,2021,0.168,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Portugal,2022,0.176,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Portugal,2023,0.879,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Romania,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Romania,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Romania,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Romania,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Romania,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Romania,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Romania,2020,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Romania,2021,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Romania,2022,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Romania,2023,0.105,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Sweden,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Sweden,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Sweden,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Sweden,2017,0.016,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Sweden,2018,0.065,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Sweden,2019,0.123,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Sweden,2020,0.224,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Sweden,2021,0.728,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Sweden,2022,2.243,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Sweden,2023,2.6,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Slovenia,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Slovenia,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Slovenia,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Slovenia,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Slovenia,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Slovenia,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Slovenia,2020,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Slovenia,2021,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Slovenia,2022,0.174,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Slovenia,2023,0.234,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Slovakia,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Slovakia,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Slovakia,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Slovakia,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Slovakia,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Slovakia,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Slovakia,2020,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Slovakia,2021,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Slovakia,2022,0.465,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Slovakia,2023,1.769,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Austria,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Austria,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Austria,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Austria,2017,0.023,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Austria,2018,0.076,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Austria,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Austria,2020,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Austria,2021,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Austria,2022,0.03,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Austria,2023,0.377,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Belgium,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Belgium,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Belgium,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Belgium,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Belgium,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Belgium,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Belgium,2020,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Belgium,2021,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Belgium,2022,0.038,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Belgium,2023,0.295,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Bulgaria,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Bulgaria,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Bulgaria,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Bulgaria,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Bulgaria,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Bulgaria,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Bulgaria,2020,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Bulgaria,2021,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Bulgaria,2022,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Bulgaria,2023,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Cyprus,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Cyprus,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Cyprus,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Cyprus,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Cyprus,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Cyprus,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Cyprus,2020,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Cyprus,2021,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Cyprus,2022,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Cyprus,2023,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Czechia,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Czechia,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Czechia,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Czechia,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Czechia,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Czechia,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Czechia,2020,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Czechia,2021,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Czechia,2022,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Czechia,2023,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Germany,2014,0.011,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Germany,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Germany,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Germany,2017,0.026,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Germany,2018,0.005,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Germany,2019,0.01,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Germany,2020,0.019,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Germany,2021,0.013,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Germany,2022,0.159,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Germany,2023,0.704,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Denmark,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Denmark,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Denmark,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Denmark,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Denmark,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Denmark,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Denmark,2020,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Denmark,2021,0.049,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Denmark,2022,0.039,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Denmark,2023,1.912,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Estonia,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Estonia,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Estonia,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Estonia,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Estonia,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Estonia,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Estonia,2020,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Estonia,2021,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Estonia,2022,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Estonia,2023,0.169,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Greece,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Greece,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Greece,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Greece,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Greece,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Greece,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Greece,2020,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Greece,2021,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Greece,2022,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Greece,2023,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Spain,2014,0.013,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Spain,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Spain,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Spain,2017,0.005,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Spain,2018,0.102,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Spain,2019,0.247,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Spain,2020,0.094,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Spain,2021,0.076,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Spain,2022,0.154,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Spain,2023,0.457,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Finland,2014,0.3,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Finland,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Finland,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Finland,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Finland,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Finland,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Finland,2020,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Finland,2021,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Finland,2022,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Finland,2023,0.953,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,France,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,France,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,France,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,France,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,France,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,France,2019,0.003,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,France,2020,0.033,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,France,2021,0.039,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,France,2022,0.015,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,France,2023,0.217,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Croatia,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Croatia,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Croatia,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Croatia,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Croatia,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Croatia,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Croatia,2020,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Croatia,2021,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Croatia,2022,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Croatia,2023,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Hungary,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Hungary,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Hungary,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Hungary,2017,0.015,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Hungary,2018,0.075,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Hungary,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Hungary,2020,0.021,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Hungary,2021,0.114,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Hungary,2022,0.034,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Hungary,2023,0.074,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Ireland,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Ireland,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Ireland,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Ireland,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Ireland,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Ireland,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Ireland,2020,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Ireland,2021,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Ireland,2022,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Ireland,2023,0.429,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Italy,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Italy,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Italy,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Italy,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Italy,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Italy,2019,0.008,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Italy,2020,0.01,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Italy,2021,0.021,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Italy,2022,0.035,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Italy,2023,0.099,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Lithuania,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Lithuania,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Lithuania,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Lithuania,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Lithuania,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Lithuania,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Lithuania,2020,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Lithuania,2021,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Lithuania,2022,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Lithuania,2023,0.051,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Luxembourg,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Luxembourg,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Luxembourg,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Luxembourg,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Luxembourg,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Luxembourg,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Luxembourg,2020,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Luxembourg,2021,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Luxembourg,2022,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Luxembourg,2023,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Latvia,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Latvia,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Latvia,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Latvia,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Latvia,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Latvia,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Latvia,2020,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Latvia,2021,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Latvia,2022,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Latvia,2023,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Malta,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Malta,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Malta,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Malta,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Malta,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Malta,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Malta,2020,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Malta,2021,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Malta,2022,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Malta,2023,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Netherlands,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Netherlands,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Netherlands,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Netherlands,2017,0.01,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Netherlands,2018,0.029,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Netherlands,2019,0.086,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Netherlands,2020,0.084,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Netherlands,2021,0.081,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Netherlands,2022,0.101,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Netherlands,2023,1.89,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Poland,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Poland,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Poland,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Poland,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Poland,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Poland,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Poland,2020,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Poland,2021,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Poland,2022,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Poland,2023,0.007,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Portugal,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Portugal,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Portugal,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Portugal,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Portugal,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Portugal,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Portugal,2020,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Portugal,2021,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Portugal,2022,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Portugal,2023,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Romania,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Romania,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Romania,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Romania,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Romania,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Romania,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Romania,2020,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Romania,2021,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Romania,2022,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Romania,2023,0.167,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Sweden,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Sweden,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Sweden,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Sweden,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Sweden,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Sweden,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Sweden,2020,0.874,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Sweden,2021,1.245,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Sweden,2022,5.35,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Sweden,2023,9.91,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Slovenia,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Slovenia,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Slovenia,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Slovenia,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Slovenia,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Slovenia,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Slovenia,2020,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Slovenia,2021,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Slovenia,2022,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Slovenia,2023,0.056,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Slovakia,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Slovakia,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Slovakia,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Slovakia,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Slovakia,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Slovakia,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Slovakia,2020,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Slovakia,2021,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Slovakia,2022,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Slovakia,2023,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Austria,2014,0.651,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Austria,2015,0.812,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Austria,2016,1.25,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Austria,2017,0.589,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Austria,2018,1.021,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Austria,2019,1.151,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Austria,2020,2.022,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Austria,2021,3.98,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Austria,2022,9.366,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Austria,2023,10.634,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Belgium,2014,0.185,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Belgium,2015,0.114,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Belgium,2016,0.219,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Belgium,2017,0.169,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Belgium,2018,0.348,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Belgium,2019,0.513,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Belgium,2020,0.636,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Belgium,2021,0.987,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Belgium,2022,3.247,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Belgium,2023,4.512,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Bulgaria,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Bulgaria,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Bulgaria,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Bulgaria,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Bulgaria,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Bulgaria,2019,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Bulgaria,2020,0.118,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Bulgaria,2021,0.135,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Bulgaria,2022,0.081,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Bulgaria,2023,2.484,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Cyprus,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Cyprus,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Cyprus,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Cyprus,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Cyprus,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Cyprus,2019,0.105,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Cyprus,2020,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Cyprus,2021,0.051,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Cyprus,2022,1.739,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Cyprus,2023,0.751,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Czechia,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Czechia,2015,0.124,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Czechia,2016,0.064,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Czechia,2017,0.157,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Czechia,2018,0.172,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Czechia,2019,0.217,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Czechia,2020,0.292,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Czechia,2021,1.411,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Czechia,2022,0.745,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Czechia,2023,1.717,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Germany,2014,0.106,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Germany,2015,0.147,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Germany,2016,1.14,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Germany,2017,1.992,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Germany,2018,2.138,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Germany,2019,2.225,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Germany,2020,3.271,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Germany,2021,4.798,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Germany,2022,7.938,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Germany,2023,7.994,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Denmark,2014,0.115,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Denmark,2015,0.184,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Denmark,2016,0.166,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Denmark,2017,0.164,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Denmark,2018,0.558,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Denmark,2019,0.7,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Denmark,2020,1.457,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Denmark,2021,4.598,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Denmark,2022,7.1,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Denmark,2023,11.197,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Estonia,2014,0.215,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Estonia,2015,0.051,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Estonia,2016,0.068,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Estonia,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Estonia,2018,0.019,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Estonia,2019,0.067,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Estonia,2020,0.454,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Estonia,2021,0.621,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Estonia,2022,1.571,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Estonia,2023,3.093,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Greece,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Greece,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Greece,2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Greece,2017,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Greece,2018,0.188,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Greece,2019,0.137,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Greece,2020,0.131,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Greece,2021,0.143,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Greece,2022,1.603,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Greece,2023,9.931,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Spain,2014,0.33,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Spain,2015,0.43,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Spain,2016,0.845,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Spain,2017,0.841,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Spain,2018,1.439,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Spain,2019,1.417,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Spain,2020,2.039,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Spain,2021,2.565,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Spain,2022,4.332,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Spain,2023,5.153,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Finland,2014,0.188,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Finland,2015,0.376,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Finland,2016,0.436,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Finland,2017,0.283,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Finland,2018,0.296,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Finland,2019,0.394,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Finland,2020,1.004,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Finland,2021,2.637,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Finland,2022,6.11,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Finland,2023,14.359,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,France,2014,1.268,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,France,2015,1.538,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,France,2016,1.768,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,France,2017,1.581,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,France,2018,2.037,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,France,2019,1.769,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,France,2020,2.05,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,France,2021,2.558,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,France,2022,4.831,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,France,2023,8.413,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Croatia,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Croatia,2015,0.337,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Croatia,2016,0.265,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Croatia,2017,0.109,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Croatia,2018,0.137,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Croatia,2019,0.253,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Croatia,2020,0.302,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Croatia,2021,1.154,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Croatia,2022,4.519,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Croatia,2023,1.186,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Hungary,2014,0.012,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Hungary,2015,0.08,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Hungary,2016,0.183,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Hungary,2017,0.333,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Hungary,2018,0.541,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Hungary,2019,0.287,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Hungary,2020,0.596,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Hungary,2021,1.203,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Hungary,2022,3.214,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Hungary,2023,3.255,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Ireland,2014,0.072,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Ireland,2015,0.098,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Ireland,2016,0.039,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Ireland,2017,0.168,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Ireland,2018,0.374,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Ireland,2019,1.531,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Ireland,2020,3.63,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Ireland,2021,2.463,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Ireland,2022,2.293,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Ireland,2023,3.529,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Italy,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Italy,2015,0.016,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Italy,2016,0.212,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Italy,2017,0.282,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Italy,2018,0.35,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Italy,2019,0.594,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Italy,2020,0.718,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Italy,2021,2.019,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Italy,2022,2.861,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Italy,2023,3.303,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Lithuania,2014,0.051,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Lithuania,2015,0.133,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Lithuania,2016,0.082,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Lithuania,2017,0.036,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Lithuania,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Lithuania,2019,0.496,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Lithuania,2020,0.267,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Lithuania,2021,5.415,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Lithuania,2022,1.749,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Lithuania,2023,7.098,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Luxembourg,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Luxembourg,2015,0.078,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Luxembourg,2016,0.205,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Luxembourg,2017,0.799,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Luxembourg,2018,0.968,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Luxembourg,2019,1.67,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Luxembourg,2020,1.357,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Luxembourg,2021,2.456,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Luxembourg,2022,4.37,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Luxembourg,2023,7.956,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Latvia,2014,0.114,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Latvia,2015,0.041,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Latvia,2016,0.175,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Latvia,2017,0.043,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Latvia,2018,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Latvia,2019,0.072,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Latvia,2020,0.739,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Latvia,2021,0.998,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Latvia,2022,1.372,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Latvia,2023,2.998,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Malta,2014,0.514,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Malta,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Malta,2016,0.745,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Malta,2017,0.747,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Malta,2018,0.483,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Malta,2019,3.646,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Malta,2020,2.692,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Malta,2021,6.622,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Malta,2022,4.269,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Malta,2023,12.659,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Netherlands,2014,1.159,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Netherlands,2015,0.466,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Netherlands,2016,0.43,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Netherlands,2017,0.691,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Netherlands,2018,1.232,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Netherlands,2019,1.673,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Netherlands,2020,2.78,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Netherlands,2021,4.641,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Netherlands,2022,7.952,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Netherlands,2023,14.385,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Poland,2014,0.046,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Poland,2015,0.028,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Poland,2016,0.028,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Poland,2017,0.044,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Poland,2018,0.077,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Poland,2019,0.187,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Poland,2020,0.122,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Poland,2021,0.907,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Poland,2022,2.46,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Poland,2023,4.169,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Portugal,2014,0.103,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Portugal,2015,0.217,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Portugal,2016,0.162,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Portugal,2017,0.56,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Portugal,2018,0.662,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Portugal,2019,0.619,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Portugal,2020,0.989,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Portugal,2021,1.313,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Portugal,2022,4.48,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Portugal,2023,8.98,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Romania,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Romania,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Romania,2016,0.035,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Romania,2017,0.1,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Romania,2018,0.136,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Romania,2019,0.317,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Romania,2020,0.16,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Romania,2021,0.179,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Romania,2022,1.354,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Romania,2023,1.478,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Sweden,2014,0.7,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Sweden,2015,0.879,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Sweden,2016,0.688,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Sweden,2017,0.828,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Sweden,2018,1.304,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Sweden,2019,2.525,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Sweden,2020,6.057,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Sweden,2021,7.285,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Sweden,2022,14.055,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Sweden,2023,19.298,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Slovenia,2014,0.316,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Slovenia,2015,0.228,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Slovenia,2016,0.13,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Slovenia,2017,0.17,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Slovenia,2018,0.251,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Slovenia,2019,0.367,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Slovenia,2020,0.224,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Slovenia,2021,0.485,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Slovenia,2022,1.274,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Slovenia,2023,1.447,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Slovakia,2014,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Slovakia,2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Slovakia,2016,0.16,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Slovakia,2017,0.16,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Slovakia,2018,0.23,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Slovakia,2019,0.058,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Slovakia,2020,0.455,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Slovakia,2021,0.508,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Slovakia,2022,1.51,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Slovakia,2023,2.897,s

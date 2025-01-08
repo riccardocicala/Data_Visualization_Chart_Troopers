@@ -19,20 +19,27 @@
 					<div class="large-graph-container">
 						<div class="mini-description">
 							<h3 class="graph-titles">
-								Main plot
+								Climate Trends in Europe: A Growing Challenge
 							</h3>
 							<p>
-								The plot displays two variables the heating degree days (HDD) index and the cooling degree days (CDD) index and are calculated on a daily basis with the following formulas HDD = max(18-T, 0) and CDD = max(T-21, 0) where T is the temperature of the day.<br>
-								The HDD is a measure that gives a view of how many degrees of difference there is between the temperature in a house and the temperature outside, thus giving a measure of how much you need to heat; in contrast, the CDD gives a view of how much you need to cool a house relative to the temperature outside.<br>
-								The plot shows the data with an annual granularity, and the value for a single year is calculated by summing all the values for that specific year.<br>
-								The data depicted represent European HDDs (in blue) and European CDDs (in red) from 1979 to 2023, obviously being very different values there is a double vertical axis one for HDDs (left) and the other for CDDs (right), on the horizontal axis instead we find the years.
+								The plot illustrates two indices, Heating Degree Days (HDD) and Cooling Degree Days (CDD), calculated daily using the following formulas:
+								HDD = max(18 - T, 0); CDD = max(T - 21, 0); where T represents the daily temperature.
+								<br>The HDD index measures the difference between indoor and outdoor temperatures, indicating how much heating is required to maintain a comfortable indoor environment.
+								<br>Conversely, the CDD index reflects the cooling needed to offset the outdoor temperature's impact on indoor comfort.
+								<br>The data are aggregated annually, with yearly values obtained by summing the daily calculations for each respective year.
+ 								<br>The plot covers <span style="color:blue;">European HDDs</span>and <span style="color:red;">European CDDs</span>from 1979 to 2023. Given the stark differences in values between the two indices, the graph uses a dual vertical axis:
+								the left axis represents HDDs, while the right axis represents CDDs.
+								The horizontal axis displays the years from 1979 to 2023.	
 							</p>
 						</div>
 						<div id="plot1"></div>
 						<div class="large-description">
 							<p>
-								As we can see from the plot, HDDs are steadily decreasing while CDDs are steadily increasing, which indicates to us how there are more and more warmer winters and summers in Europe over the years.<br>
-								The trend is remarkably marked and this shows us how going forward over the years this situation will be more and more unbearable and will cause greater and greater damage, so something needs to be done to change the trend.<br>
+								The plot clearly demonstrates a steady decrease in HDDs alongside a consistent increase in CDDs over time.
+								This trend highlights the gradual warming of winters and summers in Europe, indicating a shift towards a warmer climate over the years.
+								The pronounced nature of these changes underscores the urgency of addressing this issue.
+								<br><br>As this trend continues, the situation is likely to become increasingly challenging, leading to greater environmental consequences.
+								Immediate action is essential if we want to mitigate these impacts and change the trend.
 							</p>
 						</div>
 					</div>
@@ -41,15 +48,15 @@
 						<div id="plot2"></div>
 						<div class="description">
 							<h3 class="graph-titles">
-								HDD Europe map
+								Warming Winters: Tracking Europe's Heating Degree Days (HDDs)
 							</h3>
 							<p>
-								The HDD (heating degree days) index is a measure that gives a view of how many degrees of difference there is between the temperature in a house and the temperature outside, thus giving a measure of how much you need to heat and is calculated as HDD = max(18-T, 0) where T is the mean daily temperature.<br>
-								The data represented have an annual granularity and are calculated as the sum of daily HDDs.<br>
-								Shown on the map, in gray are the countries that are not in the European union and for which we do not have data, and in a scale of blue the European countries.<br>
-								Darker shades of blue indicate a higher HDD value and lighter ones the opposite.<br>
-								On the left is a slider so that the reference year can be chosen.<br>
-								We can see from the graph the transition of HDDs over the years, noting especially how in the past the shades of blue were much darker throughout Europe, indicating that winters are getting warmer throughout Europe.<br>
+								The HDD (Heating Degree Days) index measures the difference between the indoor and outdoor temperatures, providing an estimate of the heating required to maintain indoor comfort.
+								<br>It is calculated using the formula: <b>HDD = max(18 - T, 0)</b>, where <i>T</i> represents the mean daily temperature.
+								<br><br>The data, presented with annual granularity, are derived by summing the daily HDD values for each year.
+								<br><br>The map illustrates this data, showing European countries in varying shades of blue, while non-European Union countries, for which data are unavailable, are displayed in gray. Darker blue shades represent higher HDD values, while lighter blue shades indicate lower values.
+								<br><br>A slider on the left allows users to select a specific year, enabling a comparison of HDD values across time.
+								<br><br>The visualization reveals a noticeable trend: in earlier years, much darker shades of blue covered Europe, reflecting colder winters. Over time, the map transitions to lighter shades, highlighting the gradual warming of winters across Europe.
 							</p>
 						</div>
 					</div>
@@ -58,15 +65,14 @@
 						<div id="plot3"></div>
 						<div class="description">
 							<h3 class="graph-titles">
-								CDD Europe map
+								Rising Summer Heat: Mapping Europe's Cooling Degree Days (CDDs)
 							</h3>
 							<p>
-								The CDD (cooling degree days) index is a measure that gives a view of how many degrees of difference there is between the temperature in a house and the temperature outside, thus giving a measure of how much you need to cool and is calculated as CDD = max(T-21, 0) where T is the mean daily temperature.<br>
-								The data represented have an annual granularity and are calculated as the sum of daily CDDs.<br>
-								Shown on the map, in gray are the countries that are not in the European union and for which we do not have data, and in a scale of red the European countries.<br>
-								Darker shades of red indicate a higher CDD value and lighter ones the opposite.<br>
-								On the left is a slider so that the reference year can be chosen.<br>
-								We can see from the graph the transition of CDDs over the years, noting especially how in the past the shades of red were much lighter especially in the southernmost countries, indicating that summers are getting more and more warmer.<br>
+								The CDD (Cooling Degree Days) index measures the difference between indoor and outdoor temperatures, providing an estimate of the cooling required to maintain indoor comfort. It is calculated using the formula: <b>CDD = max(T - 21, 0)</b>, where <i>T</i> represents the mean daily temperature.
+								<br><br>The data, aggregated annually, represent the sum of daily CDD values for each year.
+								<br><br>On the map, European countries are displayed in varying shades of red, while non-European Union countries, for which data are unavailable, are shown in gray. Darker red shades indicate higher CDD values, while lighter shades signify lower values.
+								<br><br>A slider on the left allows users to select a specific year, offering a dynamic view of CDD trends over time.
+								<br><br>The visualization reveals a clear pattern: in earlier years, much lighter red shades dominated, especially in southern European countries. Over time, darker shades have become more prevalent, highlighting the increasing warmth of summers across Europe.
 							</p>
 						</div>
 					</div>
@@ -74,15 +80,15 @@
 						<div id="plot4"></div>
 						<div class="description">
 							<h3 class="graph-titles">
-								Ocean acidification
+								Ocean Acidification
 							</h3>
 							<p>
-								The heatmap shows the pH value of the ocean as the years change (starting from 1985).<br>
-								On the horizontal axis we can find the years while on the vertical axis we have a single value, pH.<br>
-								Shades of red indicate pH values lower than the optimal value 8.2 (in white), the darker red the further away we are from the optimal value.<br>
-								As we can see going forward in years the sea is becoming more and more acidic and even in 1985 we were already far away from the optimal value that was present before the industrial revolution.<br>
-								Ocean acidification can create conditions that eat away at the minerals used by oysters, clams, lobsters, shrimp, coral reefs, and other marine life to build their shells and skeletons.<br>
-								In addition, too rapid a change in pH could lead to other life forms becoming extinct, unable to adapt so quickly to these changes.
+								The heatmap shows the pH value of the ocean as the years change (starting from 1985).
+								<br><br>On the horizontal axis we can find the years while on the vertical axis we have a single value, pH.
+								<br>Shades of red indicate pH values lower than the optimal value 8.2 (in white), the darker red the further away we are from the optimal value.
+								<br><br>As we can see going forward in years the sea is becoming more and more acidic and even in 1985 we were already far away from the optimal value that was present before the industrial revolution.
+								<br>Ocean acidification can create conditions that eat away at the minerals used by oysters, clams, lobsters, shrimp, coral reefs, and other marine life to build their shells and skeletons.
+								<br>In addition, a rapid shift in pH levels could cause other life forms to go extinct, as they may be unable to adapt swiftly enough to these changes.
 							</p>
 						</div>
 					</div>
@@ -90,13 +96,13 @@
 						<div id="plot5"></div>
 						<div class="description">
 							<h3 class="graph-titles">
-								European economic losses
+								European Economic Losses
 							</h3>
 							<p>
-								Many times when we talk about global warming someone intervenes by saying that climate change has always been there, thus somehow lifting the blame that human beings have in this change.<br>
-								So it is also important to show the fact that we are the first to lose from this change, in fact the plot shows the rolling average of the last 30 years of european econimical losses due to climate change as the years change.<br>
-								This measurement is perfect for showing the trend of a variable, which as in this case points out to us how economic losses are steadily and steeply increasing.<br>
-								On the horizontal axis, in fact, we have the years, while on the vertical axis we have the economic losses in millions of euros, and we can see how only between 2011 and 2012 and between 2019 and 2020 this trend has dropped slightly while in all other years it is always increasing.
+								Many times when we talk about global warming someone intervenes by saying that climate change has always been there, thus somehow lifting the blame that human beings have in this change.
+								<br>So it is also important to show the fact that we are the first to lose from this change, in fact the plot shows the rolling average of the last 30 years of european econimical losses due to climate change as the years change.
+								<br><br>This measurement is perfect for showing the trend of a variable, which as in this case points out to us how economic losses are steadily and steeply increasing.
+								<br><br>On the horizontal axis, the years are displayed, while the vertical axis represents economic losses in millions of euros. Notably, the trend experienced slight drops only between 2011 and 2012 and between 2019 and 2020. In all other years, the losses have consistently risen.
 							</p>
 						</div>
 					</div>
@@ -107,7 +113,7 @@
 								Plot 6
 							</h3>
 							<p>
-								description.<br /><br />
+								description.
 							</p>
 						</div>
 					</div>
@@ -118,7 +124,7 @@
 								Plot 7
 							</h3>
 							<p>
-								description.<br /><br />
+								description.
 							</p>
 						</div>
 					</div>
@@ -129,7 +135,7 @@
 								Plot 8
 							</h3>
 							<p>
-								description.<br /><br />
+								description.
 							</p>
 						</div>
 					</div>
@@ -140,7 +146,7 @@
 								Plot 9
 							</h3>
 							<p>
-								description.<br /><br />
+								description.
 							</p>
 						</div>
 					</div>
@@ -151,7 +157,7 @@
 								Plot 10
 							</h3>
 							<p>
-								description.<br /><br />
+								description.
 							</p>
 						</div>
 					</div>
@@ -159,10 +165,16 @@
 						<div id="plot11"></div>
 						<div class="description">
 							<h3 class="graph-titles">
-								Plot 11
+								EU Progress on Renewable Energy Share
 							</h3>
 							<p>
-								description<br /><br />
+								This plot represents the share of renewable energy used from all the countries, expressed as a percentage.
+								<br>This indicator tracks progress towards the EU's renewable energy targets.
+								<br><br>
+								The data shows that the <b>European Union average</b> has been steadily increasing from 2004 to 2023, rising from 10% to 25%.
+								<br><br>Some countries, such as <b>Sweden</b>, <b>Finland</b>, and <b>Denmark</b>, significantly exceed this average with strong growth. 
+								<br><br>Others, like <b>Germany</b>, <b>Italy</b>, <b>France</b>, and <b>Spain</b>, remain close to the EU average with moderate increases.
+								<br><br>Countries such as <b>Poland</b> and <b>Luxembourg</b> are often below the average but show improving trends in recent years.<br/><br/>
 							</p>
 						</div>
 					</div>
@@ -170,10 +182,16 @@
 						<div id="plot12"></div>
 						<div class="description">
 							<h3 class="graph-titles">
-								Plot 12
+								Renewable Energy Production by Country: Trends and Unique Strategies
 							</h3>
 							<p>
-								description<br /><br />
+								This plot represents the top five countries in the European Union ordere by total energy production capacity, and the European Union total sum.
+								<br>It indicates the percentage of energy production by type, including Hydro, Geothermal, Wind, Solar and Biofuels for each country.
+								<br><br><b>Sweden</b> uses less solar energy compared to other countries, likely due to its long, dark winters and limited sunlight hours, making solar less efficient.
+								However, it compensates by utilizing more biofuels, likely due to the availability of biomass resources and a focus on sustainable energy sources.
+								<br><b>Italy</b> is the only country in this group with a notable use of geothermal energy, which is driven by its geological characteristics.
+								<br><b>Germany</b>, on the other hand, uses less hydroelectric energy, likely due to limited suitable sites for large-scale hydro power generation.
+								<br><br>In general, all countries rely heavily on wind, solar, and hydro energy for their renewable production.
 							</p>
 						</div>
 					</div>
@@ -181,40 +199,69 @@
 						<div id="plot13"></div>
 						<div class="description">
 							<h3 class="graph-titles">
-								Plot 13
+								Fresh Nuclear Fuel Production in the EU
 							</h3>
 							<p>
-								description<br /><br />
+								The histogram represents the production of fresh fuel elements, expressed in tonnes of Heavy Metal (tHM), across all the countries in the European Union that haven't banned yet nuclear energy.
+								<br>The production of fresh fuel elements refers to the creation and fabrication of new fuel components (usually uranium or plutonium-based) that are used in nuclear reactors.
+								<br>These fuel elements are essential for sustaining the nuclear fission process that generates energy within the reactor.
+								<br><br><b>France</b> is the leading producer with 570 tHM, indicating a strong nuclear energy sector and possibly a significant number of reactors in operation.
+								<br><b>Sweden</b>, with 360 tHM, also has a relatively large nuclear energy industry, reflecting its reliance on nuclear power for energy production.
+								<br><b>Spain</b> and <b>Romania</b> follow with 280 tHM and 210 tHM, respectively, suggesting smaller but notable contributions to the production of fresh nuclear fuel.
+								<br><b>Germany</b>, with 180 tHM, has the lowest production among these countries, which could be due to its ongoing transition away from nuclear energy in favor of renewable sources following the decision to phase out nuclear plants in the coming years.
 							</p>
 						</div>
 					</div>
-					<div class="graph-container">
+					<div class="graph-container" style="padding-top: 7rem">
 						<div id="plot14"></div>
 						<div class="description">
 							<h3 class="graph-titles">
-								Plot 14
-							</h3>
+								Environmental Taxes Across EU Countries</h3>
 							<p>
-								description<br /><br />
+								This map shows the Environmental Taxes paid by industries, households and non-residents for all EU Member State, in millions of euro.
+								<br>Darker colours imply higher taxes, while lighter colours mean lower taxes.
+								<br><br>Large economies like <b>Germany</b>, <b>France</b>, <b>Italy</b>, and <b>Spain</b> collect the most environmental taxes due to their size and policies, 
+								while smaller countries like <b>Malta</b> and <b>Cyprus</b> contribute less.
+								<br>Nordic countries like <b>Sweden</b> and <b>Finland</b> collect significant amounts relative to their size, reflecting advanced policies.
+								<br>Emerging economies like <b>Romania</b> and <b>Bulgaria</b> have room for growth.
 							</p>
 						</div>
 					</div>
-					<div class="large-graph-container">
+					<div class="large-graph-container" style="margin-top: 0">
 						<div class="mini-description">
 							<h3 class="graph-titles">
-								Main plot
+								Investments in Climate Change Mitigation
 							</h3>
 							<p>
-								description
-							</p>
+								This graph represents the relationship between <b>Environmental Taxes</b> (vertical axis), <b>GDP</b> (horizontal axis) and <b>Investments in Climate Change Mitigation</b>.
+								<br>
+								<ul style="text-align: left;">
+								  <li><b>Vertical Axis (Environmental Taxes):</b> Shows the amount of environmental taxes paid by each country (in millions of euro).</li>
+								  <li><b>Horizontal Axis (GDP):</b> Represents the GDP per capita of each country relative to the European Union's average GDP per capita (100 being the average; e.g., 120 means a GDP 20% higher than the average).</li>
+								  <li><b>Dashed vertical<span style="color:red;">Red</span>line:</b> Represents the average GDP.</li>
+								  <br>
+								  <li><b>Bubble Size (Investments):</b> Indicates the amount of investment each country makes; larger bubbles mean higher investments.</li>
+								  <li><b>Bubble Color (Investments):</b> Reflects the same metric as the size:</li>
+								  <ul style="text-align: left;">
+									<li><span style="color:red;">Red</span>: Low investment.</li>
+									<li><span style="color:blue;">Blue</span>: Moderate investment.</li>
+									<li><span style="color:green;">Green</span>: High investment.</li>
+								  </ul>
+								</ul>
+							  </p>
+							  
 						</div>
 						<div id="plot15"></div>
 						<div class="large-description">
 							<h3 class="graph-titles">
-								Plot 15
+								Investments in Climate Change Mitigation
 							</h3>
 							<p>
-								description<br /><br />
+								As expected countries with higher environmental taxes, such as <b>Germany</b>, <b>Italy</b> and <b>France</b>, invest more money in climate change mitigation.
+								<br>It is interesting to note that, for countries with the same level of taxes paid, those with a higher <b>GDP</b> tend to invest more; 
+								with the exceptions of <b>Ireland</b> and <b>Luxembourg</b>.
+								<br>But this could be due to the fact that they are very small, especially Luxembourg, and therefore lack the physical space to make larger investments, such as building dams, solar installations, or wind turbines.
+								<br><br>It is also curious to observe that almost every country collects significantly more in environmental taxes than they actually spend on climate change mitigation...
 							</p>
 						</div>
 					</div>
