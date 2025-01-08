@@ -558,7 +558,7 @@ function bubbe_plot(data, svg_plot, id_div) {
         .attr("x", -bubble_height / 2)
         .attr("y", -70)
         .style("text-anchor", "middle")
-        .text("Environmental Tax (million EUR)");
+        .text("Environmental Taxes (million EUR)");
 
     const tooltip = d3.select(id_div)
 				.append("div")
@@ -619,7 +619,7 @@ function bubbe_plot(data, svg_plot, id_div) {
 			tooltip.transition()
 				.duration(200)
 				.style("opacity", 0.9);
-			tooltip.html("Country: <b>" + d.country + "</b><br>Investments: <b>" + formatta(d.investments) + "</b> million EUR<br>GDP: <b>" + d.GDP + "</b><br>Tax: <b>" + formatta(d.taxes) + "</b> million EUR");
+			tooltip.html("Country: <b>" + d.country + "</b><br>GDP: <b>" + d.GDP + "</b><br>Taxes: <b>" + formatta(d.taxes) + "</b> million EUR"+ "<br>Investments: <b>" + formatta(d.investments) + "</b> million EUR");
 		})
 		.on("mousemove", mousemove)
 		.on("mouseout", function(event, d) {
