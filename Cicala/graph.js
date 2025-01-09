@@ -28,11 +28,11 @@ const svg_plot1 = d3
 	.select("#plot1")
 	.append("svg")
 	.attr("width", width1 + margin1.left + margin1.right)
-	.attr("height", height1 + margin1.top + margin1.bottom)
+	.attr("height", height1 + margin1.top + margin1.bottom + 20)
 	.append("g")
 	.attr("transform", `translate(${margin1.left},${margin1.top})`);
 
-let svg_plot2 = d3
+const svg_plot2 = d3
 	.select("#plot2")
 	.append("svg")
 	.attr("width", width2 + margin2.left + margin2.right)
@@ -97,10 +97,10 @@ function double_line_plot(data, svg_plot, id_div) {
 	add_axis_label(
 		svg_plot,
 		(width1 / 2)-(margin1.right-margin1.left),
-		height1 + margin1.top + 20,
+		height1 + margin1.top + 40,
 		"",
 		"middle",
-		"Years"
+		"Year"
 	);
 
     var y_heating = d3.scaleLinear()
@@ -110,7 +110,7 @@ function double_line_plot(data, svg_plot, id_div) {
 	add_axis_label(
 		svg_plot,
 		-height1 / 2,
-		-margin1.left + 50,
+		-margin1.left + 35,
 		"rotate(-90)",
 		"middle",
 		"Heating Degree Days (HDD) index"
@@ -128,7 +128,7 @@ function double_line_plot(data, svg_plot, id_div) {
 		.attr('class', 'right_label')
 		.attr("text-anchor", "middle")
 		.attr("x", -height1 / 2)
-		.attr("y", margin1.left-50)
+		.attr("y", margin1.left - 35)
 		.text("Cooling degree days (CDD) index");
 
     svg_plot.append("g")
@@ -294,12 +294,11 @@ function single_line_plot(data, svg_plot, id_div) {
 	add_axis_label(
 		svg_plot,
 		width / 2,
-		height + margin.bottom - 5,
+		height + margin.bottom - 20,
 		"",
 		"middle",
-		"Years"
+		"Year"
 	);
-
 	
     var y = d3.scaleLinear()
         .domain([0, d3.max([...data], function(d) { return +d.losses; })])
@@ -311,7 +310,7 @@ function single_line_plot(data, svg_plot, id_div) {
 		-margin.left + 30,
 		"rotate(-90)",
 		"middle",
-		"losses (billion euro)"
+		"losses (billion EUR)"
 	);
 
     svg_plot.append("g")
@@ -324,7 +323,7 @@ function single_line_plot(data, svg_plot, id_div) {
         d3.selectAll(id_div + " .domain").style("opacity", 1);
         info = d3.select(this).datum();
         tooltip
-            .html("Year: <b>" + info.year + "</b><br>Losses: <b>" + info.losses + "</b> billion euro")
+            .html("Year: <b>" + info.year + "</b><br>Losses: <b>" + info.losses + "</b> billion EUR")
             .style("opacity", 1);
     };
 
@@ -410,7 +409,7 @@ function heatmap_plot(data, svg_plot, id_div) {
 		height + margin.bottom - 25,
 		"",
 		"middle",
-		"Years"
+		"Year"
 	);
 
 	svg_plot.append("g").call(d3.axisLeft(y).tickSizeOuter([0]));
@@ -427,7 +426,7 @@ function heatmap_plot(data, svg_plot, id_div) {
 	const legendHeight = 20;
 	const legendWidth = width * 0.8;
 	const legendX = (width - legendWidth) / 2;
-	const legendY = height + 150;
+	const legendY = height + 140;
 
 	svg_plot
 		.append("g")
@@ -495,7 +494,7 @@ function heatmap_plot(data, svg_plot, id_div) {
 		info = d3.select(this).datum();
 		tooltip
 			.html(
-                "year: <b>" + info.year
+                "Year: <b>" + info.year
                 + "</b><br>"
 				+ "pH: <b>" + info.pH
 				+ "</b>" 
@@ -661,7 +660,7 @@ function map_plot(data, topo, svg_plot, colorScheme, id_div, min_value, max_valu
 	const legendHeight = 20;
 	const legendWidth = width2 * 0.8;
 	const legendX = ((width2) /4)-80;
-	const legendY = height2 + 20;
+	const legendY = height2 + 50;
 
 	svg_plot
 		.append("g")
