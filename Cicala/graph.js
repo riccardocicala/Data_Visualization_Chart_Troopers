@@ -308,10 +308,10 @@ function single_line_plot(data, svg_plot, id_div) {
 	add_axis_label(
 		svg_plot,
 		-height / 2,
-		-margin.left + 50,
+		-margin.left + 30,
 		"rotate(-90)",
 		"middle",
-		"losses (bilion euro)"
+		"losses (billion euro)"
 	);
 
     svg_plot.append("g")
@@ -324,7 +324,7 @@ function single_line_plot(data, svg_plot, id_div) {
         d3.selectAll(id_div + " .domain").style("opacity", 1);
         info = d3.select(this).datum();
         tooltip
-            .html("Year: " + info.year + "<br>Losses: " + info.losses + " bilion euro")
+            .html("Year: <b>" + info.year + "</b><br>Losses: <b>" + info.losses + "</b> billion euro")
             .style("opacity", 1);
     };
 
@@ -350,7 +350,7 @@ function single_line_plot(data, svg_plot, id_div) {
 		.y(d => y(d.losses))
 	)
             
-	//add invisible circle for mouseover
+	// Add invisible circle for mouseover
 	svg_plot.selectAll()
 	.data(data)
 	.enter()
@@ -407,7 +407,7 @@ function heatmap_plot(data, svg_plot, id_div) {
 	add_axis_label(
 		svg_plot,
 		width / 2,
-		height + margin.bottom - 5,
+		height + margin.bottom - 25,
 		"",
 		"middle",
 		"Years"
@@ -418,7 +418,7 @@ function heatmap_plot(data, svg_plot, id_div) {
 	add_axis_label(
 		svg_plot,
 		-height / 2,
-		-margin.left + 15,
+		-margin.left + 25,
 		"rotate(-90)",
 		"middle",
 		"pH"
@@ -495,9 +495,10 @@ function heatmap_plot(data, svg_plot, id_div) {
 		info = d3.select(this).datum();
 		tooltip
 			.html(
-                "year: " + info.year
-                + "<br>"
-				+ "pH: " + info.pH 
+                "year: <b>" + info.year
+                + "</b><br>"
+				+ "pH: <b>" + info.pH
+				+ "</b>" 
 			)
 			.style("opacity", 1);
 	};
