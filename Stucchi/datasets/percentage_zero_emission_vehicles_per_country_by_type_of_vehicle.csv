@@ -99,6 +99,16 @@ ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, an
 ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Spain,2021,6.711,
 ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Spain,2022,6.078,
 ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Spain,2023,16.188,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,European Union - 27 countries (from 2020),2014,0.825,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,European Union - 27 countries (from 2020),2015,0.754,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,European Union - 27 countries (from 2020),2016,0.997,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,European Union - 27 countries (from 2020),2017,1.354,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,European Union - 27 countries (from 2020),2018,1.598,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,European Union - 27 countries (from 2020),2019,4.005,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,European Union - 27 countries (from 2020),2020,6.311,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,European Union - 27 countries (from 2020),2021,9.462,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,European Union - 27 countries (from 2020),2022,12.015,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,European Union - 27 countries (from 2020),2023,15.292,s
 ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Finland,2014,0,s
 ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Finland,2015,0,
 ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,"Buses, motor coaches, and trolley buses",Percentage,Finland,2016,1.706,
@@ -369,6 +379,16 @@ ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage
 ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Spain,2021,2.656,
 ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Spain,2022,3.727,
 ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Spain,2023,5.631,
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,European Union - 27 countries (from 2020),2014,0.307,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,European Union - 27 countries (from 2020),2015,0.421,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,European Union - 27 countries (from 2020),2016,0.447,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,European Union - 27 countries (from 2020),2017,0.656,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,European Union - 27 countries (from 2020),2018,1.034,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,European Union - 27 countries (from 2020),2019,1.893,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,European Union - 27 countries (from 2020),2020,5.327,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,European Union - 27 countries (from 2020),2021,8.967,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,European Union - 27 countries (from 2020),2022,12.082,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,European Union - 27 countries (from 2020),2023,14.532,s
 ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Finland,2014,0.172,
 ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Finland,2015,0.223,
 ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Passenger cars,Percentage,Finland,2016,0.187,
@@ -639,6 +659,16 @@ ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Perc
 ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Spain,2021,0.277,s
 ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Spain,2022,2.222,s
 ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Spain,2023,2.43,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,European Union - 27 countries (from 2020),2014,0.018,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,European Union - 27 countries (from 2020),2015,0.007,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,European Union - 27 countries (from 2020),2016,0.024,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,European Union - 27 countries (from 2020),2017,0.045,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,European Union - 27 countries (from 2020),2018,0.219,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,European Union - 27 countries (from 2020),2019,0.438,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,European Union - 27 countries (from 2020),2020,0.817,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,European Union - 27 countries (from 2020),2021,0.997,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,European Union - 27 countries (from 2020),2022,1.588,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,European Union - 27 countries (from 2020),2023,3.21,s
 ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Finland,2014,0,s
 ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Finland,2015,0.036,s
 ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Lorries > 3.5 tonnes,Percentage,Finland,2016,0,s
@@ -909,6 +939,16 @@ ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,
 ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Spain,2021,0.076,s
 ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Spain,2022,0.154,s
 ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Spain,2023,0.457,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,European Union - 27 countries (from 2020),2014,0.005,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,European Union - 27 countries (from 2020),2015,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,European Union - 27 countries (from 2020),2016,0,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,European Union - 27 countries (from 2020),2017,0.008,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,European Union - 27 countries (from 2020),2018,0.015,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,European Union - 27 countries (from 2020),2019,0.03,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,European Union - 27 countries (from 2020),2020,0.03,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,European Union - 27 countries (from 2020),2021,0.033,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,European Union - 27 countries (from 2020),2022,0.091,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,European Union - 27 countries (from 2020),2023,0.456,s
 ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Finland,2014,0.3,s
 ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Finland,2015,0,s
 ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Road tractors,Percentage,Finland,2016,0,s
@@ -1179,6 +1219,16 @@ ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles
 ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Spain,2021,2.565,s
 ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Spain,2022,4.332,s
 ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Spain,2023,5.153,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,European Union - 27 countries (from 2020),2014,0.542,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,European Union - 27 countries (from 2020),2015,0.564,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,European Union - 27 countries (from 2020),2016,0.809,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,European Union - 27 countries (from 2020),2017,0.976,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,European Union - 27 countries (from 2020),2018,1.264,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,European Union - 27 countries (from 2020),2019,1.37,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,European Union - 27 countries (from 2020),2020,1.959,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,European Union - 27 countries (from 2020),2021,2.918,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,European Union - 27 countries (from 2020),2022,5.248,s
+ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,European Union - 27 countries (from 2020),2023,7.326,s
 ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Finland,2014,0.188,s
 ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Finland,2015,0.376,s
 ESTAT:ROAD_EQR_ZEV(1.0),19/12/24 23:00:00,Annual,Total,Goods road motor vehicles <= 3.5 tonnes,Percentage,Finland,2016,0.436,s

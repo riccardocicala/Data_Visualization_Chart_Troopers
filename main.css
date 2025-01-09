@@ -188,6 +188,20 @@ p {
     vertical-align: middle;
 }
 
+#range_plot7{
+	height: 45%;
+	writing-mode: vertical-lr;
+    direction: rtl;
+    vertical-align: middle;
+}
+
+#range_plot8{
+	height: 45%;
+	writing-mode: vertical-lr;
+    direction: rtl;
+    vertical-align: middle;
+}
+
 .slidecontainer{
 	width: 50px;
 	text-align: center;
