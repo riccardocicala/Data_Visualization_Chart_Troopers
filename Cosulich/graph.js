@@ -282,6 +282,11 @@ function stacked_bar_plot(data, svg_plot, id_div) {
 		.domain([0, d3.max(data, d => d.hydro + d.geothermal + d.wind + d.solar + d.biofuels)])
 		.range([0, width_11_15]);
 
+	const y = d3.scaleBand()
+		.domain(data.map(d => d.country))
+		.range([0, height_11_15])
+		.padding(0.1);
+
 	svg_plot.append("g")
 		.attr("class", "x-axis")
 		.attr("transform", `translate(0,${height_11_15})`)
@@ -295,11 +300,6 @@ function stacked_bar_plot(data, svg_plot, id_div) {
 		"middle",
 		"Electricity Production Capacity (%)"
 	);
-
-	const y = d3.scaleBand()
-		.domain(data.map(d => d.country))
-		.range([0, height_11_15])
-		.padding(0.1);
 
 	svg_plot.append("g")
 		.attr("class", "y-axis")
@@ -497,6 +497,7 @@ function map_plot_taxes(data, topo, svg_plot, colorScheme, id_div, min_value, ma
 		.domain([minVal, maxVal])
 		.range([0, legendWidth]);
 		Math.round(max_value / 2000) * 1000
+
 	const legendAxis = d3
 		.axisBottom(legendScale)
 		.tickValues([
@@ -541,24 +542,27 @@ function bubbe_plot(data, svg_plot, id_div) {
     svg_plot.append("g")
         .attr("transform", "translate(0," + bubble_height + ")")
         .call(xAxis);
-  
-    svg_plot.append("g")
+
+	add_axis_label(
+			svg_plot,
+			bubble_width / 2,
+			bubble_height + 70,
+			"",
+			"middle",
+			"GDP"
+		);
+
+	svg_plot.append("g")
         .call(yAxis);
 
-    svg_plot.append("text")
-        .attr("class", "axis-label")
-        .attr("x", bubble_width / 2)
-        .attr("y", bubble_height + 60)
-        .style("text-anchor", "middle")
-        .text("GDP");
-
-    svg_plot.append("text")
-        .attr("class", "axis-label")
-        .attr("transform", "rotate(-90)")
-        .attr("x", -bubble_height / 2)
-        .attr("y", -70)
-        .style("text-anchor", "middle")
-        .text("Environmental Taxes (million EUR)");
+	add_axis_label(
+		svg_plot,
+		-bubble_height / 2,
+		-75,
+		"rotate(-90)",
+		"middle",
+		"Electricity Production Capacity (%)"
+	);
 
     const tooltip = d3.select(id_div)
 				.append("div")
@@ -585,13 +589,13 @@ function bubbe_plot(data, svg_plot, id_div) {
 		.domain([min_value, max_value / 2, max_value]);
 
 	svg_plot.append("line")
-    .attr("x1", x(100))
-    .attr("x2", x(100))
-    .attr("y1", 0)
-    .attr("y2", bubble_height)
-    .attr("stroke", "red")
-    .attr("stroke-dasharray", "5,5")
-    .attr("stroke-width", 2);
+			.attr("x1", x(100))
+			.attr("x2", x(100))
+			.attr("y1", 0)
+			.attr("y2", bubble_height)
+			.attr("stroke", "red")
+			.attr("stroke-dasharray", "5,5")
+			.attr("stroke-width", 2);
 
 	var mousemove = function (event, d) {
         tooltip
@@ -608,7 +612,7 @@ function bubbe_plot(data, svg_plot, id_div) {
         .attr("r", d => radius(d.investments))
         .style("fill",  function (d) {
 			return colours_27(d.investments);
-		}) // (d, i) => colours_27[i % colours_27.length])
+		})
         .style("opacity", 0.7)
         .style("stroke", "black")
         .style("stroke-width", 1)
@@ -635,7 +639,7 @@ function bubbe_plot(data, svg_plot, id_div) {
 	const legendHeight = 20;
 	const legendWidth = bubble_width * 0.5;
 	const legendX = (bubble_width) / 4;
-	const legendY = bubble_height + 120;
+	const legendY = bubble_height + 130;
 
 	var min_value = d3.min(data, d => d.investments);
 	var max_value = d3.max(data, d => d.investments);
