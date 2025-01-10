@@ -6,6 +6,26 @@ const driver_margin_multiline_plot = { top: 30, right: 30, bottom: 100, left: 10
 	driver_width_multiline_plot = 770 - driver_margin_multiline_plot.left - driver_margin_multiline_plot.right,
 	driver_height_multiline_plot = 650 - driver_margin_multiline_plot.top - driver_margin_multiline_plot.bottom;
 
+const units = "million tonnes of oil equivalent";
+const formatNumber = d3.format(",.0f");
+const format = d => `${formatNumber(d)} ${units}`;
+
+// Set up the dimensions and margins
+const driver_margin_sankey = { top: 10, right: 100, bottom: 10, left: 100 };
+let driver_width_sankey = document.getElementById('plot6').clientWidth - driver_margin_sankey.left - driver_margin_sankey.right;
+let driver_height_sankey = document.getElementById('plot6').clientHeight - driver_margin_sankey.top - driver_margin_sankey.bottom;
+
+// Create the SVG container
+const svg_plot6 = d3.select("#plot6")
+  .append("svg")
+  .attr("width", driver_width_sankey + driver_margin_sankey.left + driver_margin_sankey.right)
+  .attr("height", driver_height_sankey + driver_margin_sankey.top + driver_margin_sankey.bottom)
+  .append("g")
+  .attr("transform", `translate(${driver_margin_sankey.left},${driver_margin_sankey.top})`);
+
+// Create gradient definitions
+const defs = svg_plot6.append("defs");
+
 const svg_plot7 = d3
 	.select("#plot7")
 	.append("svg")
@@ -52,6 +72,174 @@ let driver_tooltip = d3
     .style("position", "absolute")
     .style("left", "0px")
     .style("top", "0px");
+
+// Set up the sankey generator
+const sankey = d3.sankey()
+  .nodeWidth(36)
+  .nodePadding(20)
+  .extent([[0, 0], [driver_width_sankey, driver_height_sankey]]);
+
+function sankey_plot(nodes_data, links_data, svg_plot, defs) {
+	let nodes = nodes_data.map((d, i) => ({
+		name: d.node,
+		real_value: +d.value, 
+		indirect_links: new Set(JSON.parse(d.indirect_links)),
+		color: d.color
+	}));
+	
+	let links = links_data.map(d => ({
+		source: +d.source,
+		target: +d.target,
+		value: +d.value
+	}));
+
+	let n_sectors = 4;
+	let n_countries = 15;
+
+	let countries = nodes_data
+		.slice(n_sectors, n_sectors + n_countries)
+		.map(d => d.node);
+
+  // Generate the sankey diagram
+  const { nodes: sankeyNodes, links: sankeyLinks } = sankey({
+    nodes: nodes,
+    links: links
+  });
+
+  // Create gradients for each link
+  sankeyLinks.forEach((link, i) => {
+    const gradientId = `gradient-${i}`;
+    const gradient = defs.append("linearGradient")
+      .attr("id", gradientId)
+      .attr("gradientUnits", "userSpaceOnUse")
+      .attr("x1", link.source.x1)
+      .attr("x2", link.target.x0);
+
+    gradient.append("stop")
+      .attr("offset", "0%")
+      .attr("stop-color", link.source.color);
+
+    gradient.append("stop")
+      .attr("offset", "100%")
+      .attr("stop-color", link.target.color);
+  });
+
+  // Add the links
+  const link = svg_plot.append("g")
+    .selectAll(".link")
+    .data(sankeyLinks)
+    .join("path")
+    .attr("class", "link")
+    .attr("d", d3.sankeyLinkHorizontal())
+    .attr("stroke", (d, i) => `url(#gradient-${i})`)
+    .attr("stroke-width", d => Math.max(1, d.width))
+    .on("mouseover", highlightFlowLink)
+    .on("mouseout", unhighlightFlow)
+    .on("mousemove", tooltipMousemove);
+
+  // Add the nodes
+  const node = svg_plot.append("g")
+    .selectAll(".node")
+    .data(sankeyNodes)
+    .join("g")
+    .attr("class", "node")
+    .attr("transform", d => `translate(${d.x0},${d.y0})`);
+
+  // Add rectangles for the nodes
+  node.append("rect")
+    .attr("height", d => d.y1 - d.y0)
+    .attr("width", d => d.x1 - d.x0)
+    .attr("fill", d => d.color)
+    .attr("stroke", "#000")
+    .on("mouseover", highlightFlowNode)
+    .on("mouseout", unhighlightFlow)
+    .on("mousemove", tooltipMousemove);
+
+  // Add titles for the nodes
+  node.append("text")
+    .attr("x", d => (d.x0 < width / 2) ? 6 + (d.x1 - d.x0) : -6)
+    .attr("y", d => (d.y1 - d.y0) / 2)
+    .attr("dy", "0.35em")
+    .attr("text-anchor", d => (d.x0 < width / 2) ? "start" : "end")
+    .text(d => d.name);
+
+	function highlightFlowNode(event, d) {
+		// Reduce opacity of all links and nodes
+		link.style("stroke-opacity", 0.1);
+		node.style("opacity", 0.1);
+		
+		// Get all connected links
+		const linkedNodes = new Set();
+		linkedNodes.add(d);
+		
+		// Highlight connected links and their nodes
+		link.filter(l => l.source === d || l.target === d || d.indirect_links.has(l.source.index) || d.indirect_links.has(l.target.index))
+		.style("stroke-opacity", 0.7)
+		.each(l => {
+			linkedNodes.add(l.source);
+			linkedNodes.add(l.target);
+		});
+		
+		// Highlight connected nodes
+		node.filter(n => linkedNodes.has(n))
+		.style("opacity", 1); 
+
+		driver_tooltip.html("Total Energy Use: " + d.real_value + " " + units).style("opacity", 1);
+	}
+
+	// Function to remove highlighting
+	function unhighlightFlow() {
+		link.style("stroke-opacity", 0.2);
+		node.style("opacity", 1);
+		driver_tooltip.style("opacity", 0);
+	}
+
+	function tooltipMousemove(event, d) {
+		driver_tooltip.style('left', (event.pageX+20) + 'px').style('top', (event.pageY-100) + 'px');
+		}
+
+	// Function to highlight the flow
+	function highlightFlowLink(event, d) {
+	// Reduce opacity of all links and nodes
+	link.style("stroke-opacity", 0.1);
+	node.style("opacity", 0.1);
+
+	// Get all connected links
+	const linkedNodes = new Set();
+
+	// Highlight connected links and their nodes
+	link.filter(l => (l.source === d.source && l.target === d.target) || (l.source === d.target && nodes[d.source.index].indirect_links.has(l.target.index)) || (l.target === d.source && nodes[d.target.index].indirect_links.has(l.source.index)))
+		.style("stroke-opacity", 0.7)
+		.each(l => {
+		linkedNodes.add(l.source);
+		linkedNodes.add(l.target);
+		});
+
+	// Highlight connected nodes
+	node.filter(n => linkedNodes.has(n))
+		.style("opacity", 1);
+
+	if (countries.includes(d.target.name)) 
+		driver_tooltip.html(`${d.target.name}'s ${d.target.name.toLowerCase().split(" - ")[1]} energy consumption: ${d.value} ${units}.`).style("opacity", 1);
+	
+	if (countries.includes(d.source.name)) 
+		driver_tooltip.html(`${d.source.name} ${d.target.name} used: ${d.value} ${units}`).style("opacity", 1);
+	}
+}
+
+// Make it responsive
+function resize() {
+  width = document.getElementById('plot1').clientWidth - margin.left - margin.right;
+  height = document.getElementById('plot1').clientHeight - margin.top - margin.bottom;
+  
+  d3.select("#plot6 svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom);
+    
+  sankey.extent([[0, 0], [width, height]]);
+}
+
+window.addEventListener("resize", resize);
 
 let clicked_vehicle = NaN;
 
@@ -523,6 +711,85 @@ function driver_multiline_plot2(data, svg_plot, id_div) {
 		svg_plot.select(".is-eu").raise();
 }
 
+// Load and process the data
+/* Promise.all([
+	d3.csv('Stucchi/prepared_datasets/nodes.csv'),
+	d3.csv('Stucchi/prepared_datasets/links.csv')
+  ]).then(([nodes_data, links_data]) => { */
+/* 	let filtered_nodes_data = nodes_data.filter(d => d.year === "2022");
+	let filtered_links_data = links_data.filter(d => d.year === "2022");
+ */
+	/* let filtered_nodes_data = nodes_data.filter(d => d.year === "2022").map((d, i) => ({
+		name: d.node,
+		value: +d.value, // Convert value to a number
+	}));
+	
+	let filtered_links_data = links_data.filter(d => d.year === "2022").map(d => ({
+		source: +d.source,
+		target: +d.target,
+		value: +d.value, // Convert value to a number
+	})); */
+	
+/* 	sankey_plot(nodes_data, links_data, svg_plot6, "#plot6");
+  }); */
+
+let driver_plot1_loadData1_slider = NaN;
+let driver_plot1_loadData2_slider = NaN;
+
+var driver_plot1_loadData_slider_onchange = function (event, d) {
+	d3.select("#text_sliders6").text(`Year: ${event.target.value}`)
+	let plot6 = document.getElementById('plot6');
+	while (plot6.firstChild) {
+		plot6.removeChild(plot6.lastChild);
+	}
+
+	const svg_plot6 = d3.select("#plot6")
+	.append("svg")
+	.attr("width", driver_width_sankey + driver_margin_sankey.left + driver_margin_sankey.right)
+	.attr("height", driver_height_sankey + driver_margin_sankey.top + driver_margin_sankey.bottom)
+	.append("g")
+	.attr("transform", `translate(${driver_margin_sankey.left},${driver_margin_sankey.top})`);
+
+	// Create gradient definitions
+	const defs = svg_plot6.append("defs");
+
+	let filtered_nodes_data = driver_plot1_loadData1_slider.filter(d => d.year===`${event.target.value}`);
+	let filtered_link_data = driver_plot1_loadData2_slider.filter(d => d.year===`${event.target.value}`);
+	sankey_plot(filtered_nodes_data, filtered_link_data, svg_plot6, defs);
+};
+
+// Load and process the data
+Promise.all([
+	d3.csv('Stucchi/prepared_datasets/plot1_nodes.csv'),
+	d3.csv('Stucchi/prepared_datasets/plot1_links.csv')
+]).then(([nodes_data, links_data]) => {
+	let min_year = d3.min(nodes_data, function(d) { return +d.year; });
+	let max_year = d3.max(nodes_data, function(d) { return +d.year; });
+
+	let text = d3
+		.select("#slidecontainer6")
+		.append("text")
+		.style("font-size", "18px")
+		.attr("id", "text_sliders6")
+		.text(`Year: ${max_year}`);
+	let slider = d3
+		.select("#slidecontainer6")
+		.append("input")
+		.attr("type", "range")
+		.attr("id", "range_plot6")
+		.attr("min", `${min_year}`)
+		.attr("max", `${max_year}`)
+		.attr("value", `${max_year}`)
+		.on("input", driver_plot1_loadData_slider_onchange)
+
+	driver_plot1_loadData1_slider = nodes_data;
+	driver_plot1_loadData2_slider = links_data;
+	let filtered_nodes_data = driver_plot1_loadData1_slider.filter(d => d.year===`${max_year}`);
+	let filtered_link_data = driver_plot1_loadData2_slider.filter(d => d.year===`${max_year}`);
+	sankey_plot(filtered_nodes_data, filtered_link_data, svg_plot6, defs);
+});
+
+
 let driver_plot2_loadData_slider = NaN;
 
 var driver_plot2_loadData_slider_onchange = function (event, d) {
@@ -679,6 +946,5 @@ d3.csv("Stucchi/prepared_datasets/plot5.csv").then(function(data) {
             value: +entry.zero_emission_vehicles_percentage 
         }))
     }));
-
     driver_multiline_plot2(formattedData, svg_plot10, "#plot10");
 });

@@ -1,29 +1,29 @@
 ,waste_operation,year,waste_disposed_in_tonnes,waste_disposed_in_million_tonnes
-0,Disposal - incineration (D10),2014,25080000,25.08
-1,Disposal - incineration (D10),2016,15960000,15.96
-2,Disposal - incineration (D10),2018,13960000,13.96
-3,Disposal - incineration (D10),2020,9320000,9.32
-4,Disposal - incineration (D10),2022,7900000,7.9
-5,"Disposal - landfill (D1, D5, D12)",2014,172220000,172.22
-6,"Disposal - landfill (D1, D5, D12)",2016,151410000,151.41
-7,"Disposal - landfill (D1, D5, D12)",2018,158170000,158.17
-8,"Disposal - landfill (D1, D5, D12)",2020,121830000,121.83
-9,"Disposal - landfill (D1, D5, D12)",2022,136250000,136.25
-10,"Disposal - other (D2-D4, D6-D7)",2014,3190000,3.19
-11,"Disposal - other (D2-D4, D6-D7)",2016,3360000,3.36
-12,"Disposal - other (D2-D4, D6-D7)",2018,3210000,3.21
-13,"Disposal - other (D2-D4, D6-D7)",2020,1130000,1.13
-14,"Disposal - other (D2-D4, D6-D7)",2022,820000,0.82
+0,Disposal - incineration,2014,25080000,25.08
+1,Disposal - incineration,2016,15960000,15.96
+2,Disposal - incineration,2018,13960000,13.96
+3,Disposal - incineration,2020,9320000,9.32
+4,Disposal - incineration,2022,7900000,7.9
+5,Disposal - landfill,2014,172220000,172.22
+6,Disposal - landfill,2016,151410000,151.41
+7,Disposal - landfill,2018,158170000,158.17
+8,Disposal - landfill,2020,121830000,121.83
+9,Disposal - landfill,2022,136250000,136.25
+10,Disposal - other,2014,3190000,3.19
+11,Disposal - other,2016,3360000,3.36
+12,Disposal - other,2018,3210000,3.21
+13,Disposal - other,2020,1130000,1.13
+14,Disposal - other,2022,820000,0.82
 15,Recovery - backfilling,2014,12430000,12.43
 16,Recovery - backfilling,2016,12280000,12.28
 17,Recovery - backfilling,2018,11280000,11.28
 18,Recovery - backfilling,2020,16700000,16.7
 19,Recovery - backfilling,2022,17260000,17.26
-20,Recovery - energy recovery (R1),2014,103590000,103.59
-21,Recovery - energy recovery (R1),2016,118080000,118.08
-22,Recovery - energy recovery (R1),2018,124670000,124.67
-23,Recovery - energy recovery (R1),2020,123890000,123.89
-24,Recovery - energy recovery (R1),2022,122540000,122.54
+20,Recovery - energy recovery,2014,103590000,103.59
+21,Recovery - energy recovery,2016,118080000,118.08
+22,Recovery - energy recovery,2018,124670000,124.67
+23,Recovery - energy recovery,2020,123890000,123.89
+24,Recovery - energy recovery,2022,122540000,122.54
 25,Recovery - recycling,2014,374710000,374.71
 26,Recovery - recycling,2016,371030000,371.03
 27,Recovery - recycling,2018,389380000,389.38

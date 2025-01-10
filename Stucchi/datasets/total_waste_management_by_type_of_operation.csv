@@ -1,29 +1,29 @@
 DATAFLOW,LAST UPDATE,freq,wst_oper,unit,geo,TIME_PERIOD,OBS_VALUE,OBS_FLAG
-ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,Disposal - incineration (D10),Tonne,European Union - 27 countries (from 2020),2014,25080000,
-ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,Disposal - incineration (D10),Tonne,European Union - 27 countries (from 2020),2016,15960000,
-ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,Disposal - incineration (D10),Tonne,European Union - 27 countries (from 2020),2018,13960000,
-ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,Disposal - incineration (D10),Tonne,European Union - 27 countries (from 2020),2020,9320000,
-ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,Disposal - incineration (D10),Tonne,European Union - 27 countries (from 2020),2022,7900000,s
-ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,"Disposal - landfill (D1, D5, D12)",Tonne,European Union - 27 countries (from 2020),2014,172220000,
-ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,"Disposal - landfill (D1, D5, D12)",Tonne,European Union - 27 countries (from 2020),2016,151410000,
-ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,"Disposal - landfill (D1, D5, D12)",Tonne,European Union - 27 countries (from 2020),2018,158170000,
-ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,"Disposal - landfill (D1, D5, D12)",Tonne,European Union - 27 countries (from 2020),2020,121830000,
-ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,"Disposal - landfill (D1, D5, D12)",Tonne,European Union - 27 countries (from 2020),2022,136250000,s
-ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,"Disposal - other (D2-D4, D6-D7)",Tonne,European Union - 27 countries (from 2020),2014,3190000,
-ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,"Disposal - other (D2-D4, D6-D7)",Tonne,European Union - 27 countries (from 2020),2016,3360000,
-ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,"Disposal - other (D2-D4, D6-D7)",Tonne,European Union - 27 countries (from 2020),2018,3210000,
-ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,"Disposal - other (D2-D4, D6-D7)",Tonne,European Union - 27 countries (from 2020),2020,1130000,
-ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,"Disposal - other (D2-D4, D6-D7)",Tonne,European Union - 27 countries (from 2020),2022,820000,s
+ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,Disposal - incineration,Tonne,European Union - 27 countries (from 2020),2014,25080000,
+ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,Disposal - incineration,Tonne,European Union - 27 countries (from 2020),2016,15960000,
+ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,Disposal - incineration,Tonne,European Union - 27 countries (from 2020),2018,13960000,
+ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,Disposal - incineration,Tonne,European Union - 27 countries (from 2020),2020,9320000,
+ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,Disposal - incineration,Tonne,European Union - 27 countries (from 2020),2022,7900000,s
+ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,"Disposal - landfill",Tonne,European Union - 27 countries (from 2020),2014,172220000,
+ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,"Disposal - landfill",Tonne,European Union - 27 countries (from 2020),2016,151410000,
+ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,"Disposal - landfill",Tonne,European Union - 27 countries (from 2020),2018,158170000,
+ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,"Disposal - landfill",Tonne,European Union - 27 countries (from 2020),2020,121830000,
+ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,"Disposal - landfill",Tonne,European Union - 27 countries (from 2020),2022,136250000,s
+ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,"Disposal - other",Tonne,European Union - 27 countries (from 2020),2014,3190000,
+ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,"Disposal - other",Tonne,European Union - 27 countries (from 2020),2016,3360000,
+ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,"Disposal - other",Tonne,European Union - 27 countries (from 2020),2018,3210000,
+ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,"Disposal - other",Tonne,European Union - 27 countries (from 2020),2020,1130000,
+ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,"Disposal - other",Tonne,European Union - 27 countries (from 2020),2022,820000,s
 ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,Recovery - backfilling,Tonne,European Union - 27 countries (from 2020),2014,12430000,
 ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,Recovery - backfilling,Tonne,European Union - 27 countries (from 2020),2016,12280000,
 ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,Recovery - backfilling,Tonne,European Union - 27 countries (from 2020),2018,11280000,
 ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,Recovery - backfilling,Tonne,European Union - 27 countries (from 2020),2020,16700000,
 ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,Recovery - backfilling,Tonne,European Union - 27 countries (from 2020),2022,17260000,s
-ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,Recovery - energy recovery (R1),Tonne,European Union - 27 countries (from 2020),2014,103590000,
-ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,Recovery - energy recovery (R1),Tonne,European Union - 27 countries (from 2020),2016,118080000,
-ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,Recovery - energy recovery (R1),Tonne,European Union - 27 countries (from 2020),2018,124670000,
-ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,Recovery - energy recovery (R1),Tonne,European Union - 27 countries (from 2020),2020,123890000,
-ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,Recovery - energy recovery (R1),Tonne,European Union - 27 countries (from 2020),2022,122540000,s
+ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,Recovery - energy recovery,Tonne,European Union - 27 countries (from 2020),2014,103590000,
+ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,Recovery - energy recovery,Tonne,European Union - 27 countries (from 2020),2016,118080000,
+ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,Recovery - energy recovery,Tonne,European Union - 27 countries (from 2020),2018,124670000,
+ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,Recovery - energy recovery,Tonne,European Union - 27 countries (from 2020),2020,123890000,
+ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,Recovery - energy recovery,Tonne,European Union - 27 countries (from 2020),2022,122540000,s
 ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,Recovery - recycling,Tonne,European Union - 27 countries (from 2020),2014,374710000,
 ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,Recovery - recycling,Tonne,European Union - 27 countries (from 2020),2016,371030000,
 ESTAT:ENV_WASOPER(1.0),28/11/24 23:00:00,Annual,Recovery - recycling,Tonne,European Union - 27 countries (from 2020),2018,389380000,
