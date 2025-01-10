@@ -149,12 +149,12 @@ function double_line_plot(data, svg_plot, id_div) {
         info = d3.select(this).datum();
 		if(this.className['animVal']=='heating_circle'){
 			tooltip
-            .html("Year: " + info.year + "<br>HDD: " + info.heating)
+            .html("Year: <b>" + info.year + "</b><br>HDD: <b>" + info.heating + "</b>")
             .style("opacity", 1);
 		}
 		else{
 			tooltip
-            .html("Year: " + info.year + "<br>CDD: " + info.cooling)
+            .html("Year: <b>" + info.year + "</b><br>CDD: <b>" + info.cooling + "</b>")
             .style("opacity", 1);
 		}
     };
@@ -189,7 +189,7 @@ function double_line_plot(data, svg_plot, id_div) {
 		d3.selectAll(id_div + " .domain").style("opacity", 1);
 
 		tooltip
-			.html("HDD")
+			.html("<b>HDD</b>")
 			.style("opacity", 1);
 	})
 	.on("mousemove", function (event) {
@@ -239,7 +239,7 @@ function double_line_plot(data, svg_plot, id_div) {
 		d3.selectAll(id_div + " .domain").style("opacity", 1);
 
 		tooltip
-			.html("CDD")
+			.html("<b>CDD</b>")
 			.style("opacity", 1);
 	})
 	.on("mousemove", function (event) {
