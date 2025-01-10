@@ -36,7 +36,8 @@ const svg_plot10 = d3
 	.attr("width", driver_width_multiline_plot + driver_margin_multiline_plot.left + driver_margin_multiline_plot.right + 130)
 	.attr("height", driver_height_multiline_plot + driver_margin_multiline_plot.top + driver_margin_multiline_plot.bottom)
 	.append("g")
-	.attr("transform", `translate(${driver_margin_multiline_plot.left},${driver_margin_multiline_plot.top})`);
+	.attr("transform", `translate(${driver_margin_multiline_plot.left},${driver_margin_multiline_plot.top})`)
+	.attr("id", "svg10");
 
 let driver_tooltip = d3
     .select("#content-wrap")
@@ -51,6 +52,89 @@ let driver_tooltip = d3
     .style("position", "absolute")
     .style("left", "0px")
     .style("top", "0px");
+
+let clicked_vehicle = NaN;
+
+function radio(data, radio_list_id, svg_id, svg_plot) {
+	const radio_list = document.getElementById(radio_list_id);
+
+	// Iterate through the data array to create and append checkbox elements
+	// Use a Set to track unique years
+	let uniqueVehicles = new Set();
+	const default_clicked_vehicle = "Passenger cars"
+
+	data.forEach(item => {
+		const vehicle = item.vehicle;
+	
+		if (!uniqueVehicles.has(vehicle)) {
+			uniqueVehicles.add(vehicle);
+
+			// Create a new list item (li)
+			const li = document.createElement("li");
+
+			// Create a new radio input
+			const radio = document.createElement("input");
+			radio.type = "radio";
+			radio.value = vehicle;
+			radio.setAttribute("id", "radio-" + vehicle);
+
+			// Optionally set the checkbox as checked
+			if (radio.value === default_clicked_vehicle) {
+				radio.checked = true;
+			}
+
+			// Create a text node for the label
+			const label = document.createTextNode(vehicle);
+			/* let baseColor = colorScale(vehicle)
+			const box_color = document.createElement("div");
+			box_color.setAttribute("class", "color-box");
+			box_color.style.backgroundColor = baseColor; */
+			// Append the checkbox and label to the list item
+			li.appendChild(radio);
+			li.appendChild(label);
+			/* li.appendChild(box_color) */
+
+			// Append the list item to the checkbox list
+			radio_list.appendChild(li);
+		}
+	});
+
+	const radio = document.querySelectorAll("#"+radio_list_id+" input[type='radio']");
+
+	for (radio_button of radio) {
+		radio_button.addEventListener('change', (event) => {
+			if (event.currentTarget.checked) {
+					
+				for (radio_button of radio)
+					radio_button.checked = false;
+
+				event.currentTarget.checked = true;
+
+				clicked_vehicle = event.currentTarget.value
+				let plot = document.getElementById(svg_id);
+				while (plot.firstChild) {
+					plot.removeChild(plot.lastChild);
+				}
+				let filtered_data = data.filter(d => d.vehicle === clicked_vehicle);
+
+				const groupedData = d3.group(filtered_data, d => d.country);
+
+				// Transform the grouped data into the desired format
+				const formattedData = Array.from(groupedData, ([country, entries]) => ({
+					country: country,
+					zero_emission_vehicles_percentage: entries.map(entry => ({
+						year: +entry.year, 
+						value: +entry.zero_emission_vehicles_percentage 
+					}))
+				}));
+
+				driver_multiline_plot2(formattedData, svg_plot, svg_id);
+			}
+		})
+	}
+	
+	clicked_vehicle = default_clicked_vehicle;
+}
 
 function add_axis_label(svg_plot, x, y, transform, text_anchor, label) {
     svg_plot
@@ -582,8 +666,9 @@ d3.csv("Stucchi/prepared_datasets/plot4.csv").then(function(data) {
 });
 
 d3.csv("Stucchi/prepared_datasets/plot5.csv").then(function(data) { 
-    // Group data by waste_operation
-	let filtered_data = data.filter(d => d.vehicle === `Passenger cars`);
+	radio(data, "radio10_list", "svg10", svg_plot10);
+
+	let filtered_data = data.filter(d => d.vehicle === clicked_vehicle);
     const groupedData = d3.group(filtered_data, d => d.country);
 
     // Transform the grouped data into the desired format
@@ -594,7 +679,6 @@ d3.csv("Stucchi/prepared_datasets/plot5.csv").then(function(data) {
             value: +entry.zero_emission_vehicles_percentage 
         }))
     }));
-	
-    // Pass the formatted data to your plot function
+
     driver_multiline_plot2(formattedData, svg_plot10, "#plot10");
 });
