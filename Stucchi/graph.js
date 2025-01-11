@@ -220,7 +220,7 @@ function sankey_plot(nodes_data, links_data, svg_plot, defs) {
 		.style("opacity", 1);
 
 	if (countries.includes(d.target.name)) 
-		driver_tooltip.html(`${d.target.name}'s ${d.target.name.toLowerCase().split(" - ")[1]} energy consumption: ${d.value} ${units}.`).style("opacity", 1);
+		driver_tooltip.html(`${d.target.name}'s ${d.source.name.toLowerCase().split(" - ")[1]} energy consumption: ${d.value} ${units}.`).style("opacity", 1);
 	
 	if (countries.includes(d.source.name)) 
 		driver_tooltip.html(`${d.source.name} ${d.target.name} used: ${d.value} ${units}`).style("opacity", 1);
@@ -389,7 +389,7 @@ function driver_bar_plot(data, svg_plot, id_div, color_function) {
         info = d3.select(this).datum();
         driver_tooltip
             .html("Fuel consumption: " + info.total_type_of_fuel_consumption_value + " million tonnes of oil equivalent")
-            .style("opacity", 1);
+            .style("opacity", 1);		
     };
 
     var mousemove = function (event, d) {
@@ -600,7 +600,7 @@ function driver_multiline_plot1(data, svg_plot, id_div) {
                 .y(d => y(d.value))
             )
 
-		if (!isDisposalAvg || !isReciclyingAvg) {
+		if (!isDisposalAvg && !isReciclyingAvg) {
             line.on("mouseover", function (event) {
 				svg_plot.selectAll(".country-line")
 					.style("opacity", 0.2);
@@ -622,33 +622,14 @@ function driver_multiline_plot1(data, svg_plot, id_div) {
 				driver_tooltip.style("opacity", 0);
             });
 		}
-		/* else {
+		else {
 			svg_plot.append("text")
 					.attr("x", x(d3.max(waste_operation.waste_disposed, p => p.year)) + 5)
 					.attr("y", y(waste_operation.waste_disposed[waste_operation.waste_disposed.length - 1].value))
 					.attr("fill", "#4CAF50")
 					.attr("font-size", "12px")
 					.attr("alignment-baseline", "middle")
-					.text(isDisposalAvg ? "Disposal Operations Average" : "Reciclying Operations Average");
-		} */
-
-		if(isDisposalAvg) {
-			svg_plot.append("text")
-					.attr("x", x(d3.max(waste_operation.waste_disposed, p => p.year)) + 5)
-					.attr("y", y(waste_operation.waste_disposed[waste_operation.waste_disposed.length - 1].value))
-					.attr("fill", "#4CAF50")
-					.attr("font-size", "12px")
-					.attr("alignment-baseline", "middle")
-					.text("Disposal Operations Average");
-		}
-		if(isReciclyingAvg) {
-			svg_plot.append("text")
-					.attr("x", x(d3.max(waste_operation.waste_disposed, p => p.year)) + 5)
-					.attr("y", y(waste_operation.waste_disposed[waste_operation.waste_disposed.length - 1].value))
-					.attr("fill", "#4CAF50")
-					.attr("font-size", "12px")
-					.attr("alignment-baseline", "middle")
-					.text("Reciclying Operations Average");
+					.text(isDisposalAvg ? "Disposal Operations Average" : "Recovery Operations Average");
 		}
     });
 	svg_plot.select(".is-avg").raise();
