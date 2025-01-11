@@ -377,7 +377,7 @@ function driver_bar_plot(data, svg_plot, id_div, color_function) {
     add_axis_label(
         svg_plot,
         -driver_height / 2,
-        -driver_margin.left + 50,
+        -driver_margin.left + 70,
         "rotate(-90)",
         "middle",
         "Fuel consumption (Million tonnes of oil equivalent)"
@@ -474,7 +474,7 @@ function driver_stacked_bar_plot(data, svg_plot, id_div, color_function) {
 	add_axis_label(
 		svg_plot,
 		-driver_height / 2,
-		-driver_margin.left + 50,
+		-driver_margin.left + 70,
 		"rotate(-90)",
 		"middle",
 		"Country"
@@ -605,7 +605,7 @@ function driver_multiline_plot1(data, svg_plot, id_div) {
 				svg_plot.selectAll(".country-line")
 					.style("opacity", 0.2);
                 d3.select(this)
-                    .style("stroke", color_function(waste_operation.waste_operation))
+                    .style("stroke", "blue")
                     .style("opacity", 1);
 
                 driver_tooltip
@@ -853,8 +853,8 @@ var driver_plot2_3_loadData_slider_onchange = function (event, d) {
 	.attr("height", driver_height + driver_margin.top + driver_margin.bottom)
 	.append("g")
 	.attr("transform", `translate(${driver_margin.left},${driver_margin.top})`);
-
-	const fuel_types = Array.from(new Set(driver_plot2_loadData_slider.map((d) => d.fuel_type))); 
+	 
+	fuel_types = Array.from(new Set(driver_plot2_loadData_slider.map((d) => d.fuel_type))); 
 
 	// Create a color scale that generates a unique color for each fuel type
 	const color_function = d3.scaleOrdinal()
