@@ -192,15 +192,16 @@ p {
 	height: 45%;
 	width: 100%;
 	writing-mode: horizontal-tb;
-    direction: rtl;
+    direction: ltr;
     vertical-align: middle;
 }
 
 
-#range_plot7{
+#range_plot7_8{
 	height: 45%;
-	writing-mode: vertical-lr;
-    direction: rtl;
+	width: 100%;
+	writing-mode: horizontal-tb;
+    direction: ltr;
     vertical-align: middle;
 }
 
@@ -217,6 +218,12 @@ p {
 }
 
 .slidecontainer-sankey{
+	margin-top: 2.5rem;
+	width: 80%;
+	text-align: center;
+}
+
+.slidecontainer-barplots {
 	width: 80%;
 	text-align: center;
 }

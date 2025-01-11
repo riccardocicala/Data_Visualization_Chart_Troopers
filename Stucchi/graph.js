@@ -45,7 +45,7 @@ const svg_plot8 = d3
 const svg_plot9 = d3
 	.select("#plot9")
 	.append("svg")
-	.attr("width", driver_width_multiline_plot + driver_margin_multiline_plot.left + driver_margin_multiline_plot.right + 130)
+	.attr("width", driver_width_multiline_plot + driver_margin_multiline_plot.left + driver_margin_multiline_plot.right + 140)
 	.attr("height", driver_height_multiline_plot + driver_margin_multiline_plot.top + driver_margin_multiline_plot.bottom)
 	.append("g")
 	.attr("transform", `translate(${driver_margin_multiline_plot.left},${driver_margin_multiline_plot.top})`);
@@ -334,7 +334,7 @@ function add_axis_label(svg_plot, x, y, transform, text_anchor, label) {
         .text(label);
 }
 
-function driver_bar_plot(data, svg_plot, id_div) {
+function driver_bar_plot(data, svg_plot, id_div, color_function) {
     /* data = data.filter(d => d.year === "2020");
  */
     var max_value = 0;
@@ -377,7 +377,7 @@ function driver_bar_plot(data, svg_plot, id_div) {
     add_axis_label(
         svg_plot,
         -driver_height / 2,
-        -driver_margin.left + 15,
+        -driver_margin.left + 50,
         "rotate(-90)",
         "middle",
         "Fuel consumption (Million tonnes of oil equivalent)"
@@ -411,7 +411,7 @@ function driver_bar_plot(data, svg_plot, id_div) {
         .attr("y", (d) => y(d.total_type_of_fuel_consumption_value))
         .attr("width", x.bandwidth())
         .attr("height", (d) => driver_height - y(d.total_type_of_fuel_consumption_value))
-        .attr("fill", "#69b3a2")
+        .attr("fill", (d) => color_function(d.fuel_type))
         .on("mouseover", mouseover)
         .on("mousemove", mousemove)
         .on("mouseleave", mouseleave);
@@ -460,7 +460,7 @@ function driver_stacked_bar_plot(data, svg_plot, id_div, color_function) {
 	add_axis_label(
 		svg_plot,
 		driver_width / 2,
-		driver_height + driver_margin.bottom - 5,
+		driver_height + 70,
 		"",
 		"middle",
 		"Fuel consumption (Million tonnes of oil equivalent)"
@@ -474,7 +474,7 @@ function driver_stacked_bar_plot(data, svg_plot, id_div, color_function) {
 	add_axis_label(
 		svg_plot,
 		-driver_height / 2,
-		-driver_margin.left + 15,
+		-driver_margin.left + 50,
 		"rotate(-90)",
 		"middle",
 		"Country"
@@ -569,8 +569,8 @@ function driver_multiline_plot1(data, svg_plot, id_div) {
 
     add_axis_label(
         svg_plot,
-        -driver_width_multiline_plot / 2,
-		-driver_margin_multiline_plot.left + 15,
+        -driver_height_multiline_plot / 2,
+		-driver_margin_multiline_plot.left + 50,
         "rotate(-90)",
         "middle",
         "Waste Disposed (Million Tonnes)"
@@ -582,21 +582,26 @@ function driver_multiline_plot1(data, svg_plot, id_div) {
 	// Create a color scale that generates a unique color for each fuel type
 	const color_function = d3.scaleOrdinal()
 		.domain(waste_operation_types)
-		.range(waste_operation_types.map((_, i) => d3.interpolateRainbow(i / waste_operation_types.length)));
+		.range(waste_operation_types.map((_, i) => d3.interpolateCividis(i / waste_operation_types.length)));
 
     // Draw the lines
     data.forEach(waste_operation => {
-        svg_plot.append("path")
+		const isDisposalAvg = waste_operation.waste_operation === "Disposal - average";
+		const isReciclyingAvg = waste_operation.waste_operation === "Recovery - average";
+
+        const line = svg_plot.append("path")
             .datum(waste_operation.waste_disposed) // Bind data
             .attr("fill", "none")
-            .attr("stroke", "#d4d4d4")
-            .attr("stroke-width", 3)
-            .attr("class", "country-line")
+            .attr("stroke", isDisposalAvg ? "#4CAF50" : isReciclyingAvg ? "#4CAF50" : "#d4d4d4")
+            .attr("stroke-width", isDisposalAvg ? 3.5 : isReciclyingAvg ? 3.5 : 3)
+            .attr("class", isDisposalAvg ? "is-avg" : isReciclyingAvg ? "is-avg" : "country-line")
             .attr("d", d3.line()
                 .x(d => x(d.year))
                 .y(d => y(d.value))
             )
-            .on("mouseover", function (event) {
+
+		if (!isDisposalAvg || !isReciclyingAvg) {
+            line.on("mouseover", function (event) {
 				svg_plot.selectAll(".country-line")
 					.style("opacity", 0.2);
                 d3.select(this)
@@ -616,7 +621,37 @@ function driver_multiline_plot1(data, svg_plot, id_div) {
                     .style("stroke", "#d4d4d4")
 				driver_tooltip.style("opacity", 0);
             });
+		}
+		/* else {
+			svg_plot.append("text")
+					.attr("x", x(d3.max(waste_operation.waste_disposed, p => p.year)) + 5)
+					.attr("y", y(waste_operation.waste_disposed[waste_operation.waste_disposed.length - 1].value))
+					.attr("fill", "#4CAF50")
+					.attr("font-size", "12px")
+					.attr("alignment-baseline", "middle")
+					.text(isDisposalAvg ? "Disposal Operations Average" : "Reciclying Operations Average");
+		} */
+
+		if(isDisposalAvg) {
+			svg_plot.append("text")
+					.attr("x", x(d3.max(waste_operation.waste_disposed, p => p.year)) + 5)
+					.attr("y", y(waste_operation.waste_disposed[waste_operation.waste_disposed.length - 1].value))
+					.attr("fill", "#4CAF50")
+					.attr("font-size", "12px")
+					.attr("alignment-baseline", "middle")
+					.text("Disposal Operations Average");
+		}
+		if(isReciclyingAvg) {
+			svg_plot.append("text")
+					.attr("x", x(d3.max(waste_operation.waste_disposed, p => p.year)) + 5)
+					.attr("y", y(waste_operation.waste_disposed[waste_operation.waste_disposed.length - 1].value))
+					.attr("fill", "#4CAF50")
+					.attr("font-size", "12px")
+					.attr("alignment-baseline", "middle")
+					.text("Reciclying Operations Average");
+		}
     });
+	svg_plot.select(".is-avg").raise();
 }
 
 function driver_multiline_plot2(data, svg_plot, id_div) {
@@ -649,8 +684,8 @@ function driver_multiline_plot2(data, svg_plot, id_div) {
 
     add_axis_label(
         svg_plot,
-        -driver_width_multiline_plot / 2,
-		-driver_margin_multiline_plot.left + 15,
+        -driver_height_multiline_plot / 2,
+		-driver_margin_multiline_plot.left + 50,
         "rotate(-90)",
         "middle",
         "Zero Emission Vehicles (%)"
@@ -681,7 +716,7 @@ function driver_multiline_plot2(data, svg_plot, id_div) {
 						.style("opacity", 0.2);
 		
 					d3.select(this)
-						.style("stroke", "#8BC34A")
+						.style("stroke", "blue")
 						.style("opacity", 1);
 		
 					driver_tooltip
@@ -789,14 +824,20 @@ Promise.all([
 	sankey_plot(filtered_nodes_data, filtered_link_data, svg_plot6, defs);
 });
 
-
+/* let color_function = NaN; */
+let fuel_types = NaN;
 let driver_plot2_loadData_slider = NaN;
+let driver_plot3_loadData_slider = NaN;
 
-var driver_plot2_loadData_slider_onchange = function (event, d) {
-	d3.select("#text_sliders7").text(`Year: ${event.target.value}`)
+var driver_plot2_3_loadData_slider_onchange = function (event, d) {
+	d3.select("#text_sliders7_8").text(`Year: ${event.target.value}`)
 	let plot7 = document.getElementById('plot7');
+	let plot8 = document.getElementById('plot8');
 	while (plot7.firstChild) {
 		plot7.removeChild(plot7.lastChild);
+	}
+	while (plot8.firstChild) {
+		plot8.removeChild(plot8.lastChild);
 	}
 	const svg_plot7 = d3
 	.select("#plot7")
@@ -805,13 +846,36 @@ var driver_plot2_loadData_slider_onchange = function (event, d) {
 	.attr("height", driver_height + driver_margin.top + driver_margin.bottom)
 	.append("g")
 	.attr("transform", `translate(${driver_margin.left},${driver_margin.top})`);
+	const svg_plot8 = d3
+	.select("#plot8")
+	.append("svg")
+	.attr("width", driver_width + driver_margin.left + driver_margin.right)
+	.attr("height", driver_height + driver_margin.top + driver_margin.bottom)
+	.append("g")
+	.attr("transform", `translate(${driver_margin.left},${driver_margin.top})`);
 
-	let filtered_data = driver_plot2_loadData_slider.filter(d => d.year===`${event.target.value}`);
-	let colorScheme = d3.schemeBlues[7];
+	const fuel_types = Array.from(new Set(driver_plot2_loadData_slider.map((d) => d.fuel_type))); 
+
+	// Create a color scale that generates a unique color for each fuel type
+	const color_function = d3.scaleOrdinal()
+		.domain(fuel_types)
+		.range(fuel_types.map((_, i) => d3.interpolateCividis(i / fuel_types.length)));
+
+	let filtered_data1 = driver_plot2_loadData_slider.filter(d => d.year===`${event.target.value}`);
+	let filtered_data2 = driver_plot3_loadData_slider.filter(d => d.year===`${event.target.value}`);
+
 	driver_bar_plot(
-		filtered_data,
+		filtered_data1,
 		svg_plot7,
-		"#plot7"
+		"#plot7",
+		color_function
+	);
+
+	driver_stacked_bar_plot(
+		filtered_data2,
+		svg_plot8,
+		"#plot8",
+		color_function
 	);
 };
 
@@ -825,28 +889,35 @@ d3.csv("Stucchi/prepared_datasets/plot2.csv", function (d) {
     let min_year = d3.min(driver_plot2_data, function(d) { return +d.year; })
 	let max_year = d3.max(driver_plot2_data, function(d) { return +d.year; })
     let text = d3
-		.select("#slidecontainer7")
+		.select("#slidecontainer7_8")
 		.append("text")
 		.style("font-size", "18px")
-		.attr("id", "text_sliders7")
+		.attr("id", "text_sliders7_8")
 		.text(`Year: ${max_year}`);
 	let slider = d3
-		.select("#slidecontainer7")
+		.select("#slidecontainer7_8")
 		.append("input")
 		.attr("type", "range")
-		.attr("id", "range_plot7")
+		.attr("id", "range_plot7_8")
 		.attr("min", `${min_year}`)
 		.attr("max", `${max_year}`)
 		.attr("value", `${max_year}`)
-		.on("input", driver_plot2_loadData_slider_onchange)
+		.on("input", driver_plot2_3_loadData_slider_onchange)
 
 	driver_plot2_loadData_slider = driver_plot2_data;
+	 
+	fuel_types = Array.from(new Set(driver_plot2_loadData_slider.map((d) => d.fuel_type))); 
+
+	// Create a color scale that generates a unique color for each fuel type
+	let color_function = d3.scaleOrdinal()
+		.domain(fuel_types)
+		.range(fuel_types.map((_, i) => d3.interpolateCividis(i / fuel_types.length)));
+
 	let filtered_data = driver_plot2_loadData_slider.filter(d => d.year === `${max_year}`);
-	let colorScheme = d3.schemeBlues[7];
-	driver_bar_plot(filtered_data, svg_plot7, "#plot7");
+	driver_bar_plot(filtered_data, svg_plot7, "#plot7", color_function);
 });
 
-let driver_plot3_loadData_slider = NaN;
+
 
 var driver_plot3_loadData_slider_onchange = function (event, d) {
 	d3.select("#text_sliders8").text(`Year: ${event.target.value}`)
@@ -862,14 +933,14 @@ var driver_plot3_loadData_slider_onchange = function (event, d) {
 	.append("g")
 	.attr("transform", `translate(${driver_margin.left},${driver_margin.top})`);
 
-	let filtered_data = driver_plot3_loadData_slider.filter(d => d.year===`${event.target.value}`);
-
-	const fuel_types = Array.from(new Set(driver_plot3_loadData_slider.map((d) => d.fuel_type)));
+	/* const fuel_types = Array.from(new Set(driver_plot3_loadData_slider.map((d) => d.fuel_type))); */
 
 	// Create a color scale that generates a unique color for each fuel type
-	const color_function = d3.scaleOrdinal()
+	let color_function = d3.scaleOrdinal()
 		.domain(fuel_types)
-		.range(fuel_types.map((_, i) => d3.interpolateRainbow(i / fuel_types.length)));
+		.range(fuel_types.map((_, i) => d3.interpolateCividis(i / fuel_types.length)));
+
+	let filtered_data = driver_plot3_loadData_slider.filter(d => d.year===`${event.target.value}`);
 
 	driver_stacked_bar_plot(filtered_data, svg_plot8, "#plot8", color_function);
 };
@@ -903,12 +974,12 @@ d3.csv("Stucchi/prepared_datasets/plot3.csv", function (d) {
 
 	driver_plot3_loadData_slider = driver_plot3_data;
 
-	const fuel_types = Array.from(new Set(driver_plot3_data.map((d) => d.fuel_type)));
+	/* const fuel_types = Array.from(new Set(driver_plot3_data.map((d) => d.fuel_type))); */
 
 	// Create a color scale that generates a unique color for each fuel type
 	const color_function = d3.scaleOrdinal()
 		.domain(fuel_types)
-		.range(fuel_types.map((_, i) => d3.interpolateRainbow(i / fuel_types.length)));
+		.range(fuel_types.map((_, i) => d3.interpolateCividis(i / fuel_types.length)));
 
 	let filtered_data = driver_plot3_loadData_slider.filter(d => d.year === `${max_year}`);
 
