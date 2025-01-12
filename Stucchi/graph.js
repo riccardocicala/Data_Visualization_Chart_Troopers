@@ -229,14 +229,15 @@ function sankey_plot(nodes_data, links_data, svg_plot, defs) {
 
 // Make it responsive
 function resize() {
-  width = document.getElementById('plot1').clientWidth - margin.left - margin.right;
-  height = document.getElementById('plot1').clientHeight - margin.top - margin.bottom;
+	console.log("a")
+	driver_width_sankey = document.getElementById('plot6').clientWidth - driver_margin_sankey.left - driver_margin_sankey.right;
+	driver_height_sankey = document.getElementById('plot6').clientHeight - driver_margin_sankey.top - driver_margin_sankey.bottom;
   
   d3.select("#plot6 svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom);
-    
-  sankey.extent([[0, 0], [width, height]]);
+    .attr("width", driver_width_sankey + driver_margin_sankey.left + driver_margin_sankey.right)
+    .attr("height", driver_height_sankey + driver_margin_sankey.top + driver_margin_sankey.bottom);
+
+  sankey.extent([[0, 0], [driver_width_sankey, driver_height_sankey]]);
 }
 
 window.addEventListener("resize", resize);
