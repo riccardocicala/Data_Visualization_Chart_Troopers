@@ -107,7 +107,7 @@ function line_plot_energy_share(data, svg_plot, id_div) {
 		-margin_11.left + 40,
 		"rotate(-90)",
 		"middle",
-		"Share of Renewable Energy used(%)"
+		"Share of Renewable Energy used (%)"
 	);
 
 	const tooltip = d3
