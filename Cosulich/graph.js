@@ -561,7 +561,7 @@ function bubbe_plot(data, svg_plot, id_div) {
 		-75,
 		"rotate(-90)",
 		"middle",
-		"Electricity Production Capacity (%)"
+		"Environmental Taxes (million EUR)"
 	);
 
     const tooltip = d3.select(id_div)
