@@ -117,6 +117,12 @@ p {
 	margin-bottom: 140px;
 }
 
+.graph-container2 {
+	display: flex;
+	margin-top: 80px;
+	margin-bottom: 140px;
+}
+
 .large-graph-container {
 	display: flex;
 	flex-direction: column;
@@ -135,8 +141,8 @@ p {
 }
 
 .description {
-	width: 550px;
-	height: 550px;
+	width: 40%;
+	height: 100%;
 	display: flex;
 	font-size: large;
 	line-height: 1.7;
