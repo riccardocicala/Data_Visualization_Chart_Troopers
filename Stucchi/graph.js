@@ -370,7 +370,7 @@ function driver_bar_plot(data, svg_plot, id_div, color_function) {
 
     const y = d3
         .scaleLinear()
-        .domain([0, max_value + 0.1 * max_value])
+        .domain([0, driver_bar_plot_max_fuel_consumption + 0.1 * driver_bar_plot_max_fuel_consumption])
         .range([driver_height, 0]);
 
     svg_plot.append("g").call(d3.axisLeft(y).tickSizeOuter([0]));
@@ -450,7 +450,7 @@ function driver_stacked_bar_plot(data, svg_plot, id_div, color_function) {
 	// Add X axis
 	var x = d3
 		.scaleLinear()
-		.domain([0, max_value + 0.1 * max_value])
+		.domain([0, driver_stackedbar_plot_max_fuel_consumption + 0.1 * driver_stackedbar_plot_max_fuel_consumption])
 		.range([0, driver_width]);
 
 	svg_plot
@@ -847,7 +847,7 @@ var driver_plot2_3_loadData_slider_onchange = function (event, d) {
 	.attr("height", driver_height + driver_margin.top + driver_margin.bottom)
 	.append("g")
 	.attr("transform", `translate(${driver_margin.left},${driver_margin.top})`);
-	 
+
 	fuel_types = Array.from(new Set(driver_plot2_loadData_slider.map((d) => d.fuel_type))); 
 
 	// Create a color scale that generates a unique color for each fuel type
@@ -872,6 +872,9 @@ var driver_plot2_3_loadData_slider_onchange = function (event, d) {
 		color_function
 	);
 };
+
+let driver_bar_plot_max_fuel_consumption = 0
+let driver_stackedbar_plot_max_fuel_consumption = 0
 
 d3.csv("Stucchi/prepared_datasets/plot2.csv", function (d) {
 	return {
@@ -899,6 +902,8 @@ d3.csv("Stucchi/prepared_datasets/plot2.csv", function (d) {
 		.on("input", driver_plot2_3_loadData_slider_onchange)
 
 	driver_plot2_loadData_slider = driver_plot2_data;
+
+	driver_bar_plot_max_fuel_consumption = d3.max([...driver_plot2_data], function(d) { return +d.total_type_of_fuel_consumption_value; })
 	 
 	fuel_types = Array.from(new Set(driver_plot2_loadData_slider.map((d) => d.fuel_type))); 
 
@@ -945,6 +950,7 @@ d3.csv("Stucchi/prepared_datasets/plot3.csv", function (d) {
 		year: d.year,
         fuel_type: d.fuel_type,
 		consumption_value: +d.consumption_value,
+		total_country_consumption_value: +d.total_country_consumption_value,
         rank: d.Rank
 	};
 }).then(function (driver_plot3_data) {
@@ -968,6 +974,7 @@ d3.csv("Stucchi/prepared_datasets/plot3.csv", function (d) {
 
 	driver_plot3_loadData_slider = driver_plot3_data;
 
+	driver_stackedbar_plot_max_fuel_consumption = d3.max(driver_plot3_data, function(d) { return +d.total_country_consumption_value; })
 	/* const fuel_types = Array.from(new Set(driver_plot3_data.map((d) => d.fuel_type))); */
 
 	// Create a color scale that generates a unique color for each fuel type
