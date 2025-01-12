@@ -107,7 +107,7 @@ function line_plot_energy_share(data, svg_plot, id_div) {
 		-margin_11.left + 40,
 		"rotate(-90)",
 		"middle",
-		"Share of Energy (%)"
+		"Share of Renewable Energy used (%)"
 	);
 
 	const tooltip = d3
@@ -298,7 +298,7 @@ function stacked_bar_plot(data, svg_plot, id_div) {
 		height_11_15 + margin_11_15.bottom - 25,
 		"",
 		"middle",
-		"Electricity Production Capacity (%)"
+		"Renewable Energy Production Capacity (%)"
 	);
 
 	svg_plot.append("g")
@@ -561,7 +561,7 @@ function bubbe_plot(data, svg_plot, id_div) {
 		-75,
 		"rotate(-90)",
 		"middle",
-		"Electricity Production Capacity (%)"
+		"Environmental Taxes (million EUR)"
 	);
 
     const tooltip = d3.select(id_div)
