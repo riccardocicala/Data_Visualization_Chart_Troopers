@@ -1,51 +1,51 @@
 ,fuel_type,year,total_type_of_fuel_consumption_value
-0,Gas oil and diesel oil (excluding biofuel portion),2014,178.8
-1,Motor gasoline (excluding biofuel portion),2014,70.46
+0,Gas oil and diesel oil,2014,178.8
+1,Motor gasoline,2014,70.46
 2,Blended biodiesels,2014,10.26
 3,Liquefied petroleum gases,2014,6.98
 4,Natural gas,2014,5.66
-5,Gas oil and diesel oil (excluding biofuel portion),2015,183.29
-6,Motor gasoline (excluding biofuel portion),2015,68.74
+5,Gas oil and diesel oil,2015,183.29
+6,Motor gasoline,2015,68.74
 7,Blended biodiesels,2015,10.17
 8,Liquefied petroleum gases,2015,7.07
 9,Electricity,2015,5.5
-10,Gas oil and diesel oil (excluding biofuel portion),2016,189.63
-11,Motor gasoline (excluding biofuel portion),2016,68.95
+10,Gas oil and diesel oil,2016,189.63
+11,Motor gasoline,2016,68.95
 12,Blended biodiesels,2016,10.02
 13,Liquefied petroleum gases,2016,7.55
-14,Kerosene-type jet fuel (excluding biofuel portion),2016,5.69
-15,Gas oil and diesel oil (excluding biofuel portion),2017,193.41
-16,Motor gasoline (excluding biofuel portion),2017,69.05
+14,Kerosene-type jet fuel,2016,5.69
+15,Gas oil and diesel oil,2017,193.41
+16,Motor gasoline,2017,69.05
 17,Blended biodiesels,2017,10.85
 18,Liquefied petroleum gases,2017,7.93
-19,Kerosene-type jet fuel (excluding biofuel portion),2017,5.95
-20,Gas oil and diesel oil (excluding biofuel portion),2018,193.21
-21,Motor gasoline (excluding biofuel portion),2018,68.89
+19,Kerosene-type jet fuel,2017,5.95
+20,Gas oil and diesel oil,2018,193.21
+21,Motor gasoline,2018,68.89
 22,Blended biodiesels,2018,12.15
 23,Liquefied petroleum gases,2018,7.94
-24,Kerosene-type jet fuel (excluding biofuel portion),2018,6.21
-25,Gas oil and diesel oil (excluding biofuel portion),2019,193.77
-26,Motor gasoline (excluding biofuel portion),2019,70.14
+24,Kerosene-type jet fuel,2018,6.21
+25,Gas oil and diesel oil,2019,193.77
+26,Motor gasoline,2019,70.14
 27,Blended biodiesels,2019,12.63
 28,Liquefied petroleum gases,2019,8.25
-29,Kerosene-type jet fuel (excluding biofuel portion),2019,6.46
-30,Gas oil and diesel oil (excluding biofuel portion),2020,170.27
-31,Motor gasoline (excluding biofuel portion),2020,60.75
+29,Kerosene-type jet fuel,2019,6.46
+30,Gas oil and diesel oil,2020,170.27
+31,Motor gasoline,2020,60.75
 32,Blended biodiesels,2020,12.85
 33,Liquefied petroleum gases,2020,6.66
 34,Electricity,2020,5.19
-35,Gas oil and diesel oil (excluding biofuel portion),2021,180.17
-36,Motor gasoline (excluding biofuel portion),2021,64.52
+35,Gas oil and diesel oil,2021,180.17
+36,Motor gasoline,2021,64.52
 37,Blended biodiesels,2021,13.19
 38,Liquefied petroleum gases,2021,5.53
 39,Electricity,2021,5.05
-40,Gas oil and diesel oil (excluding biofuel portion),2022,181.4
-41,Motor gasoline (excluding biofuel portion),2022,68.35
+40,Gas oil and diesel oil,2022,181.4
+41,Motor gasoline,2022,68.35
 42,Blended biodiesels,2022,12.95
-43,Kerosene-type jet fuel (excluding biofuel portion),2022,5.91
+43,Kerosene-type jet fuel,2022,5.91
 44,Liquefied petroleum gases,2022,5.75
-45,Gas oil and diesel oil (excluding biofuel portion),2023,170.28
-46,Motor gasoline (excluding biofuel portion),2023,69.22
+45,Gas oil and diesel oil,2023,170.28
+46,Motor gasoline,2023,69.22
 47,Blended biodiesels,2023,13.18
-48,Kerosene-type jet fuel (excluding biofuel portion),2023,6.66
+48,Kerosene-type jet fuel,2023,6.66
 49,Electricity,2023,6.06

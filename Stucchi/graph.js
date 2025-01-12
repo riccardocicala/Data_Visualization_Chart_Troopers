@@ -361,7 +361,7 @@ function driver_bar_plot(data, svg_plot, id_div, color_function) {
     add_axis_label(
         svg_plot,
         driver_width / 2,
-        driver_height + driver_margin.bottom - 5,
+        driver_height + 110,
         "",
         "middle",
         "Fuel type"
@@ -385,8 +385,10 @@ function driver_bar_plot(data, svg_plot, id_div, color_function) {
 
     var mouseover = function (event, d) {
         d3.selectAll(id_div + "  rect").style("opacity", 0.2);
+		d3.selectAll("#plot8" + "  rect").style("opacity", 0.2);
         d3.select(this).style("opacity", 1);
         info = d3.select(this).datum();
+		d3.selectAll(".stacked-bar-" + info.fuel_type.replace(/\s/g, '')).style("opacity", 1);
         driver_tooltip
             .html("Fuel consumption: " + info.total_type_of_fuel_consumption_value + " million tonnes of oil equivalent")
             .style("opacity", 1);		
@@ -400,6 +402,7 @@ function driver_bar_plot(data, svg_plot, id_div, color_function) {
 
     var mouseleave = function (event, d) {
         d3.selectAll(id_div + " rect").style("opacity", 1);
+		d3.selectAll("#plot8" + "  rect").style("opacity", 1);
         driver_tooltip.style("opacity", 0);
     };
 
@@ -509,7 +512,8 @@ function driver_stacked_bar_plot(data, svg_plot, id_div, color_function) {
 	};
 
 	const stackedData = d3.stack().keys(subgroups)(nestedData);
-    let rank = -1;
+    let rank1 = -1;
+	let rank2 = -1;
     first_country = groups[0]
 	svg_plot
 		.append("g")
@@ -529,9 +533,15 @@ function driver_stacked_bar_plot(data, svg_plot, id_div, color_function) {
 		.attr("height", y.bandwidth())
         .attr("fill", (d) => {
             if(d.data.country == first_country)
-                rank += 1;
-			const fuelType = mapping_entity[d.data.country + subgroups[rank]][0]; // Access fuel type
+                rank1 += 1;
+			const fuelType = mapping_entity[d.data.country + subgroups[rank1]][0]; // Access fuel type
 			return color_function(fuelType); // Use fuelType for coloring  
+		})
+		.attr("class", (d) => {
+            if(d.data.country == first_country)
+                rank2 += 1;
+			const fuelType = mapping_entity[d.data.country + subgroups[rank2]][0]; // Access fuel type
+			return "stacked-bar-" + fuelType.replace(/\s/g, ''); // Use fuelType for coloring  
 		})
 		.attr("stroke", "grey")
 		.on("mouseover", mouseover)
@@ -576,14 +586,6 @@ function driver_multiline_plot1(data, svg_plot, id_div) {
         "Waste Disposed (Million Tonnes)"
     );
 
-
-	const waste_operation_types = Array.from(new Set(data.map((d) => d.waste_operation)));
-
-	// Create a color scale that generates a unique color for each fuel type
-	const color_function = d3.scaleOrdinal()
-		.domain(waste_operation_types)
-		.range(waste_operation_types.map((_, i) => d3.interpolateCividis(i / waste_operation_types.length)));
-
     // Draw the lines
     data.forEach(waste_operation => {
 		const isDisposalAvg = waste_operation.waste_operation === "Disposal - average";
@@ -594,7 +596,7 @@ function driver_multiline_plot1(data, svg_plot, id_div) {
             .attr("fill", "none")
             .attr("stroke", isDisposalAvg ? "#4CAF50" : isReciclyingAvg ? "#4CAF50" : "#d4d4d4")
             .attr("stroke-width", isDisposalAvg ? 3.5 : isReciclyingAvg ? 3.5 : 3)
-            .attr("class", isDisposalAvg ? "is-avg" : isReciclyingAvg ? "is-avg" : "country-line")
+            .attr("class", isDisposalAvg ? "is-disposal-avg" : isReciclyingAvg ? "is-recovery-avg" : "country-line")
             .attr("d", d3.line()
                 .x(d => x(d.year))
                 .y(d => y(d.value))
@@ -613,10 +615,19 @@ function driver_multiline_plot1(data, svg_plot, id_div) {
                     .style("opacity", 1)
                     .style("left", (event.pageX + 30) + "px")
                     .style("top", (event.pageY - 130) + "px");
+
+				const waste_operation_type = waste_operation.waste_operation.split(" - ")[0];
+
+				if(waste_operation_type == "Recovery")
+					svg_plot.select(".is-disposal-avg").style("opacity", 0.2);
+				else
+					svg_plot.select(".is-recovery-avg").style("opacity", 0.2);
             })
             .on("mouseleave", function () {
 				svg_plot.selectAll(".country-line")
 					.style("opacity", 1);
+				svg_plot.select(".is-disposal-avg").style("opacity", 1);
+				svg_plot.select(".is-recovery-avg").style("opacity", 1);
                 d3.select(this)
                     .style("stroke", "#d4d4d4")
 				driver_tooltip.style("opacity", 0);
@@ -632,7 +643,8 @@ function driver_multiline_plot1(data, svg_plot, id_div) {
 					.text(isDisposalAvg ? "Disposal Operations Average" : "Recovery Operations Average");
 		}
     });
-	svg_plot.select(".is-avg").raise();
+	svg_plot.select(".is-disposal-avg").raise();
+	svg_plot.select(".is-recovery-avg").raise();
 }
 
 function driver_multiline_plot2(data, svg_plot, id_div) {
